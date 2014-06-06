@@ -1,0 +1,442 @@
+// Navigation
+//
+// Styleguide 13.0
+
+// Off Canvas
+//
+// Markup:
+//  <div id="outer-wrap" class="outer-wrap">
+//    <div id="inner-wrap" class="inner-wrap">
+//      <nav class="nav nav--primary" role="navigation">
+//        <ul class="nav--primary__list">
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//          <li class="nav--primary__item">
+//            <a href="#" class="nav--primary__link">
+//                Primary nav link
+//            </a>
+//          </li>
+//        </ul>
+//      </nav>
+//    </div>
+//  </div>
+//
+// Styleguide 13.1
+
+// Top bar
+//
+//Markup:
+//<nav class="nav nav--primary" role="navigation">
+//  <ul class="nav--primary__list">
+//    <li class="nav--primary__item">
+//      <a href="#" class="nav--primary__link">
+//        Primary nav link
+//      </a>
+//    </li>
+//    <li class="nav--primary__item">
+//      <a href="#" class="nav--primary__link">
+//        Primary nav link
+//      </a>
+//    </li>
+//    <li class="nav--primary__item">
+//      <a href="#" class="nav--primary__link">
+//        Primary nav link
+//      </a>
+//    </li>
+//    <li class="nav--primary__item">
+//      <a href="#" class="nav--primary__link">
+//        Primary nav link
+//      </a>
+//    </li>
+//  </ul>
+//</nav>
+//
+// Styleguide 13.2
+
+// Simple side navigation
+//
+//
+// Styleguide 13.3
+
+// Nav tabs
+//
+//Markup:
+//<nav class="nav nav--tabs">
+//  <ul class="cf nav--tabs__list">
+//    <li class="nav--tabs__item">
+//      <a class="nav--tabs__link" href="#">
+//        Nav tab link
+//      </a>
+//    </li>
+//    <li class="nav--tabs__item">
+//      <a class="nav--tabs__link" href="#">
+//        Nav tab link
+//      </a>
+//    </li>
+//    <li class="nav--tabs__item">
+//      <a class="nav--tabs__link" href="#">
+//        Nav tab link
+//      </a>
+//    </li>
+//    <li class="nav--tabs__item">
+//      <a class="nav--tabs__link" href="#">
+//        Nav tab link
+//      </a>
+//    </li>
+//  </ul>
+//</nav>
+//
+// Styleguide 13.4
+
+
+// Breadcrumbs
+//
+//
+//<ol class="nav nav--breadcrumb"> 
+//  <li>
+//    <a href="#">
+//      Home
+//    </a>
+//  </li>
+//  <li>
+//    <a href="#">
+//      Library
+//    </a>
+//  </li>
+//  <li class="active">
+//      Home
+//  </li>
+//</ol>
+//
+//
+// Styleguide 13.5
+
+
+	
+.nav--primary li .fixed-logo {
+	@include respond-max(48em) {
+		display:none;
+		}
+	}
+
+.nav {
+	list-style-type:none;
+	
+	ul, ol {
+		list-style-type:none;
+		margin:0;
+		}
+		
+	a {
+		text-decoration:none;
+		}
+		
+	}
+	
+.js-trigger__nav--utility {
+	display:block;
+	@include respond-min(60em) {
+		display:none !important;
+		}
+	}
+	
+.js-panel__nav--utility {
+	display:none;
+	@include respond-min(60em) {
+		display:block !important;
+		}
+	}
+
+.utility-link {
+	color:#fff;
+	display:block;
+	height:rem(48px);
+	padding-top:rem(8px);
+	position:absolute;
+	top:0;
+	right:rem(52px);
+	text-align:center;
+	width:rem(52px);
+	z-index:999;
+	
+	&:active, &.active {
+		background-color:#fff;
+		i {
+			color:$primary-color;
+			}
+		}
+		
+	@include respond-min(48em) {
+		display:none;
+		}
+		
+	}
+		
+
+.fixed .nav--primary {	
+	@include respond-min(60em) {
+		-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.50);
+		-moz-box-shadow: 0 8px 6px -6px  rgba(0,0,0,0.50);
+		box-shadow: 0 8px 6px -6px rgba(0,0,0,0.50);
+		}
+		
+	@include old-ie {
+		float:none;
+		margin-left:0px !important;
+		width:1200px !important;
+		}
+
+	}
+	
+.fixed-logo {
+	display:none;
+	}
+	
+.fixed .fixed-logo {	
+	@include respond-min(60em) {
+		display:block;
+		float:left;
+		max-width:160px;
+		}
+	}
+	
+.nav--primary__list {
+	@include respond-min(60em) {
+		background-color:#fff;
+		border-bottom:1px solid $light-grey-2;
+		border-top:1px solid $light-grey-2;
+		height:rem(62px);
+		margin:0 auto;
+		padding:0 lh(1);
+		position:relative;
+		}
+			
+	}
+	
+.nav--primary__item { 
+	@include respond-min(60em) {
+		border:none;
+		float: left; 
+		margin:0;
+		padding:0;
+		width:auto;
+		}
+	}
+		
+.nav--primary__link {
+	@include respond-min(60em) {
+		border-right:1px solid $light-grey-2;
+		color:$dark-blue;
+		display:block;
+		font-family:$primary-font;
+		font-size:rem(16px);
+		height:62px;
+		line-height:62px;
+		padding:0 lh(.33);
+		text-align:center;
+		
+		&:hover,
+		&:focus {
+			background-color:$dark-blue;
+			color:#fff;
+			text-decoration:none;
+			}
+			
+		&:visited {
+			color:$dark-blue;
+			
+			&:hover {
+				color:#fff;
+				}
+			}
+				
+		@include old-ie {
+			height:60px !important;
+			line-height:60px !important;
+			}
+			
+		i {
+			opacity:0.5;
+			visibility: visible;
+			}
+		}
+		
+	@include respond-min(75em) {
+		padding:0 lh(.75);
+		}
+	
+	}
+	
+
+.selected .nav--primary__link {
+	background-color: $dark-blue;
+	border-right: 1px solid $dark-blue;
+	color: #FFFFFF !important;
+	}
+	
+.nav--secondary {
+	background-color:$light-grey-3;
+	display:block;
+	font-family:$primary-font;
+	padding:lh(1);
+	}
+	
+.nav--secondary__list {
+	display:block;
+	}
+	
+.nav--secondary__link {
+	display:block;
+	padding:lh(.33);
+	&:hover {
+		background-color:$light-grey-1;
+		}
+	}
+		
+.nav--tertiary__list {
+	display:block;
+	}
+	
+.nav--tertiary__item {
+	display:block;
+	}
+	
+.nav--tertiary__link {
+	border-bottom: 1px solid darken($blue-tint, 5%);
+	color:$light-blue;
+	display: block;
+	font-family:$secondary-font;
+	font-size:rem(18px);
+	font-weight:normal;
+	padding:lh(.33) lh(.66);
+	text-decoration: none;
+	
+	&:hover {
+		color:$dark-blue !important;
+		text-decoration:none;
+		}	
+		
+	&:visited {
+		color:$light-blue;
+		}
+		
+	}
+	
+	
+.nav--breadcrumb {
+	> li {
+		display:inline-block;
+		}
+	}
+
+.js-toggle {
+	&:hover {
+		cursor:pointer;
+		}
+	}
+	
+.nav--tabs {
+	@include clearfix();
+	display:block;
+	font-family:$secondary-font;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	
+	@include respond-min(48em) {
+		overflow:hidden;
+		position:relative;
+		width:100%;
+		}
+		
+	}
+	
+.nav--tabs__list {
+
+	@include respond-min(48em) {
+		clear:left;
+   		float:left;
+		left:50%;
+		margin:0;
+	   	padding:0;
+	   	position:relative;
+		text-align:center;
+		}
+		
+	}
+		
+.nav--tabs__item {
+	display:block;
+	float:left;
+	margin-bottom:lh(.25);
+	width:50%;
+	
+	@include respond-min(48em) {
+		list-style:none;
+		margin:0;
+		padding:0;
+		position:relative;
+		right:50%;
+		width:auto;
+		}
+		
+	}
+	
+	
+.nav--tabs__link {
+	background-color:darken($dark-blue, 10%);
+	color:#fff;
+	display:block;
+	padding:lh(.66);
+	text-align:center;
+	&:visited {
+		color:#fff;
+		}
+		
+	@include respond-min(60em) {
+		border-top:4px solid transparent;
+		font-size:rem(18px);
+		margin-right:lh(.25);
+		padding:lh(.66) lh(1.66);
+		}
+		
+	&:hover {
+		background-color:#fff;
+		color:$light-blue;
+		text-decoration:none;
+		}
+		
+	}
+	
+.active .nav--tabs__link {		
+	background-color:#fff;
+	color:$light-blue;
+	
+	@include respond-min(60em) {
+		border-top:4px solid $light-blue;
+		}
+	}
+	

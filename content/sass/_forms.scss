@@ -1,0 +1,343 @@
+// Forms
+//
+// Basic elements. Covers styles used for forms, such as the `<input>` and `<select>` elements.
+//
+// Markup:
+//<div class="alert alert--danger">
+//  <h2 class="beta">Please check the required details are completed</h2>
+//  <p>There was 1 error found in the information you supplied.</p>
+//  <ul class="list list--bullets-round">
+//    <li class="list__item list--numeric">
+//      <a tabindex="3" href="#exampleInputPassword2">Please supply details for 'Password'.</a>
+//    </li>
+//  </ul>
+//</div> 
+//<form class="form" role="form">
+//  <ul>
+//    <li>
+//      <label for="exampleText1">Textfield <em>Optional</em></label>
+//      <input type="text" id="exampleText1" name="exampleText1">
+//    </li>
+//    <li>
+//      <label for="exampleInputEmail1">Email address</label>
+//      <input type="email" placeholder="Enter email" title="Example help text">
+//      <p class="gamma">Example help text</p>
+//    </li>
+//    <li>
+//      <label for="exampleInputPassword1">Password</label>
+//      <input type="password" placeholder="Password" id="exampleInputPassword1">
+//    </li>
+//    <li class="form__alert form__alert--danger" tabindex="7">
+//      <label for="exampleInputPassword2">Confirm Password</label>
+//      <input type="password" placeholder="Confirm Password" id="exampleInputPassword2">
+//    </li>
+//    <li>
+//      <label for="exampleTextarea1">Text area</label>	
+//      <textarea cols="30" rows="4" id="exampleTextarea1"></textarea>	
+//    </li>
+//    <li class="row">
+//      <label for="inlineInput1" class="col medium_12">Inline input</label>
+//      <div class="col medium_9">
+//        <input type="text" id="inlineInput1" size="50" maxlength="50" class=""> 
+//      </div>
+//      <div class="col medium_3">
+//        <button class="btn btn--block" class="">Search</button>
+//      </div>
+//    </li>
+//    <li>
+//      <label for="exampleDropdown1">Dropdown</label>	
+//      <select id="exampleDropdown1">
+//        <option value="">Please select ...</option>
+//        <option value="Edinburgh">Edinburgh</option>
+//        <option value="Frankfurt">Frankfurt</option>
+//        <option value="Hong Kong">Hong Kong</option>
+//        <option value="Montreal">Montreal</option>
+//      </select>
+//    </li>
+//    <li>
+//      <label for="exampleInputFile">File input</label>
+//      <input type="file" id="exampleInputFile">
+//    <li>
+//    <li>
+//      <fieldset>
+//        <legend>Checkbox</legend>	
+//        <label for="exampleCheckbox1">
+//          <input type="checkbox" checked="checked" value="Forms" id="exampleCheckbox1"> 
+//          Forms
+//        </label>
+//        <label for="exampleCheckbox2">
+//          <input type="checkbox" value="Pages" id="exampleCheckbox2"> 
+//          Pages
+//        </label>
+//        <label for="exampleCheckbox3">
+//          <input type="checkbox" value="Directories" id="exampleCheckbox3"> 
+//          Directories
+//        </label>
+//      </fieldset>
+//    </li>
+//    <li>
+//      <fieldset>
+//        <legend>Radio</legend>	
+//        <label for="exampleradio1">
+//          <input type="radio" class="checkbox" value="One" id="xforms_Radio_0"> 
+//          One
+//        </label>
+//        <label for="exampleradio2">
+//        <input type="radio" class="checkbox" checked="checked" value="Two" id="exampleradio2"> 
+//          Two
+//        </label>
+//        <label for="exampleradio3">
+//          <input type="radio" class="checkbox" value="Three" id="exampleradio3"> 
+//          Three
+//        </label>
+//      </fieldset>
+//    </li>
+//  </ul>
+//  <button type="submit" class="btn">Submit</button>
+//</form>
+//
+// Styleguide 6.0
+
+
+// Horizontal Form
+//
+//Horizontal form example introduction text to go here
+//
+//Markup:
+//<form class="form" role="form">
+//  <ul>
+//    <li class="row">
+//		  <label for="exampleInputEmail5" class="col medium_3">Email address</label>
+//		  <div class="col medium_9">
+//			  <input type="email" id="exampleInputEmail5"  placeholder="Enter email">
+//		  </div>
+//	  </li>
+//	  <li class="row">
+//		  <label for="exampleInputPassword5" class="col medium_3">Password</label>
+//		  <div class="col medium_9">
+//			  <input type="password" id="exampleInputPassword5" placeholder="Password">
+//		  </div>
+//	  </li>
+//    <li class="row">
+//      <label for="exampleInputFile5" class="col medium_3">File input</label>
+//	    <div class="col medium_9">
+//     	  <input type="file" id="exampleInputFile5">
+//     	  <p class="gamma">Example block-level help text here.</p>
+//      </div>
+//    </li>
+//    <li class="checkbox push_3">
+//      <label>
+//        <input type="checkbox"> Check me out
+//      </label>
+//    </li>
+//    <button type="submit" class="btn pull-right">Submit</button>
+//  </ul>
+//</form>
+//
+// Styleguide 6.1
+
+
+
+
+
+
+/* Basic styling on all basic form elements */ 
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+	background-color: white;
+	border: 1px solid $mid-grey-1;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.75);
+	-webkit-transition: -webkit-box-shadow 0.15s, border-color 0.15s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.15s, border-color 0.15s ease-in-out;
+	transition: box-shadow 0.15s, border-color 0.15s ease-in-out; 
+	}
+	
+	
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+	-webkit-box-shadow: 0 0 5px $mid-grey-2;
+	-moz-box-shadow: 0 0 5px $mid-grey-2;
+	box-shadow: 0 0 5px $mid-grey-2;
+	
+	border-color: $mid-grey-2;
+	background: #fafafa;
+	outline: none; 
+	}
+	
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="month"][disabled],
+input[type="week"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+textarea[disabled] {
+    background-color: #dddddd;
+	}
+
+
+.form {
+	background-color:#fff;
+	color:#333;
+	font-family:$secondary-font;
+	font-size:rem(18px);
+	margin-bottom:lh();
+	margin-top:lh();
+	ul {
+		list-style-type:none;
+		}
+		
+	ul > li {
+		display:block;
+		margin-bottom:lh(.5);
+		margin-top:lh(.5);
+		padding-bottom:lh(.5);
+		padding-top:lh(.5);
+		}
+		
+	@include respond-min(48em) {
+		.error {
+			display:block;
+			}
+		}
+		
+	legend {
+		display:block;
+		}
+		
+	label {
+		display:block;
+		padding:lh(.1) 0;
+		}
+	
+	input,
+	select,
+	textarea {
+		max-width:100%;
+		padding:rem(15px) lh(.66);
+		width:100%;
+		}
+		
+		
+	select {
+		width:auto;
+		}
+		
+	input[type="checkbox"],
+	input[type="radio"] {
+		width:auto;
+		}
+		
+	textarea {
+		font-family:$font-family;
+		}
+		
+	.error {
+		color:$red;
+		}
+		
+	input.error {
+		border-color:$red;
+		color:#444;
+		background-color: #f2dede;
+		}
+	
+	}
+	
+	
+.form-filter {
+	font-size:rem(13px);
+	label {
+		padding:0;
+		@include respond-min(48em) {
+			border-bottom:none;
+			padding:0;
+			}
+		}
+	b {
+		width:auto;
+		}
+	}
+	
+.form-inline {
+	label {
+		border-bottom:none;
+		margin:0 lh(.33) lh(.33) 0;
+		padding:0;
+		width:100%;
+		@include respond-min(48em) {
+			float:left;
+			margin:0 lh(1) 0 0;
+			padding:lh(.33) 0 0 0;
+			width:auto;
+			}
+		}
+	input[type="text"],
+	input[type="password"],  
+	select,
+	textarea {
+		float:left;
+		margin:0 lh(.33) 0 0 ;
+		width:80%;
+		@include respond-min(48em) {
+			float:left;
+			margin:0 lh(.33) 0 0;
+			min-width:33%;
+			width:auto;
+			}
+		}
+	.btn {
+		padding: 0.75em;
+		}
+	}
+
+
+	
+.form__alert--danger {	
+	label {
+		color:$danger-color
+		}
+		
+	input {
+		border-color:$danger-color;
+		background-color:lighten($danger-color, 35%);
+		}
+		
+	}
+
+	

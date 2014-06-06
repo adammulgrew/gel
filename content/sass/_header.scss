@@ -1,0 +1,181 @@
+.masthead {
+	@include respond-min(48em) {
+		margin:0 auto;
+		padding:lh(.33) 0 0 0;
+		position:relative;
+		width:100%;
+		}	
+	}
+	
+.masthead-panel-colour {
+	background-color:#fff;
+	color:#fff;
+	display:block;
+	height:rem(48px);
+	left:0;
+	padding:0;
+	position:absolute;
+	width:100%;
+	top:0;
+	z-index:-2;
+	i {
+		color:#fff;
+		}
+	@include respond-min(60em) {
+		@include visuallyhidden;
+		}
+	}
+	
+.icon-menu {
+	color:$light-blue;
+	}
+		
+.site-logo__img {
+	display:block;
+	height:50px !important;
+	margin:lh(.25) 0 0 3%;
+	width:143px !important;
+	
+	@include respond-min(48em) {
+		height:78px !important;
+		margin:lh(.25) 0 0 3%;
+		width:220px !important;
+		}
+	
+	@include respond-min(60em) {
+		height:80px !important;
+		margin:0;
+		width:229px !important;
+		}
+		
+	}
+	
+	
+.site-logo--fixed {
+	display:block;
+	height:60px !important;
+	width:171px !important;
+	}
+	
+.js-scroll-offset {
+	margin-top:rem(62px);
+	}
+	
+.search-link {
+	color:$light-blue;
+	display:block;
+	position:absolute;
+	right:rem(64px);
+	text-align:center;
+	top:rem(12px);
+	z-index:9;
+
+	@include respond-min(48em) {
+		right:rem(72px);
+		}
+
+
+	@include respond-min(60em) {
+		display:none;
+		}
+		
+	}
+	
+.trigger__icon {
+	color:$light-blue;
+	font-size:rem(32px);
+	
+	&:active {
+		color:$dark-blue;
+		}
+		
+	@include respond-min(48em) {
+		font-size:rem(42px);
+		}
+		
+	}
+
+			
+.js-trigger__search {
+	display:block;
+	@include respond-min(60em) {
+		display:none !important;
+		}
+	
+	}
+	
+.js-panel__search {
+	display:none;
+	@include respond-min(60em) {
+		display:block !important;
+		}
+	
+	}
+		
+.panel--search {
+	padding:lh(.66) 3% 0 3%;
+	@include respond-min(48em) {
+		margin:0;
+		padding:lh(1) 0 0 0;
+		width:100%;
+		}
+	}
+		
+.search {
+	position:relative;
+	}
+	
+.search__label {
+	@include visuallyhidden;
+	}
+	
+.search input[type="text"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid $light-grey-2;
+	box-sizing: border-box; 
+	display:block;
+	font-size:rem(16px);
+	padding: lh(.5) lh(4) lh(.5) lh(.5);
+	position: relative;
+	width:100%;
+	z-index:1;
+	}
+	
+.search__btn {
+	@include border-radius(0);
+	background-color:$light-grey-2;
+	bottom: 0;
+	color:$mid-grey-2;
+	cursor: pointer;
+	margin:0;
+	padding: lh(.5) lh(.75);
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	&:hover {
+		background-color:$light-grey-3;
+		color:$dark-grey-1;
+		}
+	
+	&:hover {
+		background-color:darken($primary-color, 10%);
+		color:#fff;
+		}
+		
+	}
+	
+.icon--xlarge {
+	border:1px solid #000;
+	padding-bottom:100%; 
+	text-align:center;
+	width:100%;
+	}
+	
+.icon--xlarge__icon {
+	font-size:rem(100px);
+	position:absolute;
+	}
+	
+	

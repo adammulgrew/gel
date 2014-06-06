@@ -1,0 +1,39 @@
+// Videos
+//
+// Responsive video
+//
+// You may need to embed video from other third party websites into your website. To keep the video responsive it needs to sit in it's own `<div class="flex-video">`. Just replace the link with your own.
+//
+// Markup:
+//<div class="flex-video flex-video--widescreen">
+//<iframe width="1280" height="720" src="//www.youtube.com/embed/0TwCFfW_Has" frameborder="0" allowfullscreen></iframe> 
+// </div>
+//
+// Styleguide 19.0
+	
+.flex-video {
+	height: 0;
+	margin-bottom:lh();
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: rem(30px);
+	}
+
+.flex-video iframe,
+.flex-video object, 
+.flex-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+	
+.flex-video--vimeo {
+	padding-top: 0;
+	}
+	
+.flex-video--widescreen {
+	padding-bottom: 56.34%;
+	}

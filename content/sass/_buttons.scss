@@ -1,0 +1,525 @@
+// Buttons
+//
+// Button styles can be applied to anything with the `.btn` class applied.
+// However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
+//
+// Styleguide 4.0
+
+
+// Base styles & states
+//
+// :hover       - Hover state.
+// :active      - Active state.
+// .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+//
+// Markup:
+// <a class="btn {$modifiers}">Button</a>
+// <button type="submit" class="btn {$modifiers}">Button</button>
+//
+// Styleguide 4.1
+
+
+// Sizing
+//
+// Fancy larger or smaller buttons?
+// Add `.btn--large`, `.btn--small`, or `.btn--mini` for additional sizes.
+//
+// .btn--large - Large button.
+// .btn--small - Small button.
+// .btn--mini - Mini button.
+// .btn--block - Block level button.
+//
+// Markup:
+// <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+// <button type="submit" class="btn {$modifiers}">Button</button>
+//
+// Styleguide 4.2
+
+
+// Skins
+//
+// Ads an additonal modifier class to style button
+//
+// .btn--primary   - Provides extra visual weight and identifies the primary action in a set of buttons.
+// .btn--info      - Used as an alternative to the default styles.
+// .btn--success   - Indicates a successful or positive action.
+// .btn--warning   - Indicates caution should be taken with this action.
+// .btn--danger    - Indicates a dangerous or potentially negative action.
+// .btn--link      - Deemphasize a button by making it look like a link while maintaining button behavior.
+// .btn--dark-blue   - Brand basics Dark blue 
+// .btn--light-blue  - Brand basics Light blue
+// .btn--yellow   - Brand basics Yellow
+// .btn--orange   - Brand basics Orange
+// .btn--grey - Brand basics Grey 
+// .btn--blue-tint  - Brand basics Blue tint 
+//
+// Markup:
+// <a href="#" class="btn {$modifiers}">Button</a>
+// <button type="submit" class="btn {$modifiers}">Button</button>
+//
+// Styleguide 4.3
+
+
+// Icon Buttons
+//
+// Add an icon for added visual emphasis or clarity of purpose
+//
+// .btn--large - Large.
+// .btn--small - Small
+// .btn--mini - Mini
+// .btn--block - Block
+// .btn--primary - Primary
+// .btn--info - Info
+// .btn--success - Success
+// .btn--warning - Warning
+// .btn--danger - Danger
+// .btn--dark-blue - Dark-blue
+// .btn--light-blue - Light-blue
+// .btn--yellow - Yellow
+// .btn--orange - Orange
+// .btn--grey - Grey
+// .btn--blue-tint - Blue-tint
+//
+// Markup:
+//<div>
+//	<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+//</div>
+//
+// Styleguide 4.4
+
+
+// Button Groups
+//
+// Use the `.btn-group` class on a `<div>` element surrounding several `<a>` elements with class `.btn`.
+//
+// Markup:
+//<div class="btn-group">
+//	<a href="#" class="btn">Button Link</a>
+//	<a class="btn">Button Link</a>
+//	<a class="btn">Button Link</a>
+//</div>
+//
+// Styleguide 4.5
+	
+
+.btn {
+	background-color:$light-grey-2;
+	background-color:$light-blue;
+	border:1px solid darken($light-blue, 10%);
+	color: $dark-grey-2;
+	color:#fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family:$secondary-font;
+	font-size:rem(16px);
+	font-weight:normal;
+	height:rem(48px);
+	line-height:rem(48px);
+	margin:0 0 lh(1) 0;
+	outline: none;
+	padding: 0 lh(1.33);
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	
+	@include respond-min(60em) {
+		-webkit-transition: background-color 0.25s ease-in-out;
+		-moz-transition: background-color 0.25s ease-in-out;
+		-o-transition: background-color 0.25s ease-in-out;
+		transition: background-color 0.25s ease-in-out; 
+		}
+		
+	
+	// Hover/focus state
+	&:hover,
+	&:focus {
+		background-color:darken($light-blue, 10%);
+		color: #fff;
+		text-decoration:none;
+		}
+	
+	&:visited {
+		color:#fff;
+		}
+	
+	// Active state
+	&.active,
+	&:active {
+		background-color:darken($light-blue, 20%);
+		color: #fff;
+		}	
+		
+	// Should you require an btn--icon
+	&.btn--icon {
+		padding-left:lh(.75);
+		padding-right:rem(48px);
+		}
+	
+	.icon {
+		font-size:rem(16px);
+		line-height:rem(48px);
+		padding-left:rem(8px);
+		padding-right:rem(8px);
+		}
+
+	}
+	
+
+.btn--large {
+	height:rem(64px);
+	font-size:rem(32px);
+	line-height:rem(64px);
+	
+	&.btn--icon {
+		padding-right:rem(96px);
+		}
+		
+	.icon {
+		font-size:rem(32px);
+		line-height:rem(64px);
+		padding-left:rem(16px);
+		padding-right:rem(16px);
+		}
+
+	}
+
+.btn--small {
+	height:rem(36px);
+	font-size:rem(13px);
+	line-height:rem(36px);
+	padding: 0 lh(.66);
+	
+	&.btn--icon {
+		padding-right:rem(39px);
+		}
+		
+	.icon {
+		font-size:rem(13px);
+		line-height:rem(36px);
+		padding-left:rem(6px);
+		padding-right:rem(6px);
+		}
+		
+	}
+
+
+.btn--mini {
+	height:rem(22px);
+	font-size:rem(11px);
+	line-height:rem(22px);
+	padding: 0 lh(.33);
+	&.btn--icon {
+		padding-right:rem(33px);
+		}
+	.icon {
+		font-size:rem(11px);
+		line-height:rem(22px);
+		padding-left:rem(5px);
+		padding-right:rem(5px);
+		}
+	}
+	
+	
+// Block button
+// -------------------------
+
+.btn--block {
+	display:block;
+	width:100%;
+	}
+	
+// Vertically space out multiple block buttons
+.btn--block + .btn--block {
+	margin-top: lh(.5);
+	}
+	
+	
+
+
+
+
+.btn--primary {
+	background-color:$dark-blue;
+	border-color:darken($dark-blue, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($dark-blue, 10%);
+		color:#fff;
+		}
+		
+	}
+
+// Warning appears are orange
+.btn--warning {
+	background-color:$warning-color;
+	border-color:darken($warning-color, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($warning-color, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+	}
+
+// Danger and error appear as red
+.btn--danger {
+	background-color:$danger-color;
+	border-color:darken($danger-color, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($danger-color, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+		
+	}
+	
+	
+// Success appears as green
+.btn--success {
+	background-color:$success-color;
+	border-color:darken($success-color, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($success-color, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+		
+	}
+	
+// Info appears as a neutral blue
+.btn--info {
+	background-color:$info-color;
+	border-color:darken($info-color, 10%);
+	color:$dark-blue;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($info-color, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:$dark-blue;
+		}
+	}
+
+	
+.btn--link {
+	background-color:transparent;
+	border-color:transparent;
+	color:$dark-blue;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:transparent;
+		color:$light-blue;
+		}
+	&:visited {
+		color:$light-blue;
+		}
+		
+	}
+	
+
+	
+.btn--dark-blue {
+	background-color:$dark-blue;
+	border-color:darken($dark-blue, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($dark-blue, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+	
+	}
+	
+.btn--light-blue {
+	background-color:$light-blue;
+	border-color:darken($light-blue, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($light-blue, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+		
+	}
+	
+.btn--yellow {
+	background-color:$yellow;
+	border-color:darken($yellow, 10%);
+	color:$dark-blue;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($yellow, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:$dark-blue;
+		}
+	}	
+	
+.btn--orange {
+	background-color:$orange;
+	border-color:darken($orange, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($orange, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+	}
+	
+.btn--grey {
+	background-color:$grey;
+	border-color:darken($grey, 10%);
+	color:#fff;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($grey, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+	}
+	
+.btn--blue-tint {
+	background-color:$blue-tint;
+	border-color:darken($blue-tint, 5%);
+	color:$dark-blue;
+	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:darken($blue-tint, 5%);
+		color:#fff;
+		}
+		
+	&:visited {
+		color:$dark-blue;
+		}
+		
+	}
+	
+	
+	
+
+
+.btn--icon {
+	padding-right:rem(42px);
+	position:relative;
+	.icon {
+		background-color: rgba(0,0,0,0.25);
+		color:#fff;
+		height:100%;
+		right:0;
+		position:absolute;
+		top:0;
+		z-index:1;
+		}
+	}
+
+
+
+			
+.btn-group {
+    @include clearfix();
+	list-style: none outside none;
+	.btn {
+		@include border-radius(0);
+		border-right:1px solid darken($light-blue, 10%);
+		display:block;
+		margin:0;
+		&:last-child {
+			border-right:none;
+			}
+		}
+	
+	.btn:hover {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		color: white;
+		}
+
+	.active .btn {
+		background-color:$primary-color;
+		border:1px solid $primary-color;
+		color:#fff;
+		}
+	}
+	
+	
+.btn-group > * {
+    float: left;
+   	margin: 0 0 0 -1px;
+	}
+	
+.btn-group > *:first-child {
+    margin-left: 0;
+	}
+	
+	

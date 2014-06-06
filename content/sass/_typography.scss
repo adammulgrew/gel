@@ -1,0 +1,416 @@
+// Typography
+//
+// <div class="row">
+//   <div class="col medium_6 primary-font"> <span class="mega dark-blue"> Standard Life </span>
+//     <p> We have our own font called Standard Life font. It is unique to Standard Life.
+//       It is the only font that should be used for headlines, titles, headers, sub heads.
+//       It can also work well for short body copy, especially at larger sizes. </p>
+//      <p> To use Standard Life add <code>class="primary-font"</code> or <code>class="primary-font-bold"</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold"</code> in the css class</p>
+//   </div>
+//   <div class="col medium_3 primary-font dark-blue">
+//     <div class="tera"> Aa1 </div>
+//    <div> Regular </div>
+//   </div>
+//   <div class="col medium_3 dark-blue">
+//     <div class="tera primary-font-bold"> Aa1 </div>
+//     <div class="primary-font-bold"> Bold </div>
+//   </div>
+// </div>
+// <div class="push--bottom primary-font giga  dark-blue">
+//   <div class="beta primary-font"> Standard Life Regular </div>
+//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
+//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
+// </div>
+// <div class="push--bottom primary-font-bold dark-blue giga">
+//   <div class="beta"> Standard Life Bold </div>
+//  <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
+//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
+// </div>
+//
+// Styleguide 18.0
+
+// Meta Standard Life Pro TF
+//
+// <div class="row secondary-font">
+//   <div class="col medium_6"> <span class="mega dark-blue"> Meta Standard Life Pro TF </span>
+//     <p> For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;. </p>
+//    <p> To use Standard Life add <code>class="secondary-font"</code> or <code>class="secondary-font-bold"</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold"</code> in the css class</p>
+//   </div>
+//   <div class="col medium_3 light-blue secondary-font">
+//     <div class="tera"> Aa1 </div>
+//     <div class="secondary-font"> Regular </div>
+//  </div>
+//   <div class="col medium_3 light-blue">
+//     <div class="tera secondary-font-bold"> Aa1 </div>
+//     <div class="secondary-font-bold"> Bold </div>
+//   </div>
+// </div>
+// <div class="push--bottom secondary-font dark-blue giga">
+//   <div class="beta"> Meta Standard Life Pro TF </div>
+//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
+//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
+// </div>
+// <div class="push--bottom secondary-font-bold dark-blue giga">
+//   <div class="beta"> Meta Standard Life Pro Bold TF </div>
+//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
+//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
+// </div>
+//
+// Styleguide 18.1
+
+
+// Sizes and recommendations
+//
+// <h4> A modular scale </h4>
+// <p> The term Modular Scale refers to a series of harmonious values. As part of the patterns library _typography.scss has a default responsive modular scale tied to the classes below. Note, this is for illutrative purposes only. Each project and a suitable modular scale should be just on an individual basis. </p>
+// <div class="dark-blue secondary-font">
+//   <div class="tera push--bottom"> .Tera </div>
+//   <div class="giga push--bottom"> .Giga </div>
+//   <div class="mega push--bottom"> .Mega </div>
+//   <div class="alpha push--bottom"> .Alpha </div>
+//   <div class="beta push--bottom"> .Beta </div>
+//   <div class="gamma push--bottom"> .Gamma </div>
+//   <div class="delta  push--bottom"> .Delta </div>
+//   <div class="epsilon push--bottom"> .Epsilon </div>
+// </div>
+//
+// Styleguide 18.2
+
+// Color recommendations
+//
+// <p> Text should only appear at 100% colour on all backgrounds </p>
+// <div class="row">
+//   <div class="col medium_4 bg-dark-blue white soft push--bottom">
+//    <div class="primary-font mega white"> Text in 100% white </div>
+//    <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+//    <div class="primary-font mega yellow"> Text in 100% yellow </div>
+//   </div>
+//   <div class="col medium_4 bg-white white soft push--bottom border border--dark-blue">
+//     <div class="primary-font mega dark-blue"> Text in 100% dark-blue </div>
+//     <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+//     <div class="primary-font mega grey"> Text in 100% grey </div>
+//   </div>
+// </div>
+// <div class="row">
+//   <div class="col medium_4 bg-white soft push--bottom border border--dark-blue">
+//     <div class="primary-font alpha yellow"> Avoid using yellow text on white backgrounds </div>
+//   </div>
+//   <div class="col medium_4 bg-white soft push--bottom border border--dark-blue">
+//     <div class="primary-font alpha orange"> Avoid using orange text on white backgrounds </div>
+//   </div>
+//   <div class="col medium_4 bg-dark-blue soft push--bottom border border--dark-blue">
+//     <div class="primary-font alpha orange"> Avoid using orange text on blue backgrounds </div>
+//   </div>
+// </div>
+//
+// Styleguide 18.3
+
+
+
+
+
+@font-face {
+	font-family: 'standard_liferegular';
+	src: url('../webfonts/standardlife/standardlife-regular-webfont.eot');
+	src: url('../webfonts/standardlife/standardlife-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.woff') format('woff'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.ttf') format('truetype'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.svg#standard_liferegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	
+	}
+	
+@font-face {
+	font-family: 'standard_lifebold';
+	src: url('../webfonts/standardlife/standardlife-bold-webfont.eot');
+	src: url('../webfonts/standardlife/standardlife-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.woff') format('woff'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.ttf') format('truetype'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.svg#standard_lifebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+		
+@font-face {
+    font-family: 'metabook-sl';
+    src: url('../webfonts/meta-sl/metastandardlifeprotf-norm-webfont.eot');
+    src: url('../webfonts/meta-sl/metastandardlifeprotf-norm-webfont?#iefix') format('embedded-opentype'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-norm-webfont.woff') format('woff'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-norm-webfont.ttf') format('truetype'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-norm-webfont.svg#metabook-romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'metabold-sl';
+    src: url('../webfonts/meta-sl/metastandardlifeprotf-bold-webfont.eot');
+    src: url('../webfonts/meta-sl/metastandardlifeprotf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-bold-webfont.woff') format('woff'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-bold-webfont.ttf') format('truetype'),
+         url('../webfonts/meta-sl/metastandardlifeprotf-bold-webfont.svg#metabold-romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	
+	
+.primary-font {
+	font-family:$primary-font;
+	}
+	
+.primary-font-bold {
+	font-family:$primary-font-bold;
+	}
+	
+.secondary-font	 {
+	font-family:$secondary-font;	
+	}
+	
+.secondary-font-bold {
+	font-family:$secondary-font-bold;	
+	}
+	
+/* Modular Scale http://modularscale.com/scale/?px1=16&px2=32&ra1=1.618&ra2=0 */
+
+.tera {
+	font-size:rem(32px);
+	line-height: 1.05;
+	
+	@include respond-min(48em) {
+		font-size:rem(40px);
+		line-height:1.125;
+		}
+		
+	@include respond-min(60em) {
+		font-size: rem(48px);
+		line-height:1.05
+		}
+		
+	}
+
+.giga { 
+	font-size:rem(26px);
+	line-height:1.15;
+	
+	@include respond-min(48em) {
+		font-size:rem(32px);
+		line-height:1.25;
+		}
+		
+	@include respond-min(60em) {
+		font-size:rem(36px);
+		line-height:1.25;
+		}
+	}
+
+.mega { 
+	font-size:rem(22px);
+	line-height: 1.136;
+	
+	@include respond-min(48em) {
+		font-size:rem(24px);
+		line-height:1.25;
+		}
+		
+	@include respond-min(60em) {
+		font-size:rem(28px);
+		line-height:1.25;
+		}
+		
+	}
+
+.alpha { 
+	font-size:rem(18px);
+	line-height: 1.1;
+	
+	@include respond-min(48em) {
+		line-height:1.2;
+		}
+		
+	}
+
+.beta {  
+	font-size:rem(16px);
+
+	}
+
+.gamma {  
+	font-size:rem(14px);
+	}	
+
+.delta {  
+	font-size:rem(12.4px);
+	}
+
+.epsilon {  
+	font-size:rem(9.88px);
+	}
+
+.zeta {  
+	
+	}
+
+body {
+	font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	}
+
+h1 {
+	font-family:$primary-font;
+	}
+
+h1,
+h2,
+h3,	
+h4,
+h5,
+h6 {	
+	 font-family:$primary-font;
+	 font-weight:normal;
+	}
+	
+p
+li,
+dd,
+table,	
+figure, 
+figcaption {
+	font-family:$secondary-font;
+	}
+	
+p  {
+	font-family:$secondary-font;
+	font-size:rem(18px);
+	font-weight:normal;
+	margin-bottom:lh(.5);
+	}
+
+a {
+	color:$light-blue;
+	text-decoration:none;
+	&:hover {
+		color:$dark-blue;
+		text-decoration:underline;
+		}
+	}
+	
+a:hover, 
+a:focus {
+
+	}
+		
+.run-in {
+	font-size:rem(18.7px);
+	line-height:lh(.88);
+	margin-bottom:lh(.66);
+	}
+
+ul, ol {
+	margin:0;
+	}
+	
+ul {
+	list-style-type:disc;
+	}
+	
+ol{
+	list-style-type:decimal;
+	}
+
+figure.quote {
+	border-left: 6px solid $dark-blue;
+	color:$dark-blue;
+	font-family:$secondary-font;
+	font-size:rem(26px);
+	font-weight:normal;
+	line-height:1;
+	margin:lh(1) 0;
+	padding:0 lh(.33) 0 lh(.66);
+	position:relative;
+	}
+	
+figure.quote blockquote:before,
+figure.quote blockquote:after {
+	color:$dark-blue;
+	content: "\201C";
+	display: inline;
+	font-size:rem(36px);
+	font-style:normal;
+	}
+	
+figure.quote blockquote:after {
+	content: "\201D";
+	}
+
+figure.quote figcaption {
+	color:$light-blue;
+	display: block;
+	font-family:$primary-font;
+	font-size:rem(14px);
+	font-style:normal;
+	margin-top: lh(.33);
+	}
+	
+figure.quote cite {
+	font-family:$primary-font;
+	font-style:normal;
+	}	
+ 
+figure.quote cite:before {
+	content: "\2014 \2009";
+	}
+	
+.quote--pull-left {
+	@include respond-min(60em) {
+		float:left;
+		margin-left:perc(-60,700);
+		margin-right:lh(.66);
+		width:46%;
+		}
+	}
+	
+.quote--pull-right {
+	@include respond-min(60em) {
+		border-left: none;
+		border-right: 8px solid $dark-blue;
+		float:right;
+		margin-right:perc(-60,700);
+		margin-left:lh(.66);
+		padding:0 lh(.66) 0 lh(.66);
+		text-align:right;
+		width:46%;
+		}
+		
+	}
+
+		
+.overline_1 {
+	background-color:$dark-grey-3;
+	height:1px solid;
+	margin:lh(.66) auto;
+	width:40px;
+	}
+	
+.bold {
+	font-weight:bold;
+	}
+	
+.italic {
+	font-style:italic;
+	}	
+	
+.uppercase {
+	text-transform: uppercase;
+	}
+	
+.letterspace {
+	letter-spacing:rem(5px);
+	}
+
+.muted, 
+a.muted,
+.lister a.muted {
+	color:$mid-grey-2;
+	}	
+	
