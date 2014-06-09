@@ -1,4 +1,4 @@
-// = triggers
+// = Header Icon triggers
 //-----------------------------------------------------------------------------//
 
 $('.js-trigger__search').on('click', function() {
@@ -31,40 +31,8 @@ function toggleNavSearch(container, e) {
 }
 
 
-function loadAsync(url, loadFn) {
-    loadFn = loadFn || function() {}
-    $(function() {
-	    var script = document.createElement('script');
-	    script.src = url;
-	    script.async = true;
-	    $(script).on('load', loadFn);
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-	});
-}
 
-
-$(function () {
-    
-    $('#tabs').children('li').first().children('a').addClass('active')
-        .next().addClass('is-open').show();
-        
-    $('#tabs').on('click', 'li > a', function() {
-        
-      if (!$(this).hasClass('active')) {
-
-        $('#tabs .is-open').removeClass('is-open').hide();
-        $(this).next().toggleClass('is-open').toggle();
-        
-        $('#tabs').find('.active').removeClass('active');
-        $(this).addClass('active');
-      } else {
-        $('#tabs .is-open').removeClass('is-open').hide();
-        $(this).removeClass('active');
-      }
-   });
-});
-
-
+/* ACCORDION TOGGLES ------------ */
 $(".js-toggle-content").hide();
 $(".js-toggle.js-toggle--open").addClass("js-toggle--active").next().show();
 
@@ -81,18 +49,18 @@ toggle.on('click', function () {
 });
 
 
-/* TABS ------------ */
-$(document).foundationTabs(); 
 
-
-
-/* TOOLTIPS ------------ */
-$('.has-tip').addClass('tip-top');
-$(this).foundationTooltips();
-
-
-/* AUDIOPLAYER ------------ */
-$( function() { $( 'audio' ).audioPlayer(); } );
+/* Async loading ------------ */
+function loadAsync(url, loadFn) {
+    loadFn = loadFn || function() {}
+    $(function() {
+	    var script = document.createElement('script');
+	    script.src = url;
+	    script.async = true;
+	    $(script).on('load', loadFn);
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+	});
+}
 
 
 /* FONTELLO FOE IE7 ------------ */
@@ -107,28 +75,5 @@ $( function() { $( 'audio' ).audioPlayer(); } );
   }
   
   
-  
- $(document).ready(function () {
-	$('#horizontalTab').easyResponsiveTabs({
-		type: 'default', //Types: default, vertical, accordion
-		width: 'auto', //auto or any width like 600px
-		fit: true, // 100% fit in a container
-		closed: 'accordion', // Start closed if in accordion view
-		activate: function(event) { // Callback function if tab is switched
-			var $tab = $(this);
-			var $info = $('#tabInfo');
-			var $name = $('span', $info);
 
-			$name.text($tab.text());
-
-			$info.show();
-		}
-	});
-
-	$('#verticalTab').easyResponsiveTabs({
-		type: 'vertical',
-		width: 'auto',
-		fit: true
-	});
-});
  

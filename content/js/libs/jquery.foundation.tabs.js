@@ -34,3 +34,7 @@
   };
 
 })(jQuery);
+
+
+/* TABS ------------ */
+$(document).foundationTabs(); 

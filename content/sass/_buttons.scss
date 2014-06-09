@@ -103,11 +103,10 @@
 	
 
 .btn {
-	background-color:$light-grey-2;
-	background-color:$light-blue;
-	border:1px solid darken($light-blue, 10%);
+	@include border-radius(2px);
+	background-color:$light-grey-1;
+	border:1px solid darken($light-grey-1, 10%);
 	color: $dark-grey-2;
-	color:#fff;
 	cursor: pointer;
 	display: inline-block;
 	font-family:$secondary-font;
@@ -133,20 +132,20 @@
 	// Hover/focus state
 	&:hover,
 	&:focus {
-		background-color:darken($light-blue, 10%);
-		color: #fff;
+		background-color:darken($light-grey-2, 5%);
+		color: $dark-grey-3;
 		text-decoration:none;
 		}
 	
 	&:visited {
-		color:#fff;
+		color: $dark-grey-2;
 		}
 	
 	// Active state
 	&.active,
 	&:active {
-		background-color:darken($light-blue, 20%);
-		color: #fff;
+		background-color:darken($light-grey-1, 20%);
+		color: $dark-grey-3;
 		}	
 		
 	// Should you require an btn--icon
@@ -164,7 +163,6 @@
 
 	}
 	
-
 .btn--large {
 	height:rem(64px);
 	font-size:rem(32px);
@@ -233,21 +231,21 @@
 	margin-top: lh(.5);
 	}
 	
-	
-
-
-
 
 .btn--primary {
-	background-color:$dark-blue;
-	border-color:darken($dark-blue, 10%);
+	background-color:$light-blue;
+	border-color:darken($light-blue, 10%);
 	color:#fff;
-	
+
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($dark-blue, 10%);
+		background-color:darken($light-blue, 10%);
+		color:#fff;
+		}
+		
+	&:visited {
 		color:#fff;
 		}
 		
@@ -258,7 +256,10 @@
 	background-color:$warning-color;
 	border-color:darken($warning-color, 10%);
 	color:#fff;
-	
+	&:visited {
+		color:#fff;
+		}
+		
 	&:hover,
 	&:focus,
 	&.active,
@@ -483,33 +484,21 @@
 	}
 
 
-
 			
 .btn-group {
     @include clearfix();
 	list-style: none outside none;
 	.btn {
 		@include border-radius(0);
-		border-right:1px solid darken($light-blue, 10%);
 		display:block;
-		margin:0;
-		&:last-child {
-			border-right:none;
-			}
-		}
-	
-	.btn:hover {
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-		color: white;
+		margin-right:-1px;
 		}
 
 	.active .btn {
-		background-color:$primary-color;
-		border:1px solid $primary-color;
-		color:#fff;
+		background-color:darken($light-grey-1, 20%);
+		color: $dark-grey-3;
 		}
+		
 	}
 	
 	
@@ -521,5 +510,4 @@
 .btn-group > *:first-child {
     margin-left: 0;
 	}
-	
 	

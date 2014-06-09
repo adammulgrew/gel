@@ -191,3 +191,8 @@
     }
   };
 }(jQuery, this));
+
+
+/* TOOLTIPS ------------ */
+$('.has-tip').addClass('tip-top');
+$(this).foundationTooltips();
