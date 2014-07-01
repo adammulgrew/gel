@@ -67,7 +67,7 @@
 	position:absolute;
 	right:rem(64px);
 	text-align:center;
-	top:rem(12px);
+	top:lh(.75);
 	z-index:9;
 
 	@include respond-min(48em) {
