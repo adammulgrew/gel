@@ -8,41 +8,12 @@
 //
 // Styleguide 16.1
 
-.table {
-	border-top:2px solid $dark-blue;
-	font-size:rem(18px);
-	margin:0 0 lh(1) 0;
-	width:100%;
-	
-	@include respond-min(48em) {
-		line-height:lh(1);
-		}
-		
-	th {
-		background-color:$blue-tint;
-		color:$dark-blue;
-		font-family:$secondary-font;
-		font-style:normal;
-		font-weight:normal;
-		padding:lh(.66) 3%;
-		text-align:left;
-		vertical-align:bottom;
-		}
-		
-	td {
-		border-bottom:1px solid $light-grey-1;
-		padding:lh(.33) 3%;
-		text-align:left;
-		}
-		 
-	}
-	
-
 // Table styles
 //
 // Add any of the following classes to the `.table` base class.
 //
 // .table--striped   - Adds zebra-striping to any table row within the `<tbody>` via the `:nth-child` CSS selector (not available in IE7-8).
+// .table--plain   - Adds horizontal row underline only
 // .table--hover     - Enable a hover state on table rows within a `<tbody>`.
 // .table--condensed - Makes tables more compact by cutting cell padding in half.
 //
@@ -81,13 +52,65 @@
 // Styleguide 16.2
 
 
+
+.table {
+	border-top:2px solid $dark-blue;
+	font-size:rem(18px);
+	margin:0 0 lh(1) 0;
+	width:100%;
+	
+	@include respond-min(48em) {
+		line-height:lh(1);
+		}
+		
+	tr {
+		border-bottom:1px solid $light-grey-3;
+		}
+		
+	th {
+		background-color:$blue-tint;
+		color:$dark-blue;
+		font-family:$secondary-font-bold;
+		font-style:normal;
+		font-weight:normal;
+		line-height:lh(.75);
+		min-height:lh(2);
+		padding:lh(.66) 3%;
+		text-align:left;
+		vertical-align:bottom;
+		}
+		
+	td {
+		padding:lh(.33) 3%;
+		text-align:left;
+		}
+		 
+	}
+	
+	
+.table--plain {
+	border-top:none;
+	
+	th {
+		background-color:#fff;
+		color:$dark-blue;
+		}
+		
+	tr {
+		
+		}
+		 
+	}
+	
+
+
 // CONDENSED TABLE W/ HALF PADDING
 // -------------------------------
 
 .table--condensed {
 	font-size:rem(15px);
 	th, td {
-		padding: 4px 5px;
+		padding:lh(.33) 1.5%;
 		}
 	}
 

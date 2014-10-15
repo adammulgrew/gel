@@ -1,80 +1,96 @@
 // Typography
 //
-// <div class="row">
-//   <div class="col medium_6 primary-font"> <span class="mega dark-blue"> Standard Life </span>
-//     <p> We have our own font called Standard Life font. It is unique to Standard Life.
-//       It is the only font that should be used for headlines, titles, headers, sub heads.
-//       It can also work well for short body copy, especially at larger sizes. </p>
-//      <p> To use Standard Life add <code>class="primary-font"</code> or <code>class="primary-font-bold"</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold"</code> in the css class</p>
-//   </div>
-//   <div class="col medium_3 primary-font dark-blue">
-//     <div class="tera"> Aa1 </div>
-//    <div> Regular </div>
-//   </div>
-//   <div class="col medium_3 dark-blue">
-//     <div class="tera primary-font-bold"> Aa1 </div>
-//     <div class="primary-font-bold"> Bold </div>
-//   </div>
-// </div>
-// <div class="push--bottom primary-font giga  dark-blue">
-//   <div class="beta primary-font"> Standard Life Regular </div>
-//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
-// </div>
-// <div class="push--bottom primary-font-bold dark-blue giga">
-//   <div class="beta"> Standard Life Bold </div>
-//  <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
-// </div>
+//
 //
 // Styleguide 18.0
 
-// Meta Standard Life Pro TF
+
+// Standard Life Font
+// 
+// <div class="row primary-font">
+//   <div class="col large_6 soft-right--large">
+//     <p class="primary-font">We have our own font called Standard Life font.</p> 
+//     <p class="primary-font">It is unique to Standard Life.</p>
+//     <p class="primary-font">It is the only font that should be used for headlines, titles, headers, sub heads.</p>
+//     <p class="primary-font">It can also work well for short body copy, especially at larger sizes.</p>
+//     <p class="soft-half bg-blue-tint">To use Standard Life add <code>class="primary-font"</code> or <code>class="primary-font-bold"</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold"</code> in the css class</p>
+//   </div>
+//   <div class="col small_6 large_3 primary-font dark-blue">
+//    <div class="peta">Aa1</div>
+//    <div class="beta">Regular</div>
+//   </div>
+//   <div class="col small_6 large_3 dark-blue">
+//     <div class="peta primary-font-bold">Aa1</div>
+//     <div class="beta primary-font-bold">Bold</div>
+//   </div>
+// </div>
 //
-// <div class="row secondary-font">
-//   <div class="col medium_6"> <span class="mega dark-blue"> Meta Standard Life Pro TF </span>
-//     <p> For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;. </p>
-//    <p> To use Standard Life add <code>class="secondary-font"</code> or <code>class="secondary-font-bold"</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold"</code> in the css class</p>
-//   </div>
-//   <div class="col medium_3 light-blue secondary-font">
-//     <div class="tera"> Aa1 </div>
-//     <div class="secondary-font"> Regular </div>
-//  </div>
-//   <div class="col medium_3 light-blue">
-//     <div class="tera secondary-font-bold"> Aa1 </div>
-//     <div class="secondary-font-bold"> Bold </div>
-//   </div>
-// </div>
-// <div class="push--bottom secondary-font dark-blue giga">
-//   <div class="beta"> Meta Standard Life Pro TF </div>
-//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
-// </div>
-// <div class="push--bottom secondary-font-bold dark-blue giga">
-//   <div class="beta"> Meta Standard Life Pro Bold TF </div>
-//   <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-//   <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . < > ? ! &pound; @ & ( ) </div>
-// </div>
+//
 //
 // Styleguide 18.1
 
 
-// Sizes and recommendations
+// Meta Standard Life Pro TF
 //
-// <h4> A modular scale </h4>
-// <p> The term Modular Scale refers to a series of harmonious values. As part of the patterns library _typography.scss has a default responsive modular scale tied to the classes below. Note, this is for illutrative purposes only. Each project and a suitable modular scale should be just on an individual basis. </p>
-// <div class="dark-blue secondary-font">
-//   <div class="tera push--bottom"> .Tera </div>
-//   <div class="giga push--bottom"> .Giga </div>
-//   <div class="mega push--bottom"> .Mega </div>
-//   <div class="alpha push--bottom"> .Alpha </div>
-//   <div class="beta push--bottom"> .Beta </div>
-//   <div class="gamma push--bottom"> .Gamma </div>
-//   <div class="delta  push--bottom"> .Delta </div>
-//   <div class="epsilon push--bottom"> .Epsilon </div>
+// <div class="row secondary-font">
+//   <div class="col large_6 soft-right--large"> 
+//     <p>For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;.</p>
+//     <p class="soft-half bg-blue-tint">To use Meta Standard Life  add <code>class="secondary-font"</code> or <code>class="secondary-font-bold"</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold"</code> in the css class</p>
+//   </div>
+//   <div class="col small_6 large_3 bright-blue secondary-font">
+//     <div class="peta">Aa1</div>
+//     <div class="secondary-font">Regular</div>
+//  </div>
+//   <div class="col small_6 large_3 bright-blue">
+//     <div class="peta secondary-font-bold">Aa1</div>
+//     <div class="beta secondary-font-bold">Bold</div>
+//   </div>
 // </div>
 //
+//
+//
 // Styleguide 18.2
+
+
+// Arial
+// 
+// <div class="row arial">
+//   <div class="col large_6 soft-right--large">
+//     <p class="arial">We use Arial for day to day use of Microsoft software or for web where a generic font is required.</p> 
+//     <p class="soft-half bg-blue-tint"> We don't use any other fonts</p>
+//   </div>
+//   <div class="col small_6 large_3 arial dark-blue">
+//    <div class="peta">Aa1</div>
+//    <div class="beta">Regular</div>
+//   </div>
+//   <div class="col small_6 large_3 dark-blue">
+//     <div class="peta arial"><strong>Aa1</strong></div>
+//     <div class="beta arial"><strong>Bold</strong></div>
+//   </div>
+// </div>
+//
+//
+//
+// Styleguide 18.3
+
+
+// Sizes and recommendations
+//
+// <p class="giga"> A modular scale </p>
+// <p> The term Modular Scale refers to a series of harmonious values. As part of the patterns library _typography.scss has a default responsive modular scale tied to the classes below. Note, this is for illutrative purposes only. Each project and a suitable modular scale should be just on an individual basis. </p>
+// <div class="dark-blue secondary-font">
+//   <div class="tera push-half--bottom"> .Tera </div>
+//   <div class="giga push-half--bottom"> .Giga </div>
+//   <div class="mega push-half--bottom"> .Mega </div>
+//   <div class="alpha push-half--bottom"> .Alpha </div>
+//   <div class="beta push-half--bottom"> .Beta </div>
+//   <div class="gamma push-half--bottom"> .Gamma </div>
+//   <div class="delta push-half--bottom"> .Delta </div>
+//   <div class="epsilon push-half--bottom"> .Epsilon </div>
+// </div>
+//
+// Styleguide 18.4
+
 
 // Color recommendations
 //
@@ -82,12 +98,12 @@
 // <div class="row">
 //   <div class="col medium_4 bg-dark-blue white soft push--bottom">
 //    <div class="primary-font mega white"> Text in 100% white </div>
-//    <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+//    <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
 //    <div class="primary-font mega yellow"> Text in 100% yellow </div>
 //   </div>
 //   <div class="col medium_4 bg-white white soft push--bottom border border--dark-blue">
 //     <div class="primary-font mega dark-blue"> Text in 100% dark-blue </div>
-//     <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+//     <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
 //     <div class="primary-font mega grey"> Text in 100% grey </div>
 //   </div>
 // </div>
@@ -103,10 +119,7 @@
 //   </div>
 // </div>
 //
-// Styleguide 18.3
-
-
-
+// Styleguide 18.5
 
 
 @font-face {
@@ -171,7 +184,28 @@
 	font-family:$secondary-font-bold;	
 	}
 	
+.arial {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+	
+	
+	
 /* Modular Scale http://modularscale.com/scale/?px1=16&px2=32&ra1=1.618&ra2=0 */
+.peta {
+	font-size:rem(68px);
+	line-height: 1.05;
+	
+	@include respond-min(48em) {
+		font-size:rem(82px);
+		line-height:1.125;
+		}
+		
+	@include respond-min(60em) {
+		font-size: rem(110px);
+		line-height:1.05
+		}
+		
+	}
 
 .tera {
 	font-size:rem(32px);
@@ -183,7 +217,7 @@
 		}
 		
 	@include respond-min(60em) {
-		font-size: rem(48px);
+		font-size: rem(44px);
 		line-height:1.05
 		}
 		
@@ -232,24 +266,28 @@
 
 .beta {  
 	font-size:rem(16px);
-
+	line-height:1.2;
 	}
 
 .gamma {  
 	font-size:rem(14px);
+	line-height:1.2;
 	}	
 
 .delta {  
 	font-size:rem(12.4px);
+	line-height:1.1;
 	}
 
 .epsilon {  
 	font-size:rem(9.88px);
+	line-height:1.4;
 	}
 
 .zeta {  
 	
 	}
+	
 
 body {
 	font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -287,18 +325,19 @@ p  {
 	}
 
 a {
-	color:$light-blue;
+	color:$bright-blue;
 	text-decoration:none;
 	&:hover {
 		color:$dark-blue;
-		text-decoration:underline;
+		text-decoration:none;
 		}
+		
+	&:focus {
+		
+		}
+		
 	}
 	
-a:hover, 
-a:focus {
-
-	}
 		
 .run-in {
 	font-size:rem(18.7px);
@@ -344,7 +383,7 @@ figure.quote blockquote:after {
 	}
 
 figure.quote figcaption {
-	color:$light-blue;
+	color:$bright-blue;
 	display: block;
 	font-family:$primary-font;
 	font-size:rem(14px);
@@ -384,14 +423,7 @@ figure.quote cite:before {
 		
 	}
 
-		
-.overline_1 {
-	background-color:$dark-grey-3;
-	height:1px solid;
-	margin:lh(.66) auto;
-	width:40px;
-	}
-	
+			
 .bold {
 	font-weight:bold;
 	}

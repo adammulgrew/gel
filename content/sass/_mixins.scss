@@ -4,7 +4,7 @@
 
 $dark-blue:#0a2f73;
 
-$light-blue:#007bc3;
+$bright-blue:#007bc3;
 
 $yellow:#FFDD00;
 
@@ -13,6 +13,25 @@ $orange:#FF8A00;
 $grey:#4B4B4B;
 
 $blue-tint:#E0EDFE;
+
+
+/*=Additional colours for complex graphs and charts only
+------------------------------------------------*/
+
+$dark-green:#00583d;
+
+$green:#549820;
+
+$bright-yellow:#ffdc36;
+
+$purple:#4e2377;
+
+$mauve:#832072;
+
+$dark-red:#d00f00;
+
+$dark-orange:#ef7000;
+
 
 
 /*=Additional Grey UI Colours - helpful when wireframing
@@ -44,18 +63,13 @@ $off-white:#e7e6dd;
 /*=Additional UI Colours
 ------------------------------------------------*/
 
-$green:#3c763d;
-
-$red:#DC4437;
-
-
 $info-color: $blue-tint;
 
 $success-color: #3c763d;
 
 $warning-color: $orange;
 
-$danger-color: #DC4437;
+$danger-color: $dark-red;
 
 
 /*= Abstracted for common UI colours hierarchy

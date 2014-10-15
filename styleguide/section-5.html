@@ -42,47 +42,61 @@
     
   </head>
   
-    <body id="kss-node">
+    <body id="kss-node" class="test-match-height">
     
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
-                <header id="top" class="cf masthead push--bottom" role="banner">
+                <header id="top" class="cf masthead bg-dark-blue" role="banner">
                       
-                    <hr class="masthead-panel-colour" />
+                    <div class="wrap">
                     
-                    <a class="nav-btn" id="nav-open-btn" href="#nav">
-                    
-                        <i class="icon-menu trigger__icon"></i>
-                    
-                        <span class="visuallyhidden">
+                        <hr class="masthead-panel-colour" />
                         
-                            Navigation
+                        <a class="nav-btn" id="nav-open-btn" href="#nav">
                         
-                        </span>
-                    
-                    </a>
+                            <i class="icon-menu trigger__icon"></i>
+                        
+                            <span class="visuallyhidden">
                             
-                    <div class="col large_6 xlarge_4 flush--bottom"> 
-                    
-                        <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                Navigation
                             
-                            <img class="site-logo__img" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
-                
-                        </a> 
+                            </span>
+                        
+                        </a>
+                                
+                        <div class="col large_6 flush--bottom"> 
+                        
+                            <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                
+                                <img class="site-logo__img" src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life logo">
                     
+                            </a> 
+                        
+                        </div>
+                        
+                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        
+                            <div class="tagline">
+                            
+                            	Digital Guidelines
+                            
+                            </div>
+                        
+                        </div>
+                        
                     </div>
                 
                 </header>
     
                 <div id="fixed">
                       
-                  <nav id="nav" class="cf nav nav--primary" role="navigation">
+                  <nav id="nav" class="cf nav nav-primary" role="navigation">
                   
-                    <div class="block">
+                    <div class="block wrap">
                     
-                        <ul class="nav--primary__list">
+                        <ul class="nav-primary__list">
                         
                             <li class="fixed-logo">
                             
@@ -90,9 +104,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item">
+                            <li class="nav-primary__item">
                             
-                                <a title="#" href="http://sldigitalguidelines.com/" class="nav--primary__link">
+                                <a title="#" href="http://sldigitalguidelines.com/" class="nav-primary__link">
                                 
                                     Home
                                 
@@ -100,9 +114,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Digital Principles
                                 
@@ -110,19 +124,73 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item selected"> 
+                            <li class="nav-primary__item selected submenu"> 
                             
-                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Global Experience Language
                                 
                                 </a>
+                                
+                                <span class="js-toggle-link expander">
+                                
+                                	<i class="icon-angle-down alpha"></i>
+                                
+                                </span>
+                                
+                                <nav class="js-toggle-item nav-secondary">
+                                
+                                    <ul class="nav-secondary__list">
+                                    
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel" class="nav-secondary__link">
+                                            
+                                                About GEL
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-secondary__link">
+                                            
+                                                Foundations
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://patterns.sldigitalguidelines.com/" class="nav-secondary__link">
+                                            
+                                                Patterns
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-secondary__link">
+                                            
+                                                CSS and Markup
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                    
+                                    </ul>
+                                
+                                </nav>
                                                          
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Case Studies
                                 
@@ -130,9 +198,9 @@
                             
                             </li>
                             
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
                                 
@@ -142,7 +210,7 @@
                         
                         </ul>
                       
-                        <a class="nav--primary__close-btn" id="nav-close-btn" href="#top">
+                        <a class="nav-primary__close-btn" id="nav-close-btn" href="#top">
                         
                             <i class="icon-cancel giga"></i> 
                             
@@ -164,17 +232,17 @@
                 
                     <div class="bg-pattern panel--push-down">
                 
-                        <div class="wrap white soft-half--ends text--center">
+                        <div class="wrap white soft--ends">
                         
-                            <h1 class="tera push-half--ends">
+                            <h1 class="medium_12 tera push-half--ends">
                 
                                 Patterns
                             
                             </h1>
                             
-                            <hr class="overline_1 bg-yellow" />
+                            <hr class="overline small_1 overline_1 bg-yellow" />
                             
-                            <p class="block secondary-font alpha large_8 push_2 pull_2">
+                            <p class="block secondary-font alpha medium_8 large_7">
                             
                                  We envisage these elements will be the core elements of any new Standard Life project, dealing with layout, navigation, typography, colour and iconography in a modular, device and screen size agnostic manner.
                             
@@ -184,13 +252,13 @@
                     
                     </div>
                 
-                    <nav class="wrap nav nav--tabs panel--pull-up">
+                    <nav class="wrap nav nav-tabs panel--pull-up" style="display:none">
                        
-                        <ul class="cf nav--tabs__list">
+                        <ul class="cf nav-tabs__list medium_12">
                         
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel" class="nav-tabs__link">
                                 
                                     About GEL 
                                 
@@ -198,9 +266,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-tabs__link">
                                 
                                     Foundations
                                 
@@ -208,9 +276,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item active">
+                            <li class="nav-tabs__item active">
                             
-                                <a href="http://patterns.sldigitalguidelines.com/" class="nav--tabs__link">
+                                <a href="http://patterns.sldigitalguidelines.com/" class="nav-tabs__link">
                                 
                                     Patterns
                                 
@@ -218,9 +286,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-tabs__link">
                                 
                                     CSS and Markup
                                 
@@ -232,7 +300,7 @@
                         
                     </nav>
                     
-                    <section class="wrap bg-white soft--ends">
+                    <section class="wrap bg-white soft--ends panel--pull-up">
                 
                         <div class="kss-wrapper wrap">
                         
@@ -265,6 +333,21 @@
                                           <span class="kss-ref">1</span>
                                           
                                           <span class="kss-name">Accordion</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="section-2.html">
+                                      
+                                          <span class="kss-ref">2</span>
+                                          
+                                          <span class="kss-name">Alerts</span>
                                       
                                       </a>
                                   
@@ -561,7 +644,7 @@
                                       
                                           <span class="kss-ref">5.1</span>
                                           
-                                          <span class="kss-name">Standard Life branding basics colours</span>
+                                          <span class="kss-name">Standard Life colours</span>
                                       
                                       </a>
                                   
@@ -577,7 +660,7 @@
                                       
                                           <span class="kss-ref">5.2</span>
                                           
-                                          <span class="kss-name">Background colours</span>
+                                          <span class="kss-name">Chart for % tint values</span>
                                       
                                       </a>
                                   
@@ -593,7 +676,7 @@
                                       
                                           <span class="kss-ref">5.3</span>
                                           
-                                          <span class="kss-name">Border colours</span>
+                                          <span class="kss-name">Additional colours</span>
                                       
                                       </a>
                                   
@@ -609,7 +692,7 @@
                                       
                                           <span class="kss-ref">5.4</span>
                                           
-                                          <span class="kss-name">Border positions</span>
+                                          <span class="kss-name">Border colours</span>
                                       
                                       </a>
                                   
@@ -625,6 +708,22 @@
                                       
                                           <span class="kss-ref">5.5</span>
                                           
+                                          <span class="kss-name">Border positions</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-5.7">
+                                      
+                                          <span class="kss-ref">5.7</span>
+                                          
                                           <span class="kss-name">Border size</span>
                                       
                                       </a>
@@ -637,9 +736,9 @@
                                   
                                   <li class="kss-menu-item">
                                   
-                                      <a href="#section-5.6">
+                                      <a href="#section-5.8">
                                       
-                                          <span class="kss-ref">5.6</span>
+                                          <span class="kss-ref">5.8</span>
                                           
                                           <span class="kss-name">Border style</span>
                                       
@@ -660,7 +759,7 @@
                             
                           </div>
                           
-                          <div class="kss-content pull-right--medium col medium_8 large_9">
+                          <div class="kss-content col medium_8">
                           
                             <article class="kss-article">
                             
@@ -669,9 +768,9 @@
                               
                               <section id="section-5" class="kss-section kss-depth-1">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         5
                                     
@@ -685,15 +784,6 @@
                                 
                                 
                                 
-                                <div class="kss-description">
-                                
-                                  <p>Colour any object with branding basics colours</p>
-
-                                  
-                                </div>
-                                
-                                
-                                
                                 
                                 
                               </section>
@@ -702,15 +792,15 @@
                               
                               <section id="section-5.1" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         5.1
                                     
                                     </span> 
                                 
-                                    Standard Life branding basics colours
+                                    Standard Life colours
                                 
                                 </h1>
                                 
@@ -718,186 +808,62 @@
                                 
                                 
                                 
-                                <div class="kss-modifier-block">
+                                <div class="kss-description">
                                 
-                                  <div class="kss-modifier kss-modifier-original">
-                                  
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .dark-blue
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Dark blue </p>
+                                  <p>Colour any object with branding basics colours
 
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha dark-blue">.dark-blue</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .light-blue
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Light blue </p>
 
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha light-blue">.light-blue</div>
+</p>
+<p><div class="row text--center dark-blue items-container">
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold white bg-dark-blue circle circle--large col--centered">Dark blue</div>
+   <div class="gamma">
+     <strong>Hex</strong> 0a2f73 <br />
+     <strong>CSS</strong> .dark-blue, bg-dark-blue
+   </div>
+ </div>
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold white bg-bright-blue circle circle--large col--centered">Bright blue</div>
+   <div class="gamma">
+     <strong>Hex</strong> 007bc3 <br />
+     <strong>CSS</strong> .bright-blue, bg-bright-blue
+   </div>
+ </div>
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold dark-blue bg-yellow circle circle--large col--centered">Yellow</div>
+   <div class="gamma">
+     <strong>Hex</strong> ffdd00 <br />
+     <strong>CSS</strong> .yellow, bg-yellow
+   </div>
+ </div>
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold white bg-orange circle circle--large col--centered">Orange</div>
+   <div class="gamma">
+     <strong>Hex</strong> ff8a00 <br />
+     <strong>CSS</strong> .orange, bg-orange
+   </div>
+ </div>
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold white bg-grey circle circle--large col--centered">Grey</div>
+   <div class="gamma">
+     <strong>Hex</strong> 4b4b4b <br />
+     <strong>CSS</strong> .grey, bg-grey
+   </div>
+ </div>
+ <div class="col small_6 medium_4 xlarge_2 item">
+   <div class="circle--large primary-font-bold dark-blue bg-blue-tint circle circle--large col--centered">Blue tint</div>
+   <div class="gamma">
+     <strong>Hex</strong> e0edfe <br />
+     <strong>CSS</strong> .blue-tint, .bg-blue-tint
+   </div>
+ </div>
 </div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .blue-tint
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Blue tint </p>
+<span class="gamma">Grey is only for body copy online, drop shadows,instances where we need to convey the disabled status of links/buttons and for progress bars. It can’t be used for any other elements.</span></p>
 
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha blue-tint">.blue-tint</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .orange
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Orange </p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha orange">.orange</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .yellow
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Yellow </p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha yellow">.yellow</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-markup">
-                                  
-                                    <pre><code data-language="html">&lt;div class=&quot;inline-block&quot;&gt;
-  &lt;div class=&quot;bg-light-grey-1 soft push inline-block secondary-font-bold alpha {$modifiers}&quot;&gt;.{$modifiers}&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                    
-                                  </div>
                                   
                                 </div>
+                                
+                                
                                 
                                 
                                 
@@ -907,15 +873,15 @@
                               
                               <section id="section-5.2" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         5.2
                                     
                                     </span> 
                                 
-                                    Background colours
+                                    Chart for % tint values
                                 
                                 </h1>
                                 
@@ -923,186 +889,95 @@
                                 
                                 
                                 
-                                <div class="kss-modifier-block">
+                                <div class="kss-description">
                                 
-                                  <div class="kss-modifier kss-modifier-original">
-                                  
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .bg-dark-blue
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Dark blue background</p>
+                                  <p>Always lead with 100% block colour followed by 75% tint or less for tonal contrast when needed. After 75%/50% tint, some colours do not look like SL brand colours and may not be approved.
 
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha bg-dark-blue">.bg-dark-blue</div>
+</p>
+<div class="row">
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Dark blue</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-dark-blue">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.dark-blue</td></tr>
+       <tr><td><div class="circle bg-dark-blue--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.dark-blue--75</td></tr>
+       <tr><td><div class="circle bg-dark-blue--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.dark-blue--50</td></tr>
+       <tr><td><div class="circle bg-dark-blue--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.dark-blue--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Bright blue</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-bright-blue">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.bright-blue</td></tr>
+       <tr><td><div class="circle bg-bright-blue--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.bright-blue--75</td></tr>
+       <tr><td><div class="circle bg-bright-blue--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.bright-blue--50</td></tr>
+       <tr><td><div class="circle bg-bright-blue--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.bright-blue--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Yellow</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-yellow">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.yellow</td></tr>
+       <tr><td><div class="circle bg-yellow--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.yellow--75</td></tr>
+       <tr><td><div class="circle bg-yellow--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.yellow--50</td></tr>
+       <tr><td><div class="circle bg-yellow--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.yellow--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Orange</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-orange">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.orange</td></tr>
+       <tr><td><div class="circle bg-orange--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.orange--75</td></tr>
+       <tr><td><div class="circle bg-orange--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.orange--50</td></tr>
+       <tr><td><div class="circle bg-orange--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.orange--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Grey</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-grey">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.grey</td></tr>
+       <tr><td><div class="circle bg-grey--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.grey--75</td></tr>
+       <tr><td><div class="circle bg-grey--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.grey--50</td></tr>
+       <tr><td><div class="circle bg-grey--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.grey--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Blue tint</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-blue-tint">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.blue-tint</td></tr>
+       <tr><td><div class="circle bg-blue-tint--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.blue-tint--75</td></tr>
+       <tr><td><div class="circle bg-blue-tint--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.blue-tint--50</td></tr>
+       <tr><td><div class="circle bg-blue-tint--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.blue-tint--25</td></tr>
+     </tbody>
+   </table>
+ </div>
 </div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .bg-light-blue
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Light blue background</p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha bg-light-blue">.bg-light-blue</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .bg-blue-tint
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Blue tint background</p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha bg-blue-tint">.bg-blue-tint</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .bg-orange
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Orange background</p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha bg-orange">.bg-orange</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-modifier">
-                                  
-                                    <div class="kss-modifier-head">
-                                    
-                                      <div class="kss-modifier-name">
-                                      
-                                        .bg-yellow
-                                      
-                                      </div>
-                                      
-                                      <div class="kss-modifier-description">
-                                      
-                                        <p>Yellow background</p>
-
-                                        
-                                      </div>
-                                      
-                                    </div>
-                                    
-                                    <div class="kss-modifier-example">
-                                    
-                                      <div class="inline-block">
-  <div class="soft push inline-block secondary-font-bold alpha bg-yellow">.bg-yellow</div>
-</div>
-                                      
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                  
-                                  
-                                  <div class="kss-markup">
-                                  
-                                    <pre><code data-language="html">&lt;div class=&quot;inline-block&quot;&gt;
-  &lt;div class=&quot;soft push inline-block secondary-font-bold alpha {$modifiers}&quot;&gt;.{$modifiers}&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                    
-                                  </div>
                                   
                                 </div>
+                                
+                                
                                 
                                 
                                 
@@ -1112,11 +987,138 @@
                               
                               <section id="section-5.3" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         5.3
+                                    
+                                    </span> 
+                                
+                                    Additional colours
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p>Additional web colours for complex graphs and charts only
+
+</p>
+<div class="row">
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Dark green</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-dark-green">&nbsp;</div></td><td>100%</td><td>00583d</td><td>.dark-green</td></tr>
+       <tr><td><div class="circle bg-dark-green--75">&nbsp;</div></td><td>75%</td><td>40826e</td><td>.dark-green--75</td></tr>
+       <tr><td><div class="circle bg-dark-green--50">&nbsp;</div></td><td>50%</td><td>7fab9e</td><td>.dark-green--50</td></tr>
+       <tr><td><div class="circle bg-dark-green--25">&nbsp;</div></td><td>25%</td><td>bfd5ce</td><td>.dark-green--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Green</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-green">&nbsp;</div></td><td>100%</td><td>549820</td><td>.green</td></tr>
+       <tr><td><div class="circle bg-green--75">&nbsp;</div></td><td>75%</td><td>7fb258</td><td>.green--75</td></tr>
+       <tr><td><div class="circle bg-green--50">&nbsp;</div></td><td>50%</td><td>a9cb8f</td><td>.green--50</td></tr>
+       <tr><td><div class="circle bg-green--25">&nbsp;</div></td><td>25%</td><td>d4e5c7</td><td>.green--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Purple</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-purple">&nbsp;</div></td><td>100%</td><td>4e2377</td><td>.purple</td></tr>
+       <tr><td><div class="circle bg-purple--75">&nbsp;</div></td><td>75%</td><td>7a5a99</td><td>.purple--75</td></tr>
+       <tr><td><div class="circle bg-purple--50">&nbsp;</div></td><td>50%</td><td>a691bb</td><td>.purple--50</td></tr>
+       <tr><td><div class="circle bg-purple--25">&nbsp;</div></td><td>25%</td><td>d3c8dd</td><td>.purple--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Mauve</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-mauve">&nbsp;</div></td><td>100%</td><td>832072</td><td>.mauve</td></tr>
+       <tr><td><div class="circle bg-mauve--75">&nbsp;</div></td><td>75%</td><td>a25895</td><td>.mauve--75</td></tr>
+       <tr><td><div class="circle bg-mauve--50">&nbsp;</div></td><td>50%</td><td>c18fb8</td><td>.mauve--50</td></tr>
+       <tr><td><div class="circle bg-mauve--25">&nbsp;</div></td><td>25%</td><td>e0c7dc</td><td>.mauve--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Dark red</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-dark-red">&nbsp;</div></td><td>100%</td><td>d00f00</td><td>.dark-red</td></tr>
+       <tr><td><div class="circle bg-dark-red--75">&nbsp;</div></td><td>75%</td><td>dc4b40</td><td>.dark-red--75</td></tr>
+       <tr><td><div class="circle bg-dark-red--50">&nbsp;</div></td><td>50%</td><td>e7877f</td><td>.dark-red--50</td></tr>
+       <tr><td><div class="circle bg-dark-red--25">&nbsp;</div></td><td>25%</td><td>f3c3bf</td><td>.dark-red--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Dark Orange</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-dark-orange">&nbsp;</div></td><td>100%</td><td>ef7000</td><td>.dark-orange</td></tr>
+       <tr><td><div class="circle bg-dark-orange--75">&nbsp;</div></td><td>75%</td><td>f39440</td><td>.dark-orange--75</td></tr>
+       <tr><td><div class="circle bg-dark-orange--50">&nbsp;</div></td><td>50%</td><td>f7b77f</td><td>.dark-orange--50</td></tr>
+       <tr><td><div class="circle bg-dark-orange--25">&nbsp;</div></td><td>25%</td><td>fbdbbf</td><td>.dark-orange--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+ <div class="col medium_6">
+   <table class="table table--plain table--condensed">
+     <thead>
+       <tr><th>Bright Yellow</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+     </thead>
+     <tbody>
+       <tr><td><div class="circle bg-bright-yellow">&nbsp;</div></td><td>100%</td><td>ffdc36</td><td>.bright-yellow</td></tr>
+       <tr><td><div class="circle bg-bright-yellow--75">&nbsp;</div></td><td>75%</td><td>ffe568</td><td>.bright-yellow--75</td></tr>
+       <tr><td><div class="circle bg-bright-yellow--50">&nbsp;</div></td><td>50%</td><td>ffed9a</td><td>.bright-yellow--50</td></tr>
+       <tr><td><div class="circle bg-bright-yellow--25">&nbsp;</div></td><td>25%</td><td>fff6cd</td><td>.bright-yellow--25</td></tr>
+     </tbody>
+   </table>
+ </div>
+</div>
+                                  
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-5.4" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        5.4
                                     
                                     </span> 
                                 
@@ -1190,7 +1192,7 @@
                                     
                                       <div class="kss-modifier-name">
                                       
-                                        .border--light-blue
+                                        .border--bright-blue
                                       
                                       </div>
                                       
@@ -1206,7 +1208,7 @@
                                     <div class="kss-modifier-example">
                                     
                                       <div class="inline-block">
-  <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue border--light-blue">.border--light-blue</div>
+  <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue border--bright-blue">.border--bright-blue</div>
 </div>
                                       
                                     </div>
@@ -1324,13 +1326,13 @@
                               
                               
                               
-                              <section id="section-5.4" class="kss-section kss-depth-2">
+                              <section id="section-5.5" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
-                                        5.4
+                                        5.5
                                     
                                     </span> 
                                 
@@ -1507,13 +1509,13 @@
                               
                               
                               
-                              <section id="section-5.5" class="kss-section kss-depth-2">
+                              <section id="section-5.7" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
-                                        5.5
+                                        5.7
                                     
                                     </span> 
                                 
@@ -1659,13 +1661,13 @@
                               
                               
                               
-                              <section id="section-5.6" class="kss-section kss-depth-2">
+                              <section id="section-5.8" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
-                                        5.6
+                                        5.8
                                     
                                     </span> 
                                 
@@ -1863,7 +1865,7 @@
                     
                     <div class="col medium_6 large_2">
                     
-                        <img src="../content/images/branding/footer-logo.svg" width="400" height="140" data-fallback="../content/images/branding/footer-logo.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
+                        <img src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
                         
                     </div>
                     
@@ -1897,9 +1899,13 @@
     
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
     
+    <script src="../content/js/libs/jquery.collapse.js"></script>
+    
     <script src="../content/js/libs/jquery.foundation.tooltips.js"></script>
     
     <script src="../content/js/libs/audioplayer.min.js"></script>
+    
+    <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
     
     <script src="../content/js/core.js"></script>
     

@@ -1,39 +1,248 @@
 // Colour
 //
-//Colour any object with branding basics colours
-//
 // Styleguide 5.0
 
-// Standard Life branding basics colours
+// Standard Life colours
 //
-// .dark-blue - Dark blue 
-// .light-blue - Light blue 
-// .blue-tint - Blue tint 
-// .orange - Orange 
-// .yellow - Yellow 
+// Colour any object with branding basics colours
 //
-// Markup:
-// <div class="inline-block">
-//   <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
-// </div>
+//
+//<div class="row text--center dark-blue items-container">
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold white bg-dark-blue circle circle--large col--centered">Dark blue</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> 0a2f73 <br />
+//      <strong>CSS</strong> .dark-blue, bg-dark-blue
+//    </div>
+//  </div>
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold white bg-bright-blue circle circle--large col--centered">Bright blue</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> 007bc3 <br />
+//      <strong>CSS</strong> .bright-blue, bg-bright-blue
+//    </div>
+//  </div>
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold dark-blue bg-yellow circle circle--large col--centered">Yellow</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> ffdd00 <br />
+//      <strong>CSS</strong> .yellow, bg-yellow
+//    </div>
+//  </div>
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold white bg-orange circle circle--large col--centered">Orange</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> ff8a00 <br />
+//      <strong>CSS</strong> .orange, bg-orange
+//    </div>
+//  </div>
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold white bg-grey circle circle--large col--centered">Grey</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> 4b4b4b <br />
+//      <strong>CSS</strong> .grey, bg-grey
+//    </div>
+//  </div>
+//  <div class="col small_6 medium_4 xlarge_2 item">
+//    <div class="circle--large primary-font-bold dark-blue bg-blue-tint circle circle--large col--centered">Blue tint</div>
+//    <div class="gamma">
+//      <strong>Hex</strong> e0edfe <br />
+//      <strong>CSS</strong> .blue-tint, .bg-blue-tint
+//    </div>
+//  </div>
+//</div>
+//<span class="gamma">Grey is only for body copy online, drop shadows,instances where we need to convey the disabled status of links/buttons and for progress bars. It can’t be used for any other elements.</span>
 //
 // Styleguide 5.1
 
 
-// Background colours
+// Chart for % tint values
 //
-// .bg-dark-blue - Dark blue background
-// .bg-light-blue - Light blue background
-// .bg-blue-tint - Blue tint background
-// .bg-orange - Orange background
-// .bg-yellow - Yellow background
+// Always lead with 100% block colour followed by 75% tint or less for tonal contrast when needed. After 75%/50% tint, some colours do not look like SL brand colours and may not be approved.
 //
-// Markup:
-// <div class="inline-block">
-//   <div class="soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
-// </div>
+//<div class="row">
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Dark blue</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-dark-blue">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.dark-blue</td></tr>
+//        <tr><td><div class="circle bg-dark-blue--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.dark-blue--75</td></tr>
+//        <tr><td><div class="circle bg-dark-blue--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.dark-blue--50</td></tr>
+//        <tr><td><div class="circle bg-dark-blue--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.dark-blue--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Bright blue</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-bright-blue">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.bright-blue</td></tr>
+//        <tr><td><div class="circle bg-bright-blue--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.bright-blue--75</td></tr>
+//        <tr><td><div class="circle bg-bright-blue--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.bright-blue--50</td></tr>
+//        <tr><td><div class="circle bg-bright-blue--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.bright-blue--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Yellow</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-yellow">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.yellow</td></tr>
+//        <tr><td><div class="circle bg-yellow--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.yellow--75</td></tr>
+//        <tr><td><div class="circle bg-yellow--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.yellow--50</td></tr>
+//        <tr><td><div class="circle bg-yellow--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.yellow--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Orange</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-orange">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.orange</td></tr>
+//        <tr><td><div class="circle bg-orange--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.orange--75</td></tr>
+//        <tr><td><div class="circle bg-orange--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.orange--50</td></tr>
+//        <tr><td><div class="circle bg-orange--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.orange--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Grey</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-grey">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.grey</td></tr>
+//        <tr><td><div class="circle bg-grey--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.grey--75</td></tr>
+//        <tr><td><div class="circle bg-grey--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.grey--50</td></tr>
+//        <tr><td><div class="circle bg-grey--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.grey--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Blue tint</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-blue-tint">&nbsp;</div></td><td>100%</td><td>007bc3</td><td>.blue-tint</td></tr>
+//        <tr><td><div class="circle bg-blue-tint--75">&nbsp;</div></td><td>75%</td><td>409cd2</td><td>.blue-tint--75</td></tr>
+//        <tr><td><div class="circle bg-blue-tint--50">&nbsp;</div></td><td>50%</td><td>7fbde1</td><td>.blue-tint--50</td></tr>
+//        <tr><td><div class="circle bg-blue-tint--25">&nbsp;</div></td><td>25%</td><td>bfdef0</td><td>.blue-tint--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//</div>
 //
 // Styleguide 5.2
+
+
+// Additional colours
+//
+// Additional web colours for complex graphs and charts only
+//
+//<div class="row">
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Dark green</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-dark-green">&nbsp;</div></td><td>100%</td><td>00583d</td><td>.dark-green</td></tr>
+//        <tr><td><div class="circle bg-dark-green--75">&nbsp;</div></td><td>75%</td><td>40826e</td><td>.dark-green--75</td></tr>
+//        <tr><td><div class="circle bg-dark-green--50">&nbsp;</div></td><td>50%</td><td>7fab9e</td><td>.dark-green--50</td></tr>
+//        <tr><td><div class="circle bg-dark-green--25">&nbsp;</div></td><td>25%</td><td>bfd5ce</td><td>.dark-green--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Green</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-green">&nbsp;</div></td><td>100%</td><td>549820</td><td>.green</td></tr>
+//        <tr><td><div class="circle bg-green--75">&nbsp;</div></td><td>75%</td><td>7fb258</td><td>.green--75</td></tr>
+//        <tr><td><div class="circle bg-green--50">&nbsp;</div></td><td>50%</td><td>a9cb8f</td><td>.green--50</td></tr>
+//        <tr><td><div class="circle bg-green--25">&nbsp;</div></td><td>25%</td><td>d4e5c7</td><td>.green--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Purple</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-purple">&nbsp;</div></td><td>100%</td><td>4e2377</td><td>.purple</td></tr>
+//        <tr><td><div class="circle bg-purple--75">&nbsp;</div></td><td>75%</td><td>7a5a99</td><td>.purple--75</td></tr>
+//        <tr><td><div class="circle bg-purple--50">&nbsp;</div></td><td>50%</td><td>a691bb</td><td>.purple--50</td></tr>
+//        <tr><td><div class="circle bg-purple--25">&nbsp;</div></td><td>25%</td><td>d3c8dd</td><td>.purple--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Mauve</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-mauve">&nbsp;</div></td><td>100%</td><td>832072</td><td>.mauve</td></tr>
+//        <tr><td><div class="circle bg-mauve--75">&nbsp;</div></td><td>75%</td><td>a25895</td><td>.mauve--75</td></tr>
+//        <tr><td><div class="circle bg-mauve--50">&nbsp;</div></td><td>50%</td><td>c18fb8</td><td>.mauve--50</td></tr>
+//        <tr><td><div class="circle bg-mauve--25">&nbsp;</div></td><td>25%</td><td>e0c7dc</td><td>.mauve--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Dark red</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-dark-red">&nbsp;</div></td><td>100%</td><td>d00f00</td><td>.dark-red</td></tr>
+//        <tr><td><div class="circle bg-dark-red--75">&nbsp;</div></td><td>75%</td><td>dc4b40</td><td>.dark-red--75</td></tr>
+//        <tr><td><div class="circle bg-dark-red--50">&nbsp;</div></td><td>50%</td><td>e7877f</td><td>.dark-red--50</td></tr>
+//        <tr><td><div class="circle bg-dark-red--25">&nbsp;</div></td><td>25%</td><td>f3c3bf</td><td>.dark-red--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Dark Orange</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-dark-orange">&nbsp;</div></td><td>100%</td><td>ef7000</td><td>.dark-orange</td></tr>
+//        <tr><td><div class="circle bg-dark-orange--75">&nbsp;</div></td><td>75%</td><td>f39440</td><td>.dark-orange--75</td></tr>
+//        <tr><td><div class="circle bg-dark-orange--50">&nbsp;</div></td><td>50%</td><td>f7b77f</td><td>.dark-orange--50</td></tr>
+//        <tr><td><div class="circle bg-dark-orange--25">&nbsp;</div></td><td>25%</td><td>fbdbbf</td><td>.dark-orange--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//  <div class="col medium_6">
+//    <table class="table table--plain table--condensed">
+//      <thead>
+//        <tr><th>Bright Yellow</th><th>%</th><th>Hexadecimal</th><th>CSS</th></tr>
+//      </thead>
+//      <tbody>
+//        <tr><td><div class="circle bg-bright-yellow">&nbsp;</div></td><td>100%</td><td>ffdc36</td><td>.bright-yellow</td></tr>
+//        <tr><td><div class="circle bg-bright-yellow--75">&nbsp;</div></td><td>75%</td><td>ffe568</td><td>.bright-yellow--75</td></tr>
+//        <tr><td><div class="circle bg-bright-yellow--50">&nbsp;</div></td><td>50%</td><td>ffed9a</td><td>.bright-yellow--50</td></tr>
+//        <tr><td><div class="circle bg-bright-yellow--25">&nbsp;</div></td><td>25%</td><td>fff6cd</td><td>.bright-yellow--25</td></tr>
+//      </tbody>
+//    </table>
+//  </div>
+//</div>
+//
+// Styleguide 5.3
 
 
 // Border colours
@@ -41,7 +250,7 @@
 // Set a border colour
 //
 // .border--dark-blue - Dark blue border
-// .border--light-blue - Light blue border
+// .border--bright-blue - Light blue border
 // .border--blue-tint - Blue tint border
 // .border--orange - Orange border
 // .border--yellow - Yellow border
@@ -51,7 +260,7 @@
 //   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
 // </div>
 //
-// Styleguide 5.3
+// Styleguide 5.4
 
 
 // Border positions
@@ -68,7 +277,7 @@
 //   <div class="bg-light-grey-1 soft push grey inline-block border--dark-blue  {$modifiers}">.{$modifiers}</div>
 // </div>
 //
-// Styleguide 5.4
+// Styleguide 5.5
 
 
 // Border size
@@ -84,7 +293,7 @@
 //   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
 // </div>
 //
-// Styleguide 5.5
+// Styleguide 5.7
 
 // Border style
 //
@@ -97,7 +306,7 @@
 //   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
 // </div>
 //
-// Styleguide 5.6
+// Styleguide 5.8
 
 
 /* Branding basics colours ---------------------- */
@@ -106,8 +315,8 @@
 	color:$dark-blue;
 	}
 	
-.light-blue {
-	color:$light-blue;
+.bright-blue {
+	color:$bright-blue;
 	}
 	
 .orange {
@@ -130,38 +339,487 @@
 	color:#fff;
 	}
 	
-	
-/* Branding basics background colours ---------------------- */
-
-.bg-dark-blue {
-	background-color:$dark-blue;
-	}
-	
-.bg-light-blue {
-	background-color:$light-blue;
-	}
-
-.bg-orange {
-	background-color:$orange;
-	}	
-	
-.bg-yellow {
-	background-color:$yellow;
-	}
-	
-.bg-blue-tint {
-	background-color:$blue-tint;
-	}
-	
-.bg-grey {
-	background-color:$grey;
-	}
-	
 .bg-white {
 	background-color:#fff;
 	}
 	
+/* Branding basics colour tints ---------------------- */
+
+.dark-blue {
+	color:$dark-blue;
+	}
 	
+	.dark-blue--75 {
+		color:tint($dark-blue, 25%);
+		}
+	
+	.dark-blue--50 {
+		color:tint($dark-blue, 50%);
+		}
+		
+	.dark-blue--25 {
+		color:tint($dark-blue, 75%);
+		}
+		
+	.bg-dark-blue {
+		background-color:$dark-blue;
+		}
+		
+	.bg-dark-blue--75 {
+		background-color:tint($dark-blue, 25%);
+		}
+		
+	.bg-dark-blue--50 {
+		background-color:tint($dark-blue, 50%);
+		}
+		
+	.bg-dark-blue--25 {
+		background-color:tint($dark-blue, 75%);
+		}
+	
+	
+	
+.bright-blue {
+	color:$bright-blue;
+	}
+	
+	.bright-blue--75 {
+		color:tint($bright-blue, 25%);
+		}
+	
+	.bright-blue--50 {
+		color:tint($bright-blue, 50%);
+		}
+		
+	.bright-blue--25 {
+		color:tint($bright-blue, 75%);
+		}
+		
+	.bg-bright-blue {
+		background-color:$bright-blue;
+		}
+		
+	.bg-bright-blue--75 {
+		background-color:tint($bright-blue, 25%);
+		}
+		
+	.bg-bright-blue--50 {
+		background-color:tint($bright-blue, 50%);
+		}
+		
+	.bg-bright-blue--25 {
+		background-color:tint($bright-blue, 75%);
+		}
+	
+.orange {
+	color:$orange;
+	}
+	
+	.orange--75 {
+		color:tint($orange, 25%);
+		}
+	
+	.orange--50 {
+		color:tint($orange, 50%);
+		}
+		
+	.orange--25 {
+		color:tint($orange, 75%);
+		}
+		
+	.bg-orange {
+		background-color:$orange;
+		}
+		
+	.bg-orange--75 {
+		background-color:tint($orange, 25%);
+		}
+		
+	.bg-orange--50 {
+		background-color:tint($orange, 50%);
+		}
+		
+	.bg-orange--25 {
+		background-color:tint($orange, 75%);
+		}
+		
+.yellow {
+	color:$yellow;
+	}
+	
+	.yellow--75 {
+		color:tint($yellow, 25%);
+		}
+	
+	.yellow--50 {
+		color:tint($yellow, 50%);
+		}
+		
+	.yellow--25 {
+		color:tint($yellow, 75%);
+		}
+		
+	.bg-yellow {
+		background-color:$yellow;
+		}
+		
+	.bg-yellow--75 {
+		background-color:tint($yellow, 25%);
+		}
+		
+	.bg-yellow--50 {
+		background-color:tint($yellow, 50%);
+		}
+		
+	.bg-yellow--25 {
+		background-color:tint($yellow, 75%);
+		}
+	
+	
+.blue-tint {
+	color:$blue-tint;
+	}
+	
+	.blue-tint--75 {
+		color:tint($blue-tint, 25%);
+		}
+	
+	.blue-tint--50 {
+		color:tint($blue-tint, 50%);
+		}
+		
+	.blue-tint--25 {
+		color:tint($blue-tint, 75%);
+		}
+		
+	.bg-blue-tint {
+		background-color:$blue-tint;
+		}
+		
+	.bg-blue-tint--75 {
+		background-color:tint($blue-tint, 25%);
+		}
+		
+	.bg-blue-tint--50 {
+		background-color:tint($blue-tint, 50%);
+		}
+		
+	.bg-blue-tint--25 {
+		background-color:tint($blue-tint, 75%);
+		}
+		
+	.bg-blue-tint--large {
+		@include respond-min(60em) {
+			background-color:$blue-tint;	
+			}
+		}
+		
+	
+.grey {
+	color:$grey;
+	}	
+	
+	.grey--75 {
+		color:tint($grey, 25%);
+		}
+	
+	.grey--50 {
+		color:tint($grey, 50%);
+		}
+		
+	.grey--25 {
+		color:tint($grey, 75%);
+		}
+		
+	.bg-grey {
+		background-color:$grey;
+		}
+		
+	.bg-grey--75 {
+		background-color:tint($grey, 25%);
+		}
+		
+	.bg-grey--50 {
+		background-color:tint($grey, 50%);
+		}
+		
+	.bg-grey--25 {
+		background-color:tint($grey, 75%);
+		}
+	
+	
+.white {
+	color:#fff;
+	}
+	
+	
+	
+
+	
+/*=Additional colours for complex graphs and charts only
+------------------------------------------------*/	
+	
+.dark-green {
+	color:$dark-green;
+	}
+	
+	.dark-green--75 {
+		color:tint($dark-green, 25%);
+		}
+	
+	.dark-green--50 {
+		color:tint($dark-green, 50%);
+		}
+		
+	.dark-green--25 {
+		color:tint($dark-green, 75%);
+		}
+		
+	.bg-dark-green {
+		background-color:$dark-green;
+		}
+		
+	.bg-dark-green--75 {
+		background-color:tint($dark-green, 25%);
+		}
+		
+	.bg-dark-green--50 {
+		background-color:tint($dark-green, 50%);
+		}
+		
+	.bg-dark-green--25 {
+		background-color:tint($dark-green, 75%);
+		}
+	
+	
+	
+.green {
+	color:$green;	
+	}
+	
+	.green--75 {
+		color:tint($green, 25%);
+		}
+	
+	.green--50 {
+		color:tint($green, 50%);
+		}
+		
+	.green--25 {
+		color:tint($green, 75%);
+		}
+		
+	.bg-green {
+		background-color:$green;
+		}
+		
+	.bg-green--75 {
+		background-color:tint($green, 25%);
+		}
+		
+	.bg-green--50 {
+		background-color:tint($green, 50%);
+		}
+		
+	.bg-green--25 {
+		background-color:tint($green, 75%);
+		}
+	
+	
+
+.bright-yellow {
+	color:$bright-yellow;	
+	}
+	
+	.bright-yellow--75 {
+		color:tint($bright-yellow, 25%);
+		}
+	
+	.bright-yellow--50 {
+		color:tint($bright-yellow, 50%);
+		}
+		
+	.bright-yellow--25 {
+		color:tint($bright-yellow, 75%);
+		}
+		
+	.bg-bright-yellow {
+		background-color:$bright-yellow;
+		}
+		
+	.bg-bright-yellow--75 {
+		background-color:tint($bright-yellow, 25%);
+		}
+		
+	.bg-bright-yellow--50 {
+		background-color:tint($bright-yellow, 50%);
+		}
+		
+	.bg-bright-yellow--25 {
+		background-color:tint($bright-yellow, 75%);
+		}
+
+.purple  {
+	color:$purple;
+	}
+	
+	.purple--75 {
+		color:tint($purple, 25%);
+		}
+	
+	.purple--50 {
+		color:tint($purple, 50%);
+		}
+		
+	.purple--25 {
+		color:tint($purple, 75%);
+		}
+		
+	.bg-purple {
+		background-color:$purple;
+		}
+		
+	.bg-purple--75 {
+		background-color:tint($purple, 25%);
+		}
+		
+	.bg-purple--50 {
+		background-color:tint($purple, 50%);
+		}
+		
+	.bg-purple--25 {
+		background-color:tint($purple, 75%);
+		}
+
+.mauve  {
+	color:$mauve;
+	}
+	
+	.mauve--75 {
+		color:tint($mauve, 25%);
+		}
+	
+	.mauve--50 {
+		color:tint($mauve, 50%);
+		}
+		
+	.mauve--25 {
+		color:tint($mauve, 75%);
+		}
+		
+	.bg-mauve {
+		background-color:$mauve;
+		}
+		
+	.bg-mauve--75 {
+		background-color:tint($mauve, 25%);
+		}
+		
+	.bg-mauve--50 {
+		background-color:tint($mauve, 50%);
+		}
+		
+	.bg-mauve--25 {
+		background-color:tint($mauve, 75%);
+		}
+	
+.dark-red {
+	color:$dark-red;
+	}
+	
+	.dark-red--75 {
+		color:tint($dark-red, 25%);
+		}
+	
+	.dark-red--50 {
+		color:tint($dark-red, 50%);
+		}
+		
+	.dark-red--25 {
+		color:tint($dark-red, 75%);
+		}
+		
+	.bg-dark-red {
+		background-color:$dark-red;
+		}
+		
+	.bg-dark-red--75 {
+		background-color:tint($dark-red, 25%);
+		}
+		
+	.bg-dark-red--50 {
+		background-color:tint($dark-red, 50%);
+		}
+		
+	.bg-dark-red--25 {
+		background-color:tint($dark-red, 75%);
+		}
+
+.dark-orange {
+	color:$dark-orange;
+	}
+	
+	.dark-orange--75 {
+		color:tint($dark-orange, 25%);
+		}
+	
+	.dark-orange--50 {
+		color:tint($dark-orange, 50%);
+		}
+		
+	.dark-orange--25 {
+		color:tint($dark-orange, 75%);
+		}
+		
+	.bg-dark-orange {
+		background-color:$dark-orange;
+		}
+		
+	.bg-dark-orange--75 {
+		background-color:tint($dark-orange, 25%);
+		}
+		
+	.bg-dark-orange--50 {
+		background-color:tint($dark-orange, 50%);
+		}
+		
+	.bg-dark-orange--25 {
+		background-color:tint($dark-orange, 75%);
+		}
+	
+	
+/*=Additional background colours for complex graphs and charts only
+------------------------------------------------*/	
+	
+.bg-dark-green {
+	background-color:$dark-green;
+	}
+
+.bg-green {
+	background-color:$green;	
+	}
+
+.bg-bright-yellow {
+	background-color:$bright-yellow;	
+	}
+
+.bg-purple  {
+	background-color:$purple;
+	}
+
+.bg-mauve  {
+	background-color:$mauve;
+	}
+	
+.bg-dark-red {
+	background-color:$dark-red;
+	}
+
+.bg-dark-orange {
+	background-color:$dark-orange;
+	}	
+	
+
 /* Grayscale colours ---------------------- */
 
 .light-grey-1 {
@@ -309,8 +967,8 @@
 	border-color:$dark-blue;
 	}
 	
-.border--light-blue {
-	border-color:$light-blue;
+.border--bright-blue {
+	border-color:$bright-blue;
 	}
 	
 .border--blue-tint {
@@ -333,17 +991,28 @@
 	
 /* Overlines ---------------------- */		
 .overline {
-	background-color:$dark-grey-3;
+	background-color:$bright-blue;
 	display:block;
 	float:none;
-	height:1px;
-	margin:lh(.66) auto;
+	height:2px;
+	margin-bottom:lh(.66);
+	margin-top:lh(.66);
+	&.bg-yellow {
+		background-color:$yellow;
+		}
 	}
 	
+.overline--centered {
+	margin-left: auto;
+	margin-right: auto;
+	}
 	
+.overline_1 {
+	width:40px;
+	}
 	
 .bg-pattern {
-	background-color:#063375;	
+	background-color:$dark-blue;	
 	@include respond-min(60em) {
 		background-image:url(../images/branding/sl-pattern-01.png);
 		background-position:right top;

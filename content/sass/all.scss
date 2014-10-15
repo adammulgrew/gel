@@ -1,8 +1,8 @@
 @import "_utils";
 
-@import "_grid";
-
 @import "_mixins";
+
+@import "_grid";
 
 @import "_base";
 
@@ -30,9 +30,9 @@
 
 @import "_layout";
 
-@import "_lists";
-
 @import "_map";
+
+@import "_lists";
 
 @import "_pagination";
 
@@ -46,9 +46,13 @@
 
 @import "_flexi-video";
 
+@import "_flexslider";
+
 @import "_visibility";
 
 @import "_color";
+
+@import "_editor-content";
 
 // Header styles for SLDG site template
 @import "_header";
@@ -58,3 +62,6 @@
 
 // Overrides for KSS template
 @import "_kss";
+
+// Overrides for Sharepoint template
+@import "_sharepoint";

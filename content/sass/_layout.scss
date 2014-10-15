@@ -38,25 +38,25 @@
 //
 // Markup:
 // <div class="bg-yellow inline-block ">
-//   <div class="bg-light-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.2
 
 	
-// Remove margins
+//remove margins
 //
-// .flush - Remove all margins
-// .flush--top - Remove top margin
-// .flush--right - Remove right margin
-// .flush--bottom - Remove bottom margin
-// .flush--left - Remove left margin
-// .flush--ends - Remove vertical margins
-// .flush--sides - Remove horizontal margins
+// .flush -remove all margins
+// .flush--top -remove top margin
+// .flush--right -remove right margin
+// .flush--bottom -remove bottom margin
+// .flush--left -remove left margin
+// .flush--ends -remove vertical margins
+// .flush--sides -remove horizontal margins
 //
 // Markup:
 // <div class="bg-yellow inline-block ">
-//   <div class="bg-light-blue soft push white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft push white inline-block {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.3
@@ -81,25 +81,25 @@
 //
 // Markup:
 // <div class="bg-yellow soft inline-block">
-//   <div class="bg-light-blue white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue white inline-block {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.4
 
 
-// Remove padding
+//remove padding
 //
-// .hard - Remove all padding
-// .hard--top - Remove top padding
-// .hard--right - Remove right padding
-// .hard--bottom - Remove bottom padding
-// .hard--left - Remove left padding
-// .hard--ends - Remove vertical padding
-// .hard--sides - Remove horizontal padding
+// .hard -remove all padding
+// .hard--top -remove top padding
+// .hard--right -remove right padding
+// .hard--bottom -remove bottom padding
+// .hard--left -remove left padding
+// .hard--ends -remove vertical padding
+// .hard--sides -remove horizontal padding
 //
 // Markup:
 // <div class="bg-yellow soft inline-block">
-//   <div class="bg-light-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.5
@@ -201,69 +201,69 @@
  * Add/remove margins
  */
 .push { 
-	margin:$font-base-line-height!important;
+	margin:rem($font-base-line-height) !important;
 	}
 	
 .push--medium {
 	@include respond-min(48em) {
-		margin:$font-base-line-height!important;
+		margin:rem($font-base-line-height) !important;
 		}
 	}
 		
 .push--top { 
-	margin-top:$font-base-line-height!important;
+	margin-top:rem($font-base-line-height) !important;
 	}
 	
 .push--right { 
-	margin-right: $font-base-line-height!important; 
+	margin-right:rem($font-base-line-height) !important; 
 	}
 	
 .push--bottom { 
-	margin-bottom:$font-base-line-height!important; 
+	margin-bottom:rem($font-base-line-height) !important; 
 	}
 
 .push--left { 
-	margin-left:$font-base-line-height!important; 
+	margin-left:rem($font-base-line-height) !important; 
 	}
 
 .push--ends { 
-	margin-top:$font-base-line-height!important; 
-	margin-bottom:$font-base-line-height!important;
+	margin-top:rem($font-base-line-height) !important; 
+	margin-bottom:rem($font-base-line-height) !important;
 	}
 	
 .push--sides { 
-	margin-right: $font-base-line-height!important; 
-	margin-left:  $font-base-line-height!important; 
+	margin-right:rem($font-base-line-height) !important; 
+	margin-left:rem($font-base-line-height) !important; 
 	}
 
 .push-half { 
-	margin:$font-base-line-height-half!important;
+	margin:rem($font-base-line-height-half) !important;
 	}
 	
 .push-half--top { 
-	margin-top:$font-base-line-height-half!important; 
+	margin-top:rem($font-base-line-height-half) !important; 
 	}
 	
 .push-half--right { 
-	margin-right: $font-base-line-height-half!important; 
+	margin-right:rem($font-base-line-height-half) !important; 
 	}
 	
 .push-half--bottom { 
-	margin-bottom:$font-base-line-height-half!important; 
+	margin-bottom:rem($font-base-line-height-half) !important; 
 	}
 	
 .push-half--left { 
-	margin-left:$font-base-line-height-half!important; 
+	margin-left:rem($font-base-line-height-half) !important; 
 	}
 	
 .push-half--ends { 
-	margin-top:$font-base-line-height-half!important; 
-	margin-bottom:$font-base-line-height-half!important; 
+	margin-top:rem($font-base-line-height-half) !important; 
+	margin-bottom:rem($font-base-line-height-half) !important; 
 	}
 	
 .push-half--sides { 
-	margin-right: $font-base-line-height-half!important; 
-	margin-left:  $font-base-line-height-half!important; 
+	margin-right:rem($font-base-line-height-half) !important; 
+	margin-left: rem($font-base-line-height-half) !important; 
 	}
 	
 
@@ -303,75 +303,87 @@
  * Add/remove paddings
  */
 .soft { 
-	padding:$font-base-line-height!important; 
+	padding:rem($font-base-line-height) !important; 
 	}
 	
 .soft--medium {
 	@include respond-min(48em) {
-		padding:$font-base-line-height!important;
+		padding:rem($font-base-line-height) !important;
 		}
 	}
 	
 .soft--large {	
 	@include respond-min(60em) {
-		padding:$font-base-line-height!important;
+		padding:rem($font-base-line-height) !important;
 		}
 	}
 	
 .soft--top { 
-	padding-top:$font-base-line-height!important; 
+	padding-top:rem($font-base-line-height) !important; 
 	}
 	
 .soft--right { 
-	padding-right:$font-base-line-height!important; 
+	padding-right:rem($font-base-line-height) !important; 
+	}
+	
+.soft-right--large { 
+	@include respond-min(60em) {
+		padding-right:$font-base-line-height !important;
+		}
 	}
 	
 .soft--bottom { 
-	padding-bottom:$font-base-line-height!important; 
+	padding-bottom:rem($font-base-line-height) !important; 
 	}
 	
 .soft--left { 
-	padding-left:$font-base-line-height!important;
+	padding-left:rem($font-base-line-height) !important;
 	}
 	
 .soft--ends { 
-	padding-top:$font-base-line-height!important; 
-	padding-bottom:$font-base-line-height!important; 
+	padding-top:rem($font-base-line-height) !important; 
+	padding-bottom:rem($font-base-line-height) !important; 
 	}
 	
 .soft--sides { 
-	padding-right:$font-base-line-height!important; 
-	padding-left:  $font-base-line-height!important;
+	padding-right:rem($font-base-line-height) !important; 
+	padding-left: rem($font-base-line-height) !important;
 	}
 
 .soft-half { 
-	padding:$font-base-line-height-half!important; 
+	padding:rem($font-base-line-height-half) !important; 
+	}
+	
+.soft-half--large { 
+	@include respond-min(60em) {
+		padding:rem($font-base-line-height-half) !important;
+		}
 	}
 	
 .soft-half--top { 
-	padding-top:$font-base-line-height-half!important; 
+	padding-top:rem($font-base-line-height-half) !important; 
 	}
 	
 .soft-half--right {
-	padding-right:$font-base-line-height-half!important;
+	padding-right:rem($font-base-line-height-half) !important;
 	}
 	
 .soft-half--bottom { 
-	padding-bottom:$font-base-line-height-half!important; 
+	padding-bottom:rem($font-base-line-height-half) !important; 
 	}
 	
 .soft-half--left { 
-	padding-left:$font-base-line-height-half!important;
+	padding-left:rem($font-base-line-height-half) !important;
 	}
 	
 .soft-half--ends { 
-	padding-top:$font-base-line-height-half!important; 
-	padding-bottom:$font-base-line-height-half!important;
+	padding-top:rem($font-base-line-height-half) !important; 
+	padding-bottom:rem($font-base-line-height-half) !important;
 	}
 	
 .soft-half--sides { 
-	padding-right:$font-base-line-height-half!important; 
-	padding-left:  $font-base-line-height-half!important; 
+	padding-right:rem($font-base-line-height-half) !important; 
+	padding-left: rem($font-base-line-height-half) !important; 
 	}
 
 .hard { 
@@ -404,7 +416,6 @@
 	padding-left:  0!important;
 	}
 	
-
 
 .text--center {
 	text-align:center;
@@ -446,10 +457,6 @@
 	top: 0;
 	}
 
-
-
-
-
 pre {
 	background-color:$light-grey-1;
 	border:1px solid $light-grey-3;
@@ -457,6 +464,7 @@ pre {
 	margin-bottom:lh(1);
 	padding:lh(1);
 	}
+
 
 .affix {
 	position:fixed;
@@ -478,7 +486,6 @@ pre {
 		}
 	
 	}
-
 
 .content {	
 	position: relative;
@@ -506,4 +513,41 @@ pre {
     text-align: center;
     width: 5.49rem;
 	}
-
+	
+	
+.panel-text-home {
+    @include respond-min(48em)  {
+		height:rem(140px);
+		}
+		
+	@include respond-min(60em)  {
+		height:rem(220px);
+		}
+	
+	@include respond-min(90em)  {
+		height:rem(80px);
+		}
+		
+	}
+	
+.panel-text-landing {  	
+	@include respond-min(60em)  {
+		height:rem(140px);
+		}
+	}
+	
+.overlay {
+	position:relative;
+	&:after {
+		background:rgba(0,0,0, .75); 
+		bottom:0;
+		content:'';
+		display:block;
+		left:0; 
+		position:absolute; 
+		right:0; 
+		top:0; 
+		z-index:0;
+		}
+	}
+	

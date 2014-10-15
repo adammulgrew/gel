@@ -1,113 +1,32 @@
 // Navigation
 //
+//
+//
 // Styleguide 13.0
 
 // Off Canvas
 //
-// Markup:
-//  <div id="outer-wrap" class="outer-wrap">
-//    <div id="inner-wrap" class="inner-wrap">
-//      <nav class="nav nav--primary" role="navigation">
-//        <ul class="nav--primary__list">
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//          <li class="nav--primary__item">
-//            <a href="#" class="nav--primary__link">
-//                Primary nav link
-//            </a>
-//          </li>
-//        </ul>
-//      </nav>
-//    </div>
-//  </div>
+//
 //
 // Styleguide 13.1
 
 // Top bar
 //
-//Markup:
-//<nav class="nav nav--primary" role="navigation">
-//  <ul class="nav--primary__list">
-//    <li class="nav--primary__item">
-//      <a href="#" class="nav--primary__link">
-//        Primary nav link
-//      </a>
-//    </li>
-//    <li class="nav--primary__item">
-//      <a href="#" class="nav--primary__link">
-//        Primary nav link
-//      </a>
-//    </li>
-//    <li class="nav--primary__item">
-//      <a href="#" class="nav--primary__link">
-//        Primary nav link
-//      </a>
-//    </li>
-//    <li class="nav--primary__item">
-//      <a href="#" class="nav--primary__link">
-//        Primary nav link
-//      </a>
-//    </li>
-//  </ul>
-//</nav>
+//
+//
 //
 // Styleguide 13.2
 
 // Simple side navigation
 //
 //
+//
 // Styleguide 13.3
 
 // Nav tabs
 //
-//Markup:
-//<nav class="nav nav--tabs">
-//  <ul class="cf nav--tabs__list">
-//    <li class="nav--tabs__item">
-//      <a class="nav--tabs__link" href="#">
-//        Nav tab link
-//      </a>
-//    </li>
-//    <li class="nav--tabs__item">
-//      <a class="nav--tabs__link" href="#">
-//        Nav tab link
-//      </a>
-//    </li>
-//    <li class="nav--tabs__item">
-//      <a class="nav--tabs__link" href="#">
-//        Nav tab link
-//      </a>
-//    </li>
-//    <li class="nav--tabs__item">
-//      <a class="nav--tabs__link" href="#">
-//        Nav tab link
-//      </a>
-//    </li>
-//  </ul>
-//</nav>
+//
+//
 //
 // Styleguide 13.4
 
@@ -115,39 +34,16 @@
 // Breadcrumbs
 //
 //
-//<ol class="nav nav--breadcrumb"> 
-//  <li>
-//    <a href="#">
-//      Home
-//    </a>
-//  </li>
-//  <li>
-//    <a href="#">
-//      Library
-//    </a>
-//  </li>
-//  <li class="active">
-//      Home
-//  </li>
-//</ol>
+//
 //
 //
 // Styleguide 13.5
-
-
 	
-.nav--primary li .fixed-logo {
-	@include respond-max(48em) {
-		display:none;
-		}
-	}
-
 .nav {
 	list-style-type:none;
 	
 	ul, ol {
 		list-style-type:none;
-		margin:0;
 		}
 		
 	a {
@@ -169,6 +65,7 @@
 		display:block !important;
 		}
 	}
+
 
 .utility-link {
 	color:#fff;
@@ -196,7 +93,7 @@
 	}
 		
 
-.fixed .nav--primary {	
+.fixed .nav-primary {	
 	@include respond-min(60em) {
 		-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.50);
 		-moz-box-shadow: 0 8px 6px -6px  rgba(0,0,0,0.50);
@@ -223,50 +120,53 @@
 		}
 	}
 	
-.nav--primary__list {
+.nav-primary {
 	@include respond-min(60em) {
-		background-color:#fff;
-		border-bottom:1px solid $light-grey-2;
-		border-top:1px solid $light-grey-2;
-		height:rem(62px);
+		background-color:$bright-blue;
+		position:relative;
+		}	
+	}
+	
+.nav-primary__list {
+	@include respond-min(60em) {
+		height:rem(50px);
 		margin:0 auto;
 		padding:0 lh(1);
-		position:relative;
 		}
 			
 	}
-	
-.nav--primary__item { 
+		
+.nav-primary__item { 
 	@include respond-min(60em) {
 		border:none;
 		float: left; 
 		margin:0;
+		overflow:visible;
 		padding:0;
 		width:auto;
 		}
 	}
-		
-.nav--primary__link {
+				
+.nav-primary__link {
 	@include respond-min(60em) {
-		border-right:1px solid $light-grey-2;
-		color:$dark-blue;
+		color:#fff;
 		display:block;
 		font-family:$primary-font;
 		font-size:rem(16px);
-		height:62px;
-		line-height:62px;
-		padding:0 lh(.33);
+		height:rem(65px);
+		line-height:rem(65px);
+		padding:0 lh(.66);
 		text-align:center;
 		
 		&:hover,
 		&:focus {
-			background-color:$dark-blue;
+			background-color:$bright-blue;
 			color:#fff;
 			text-decoration:none;
 			}
 			
 		&:visited {
-			color:$dark-blue;
+			color:#fff;
 			
 			&:hover {
 				color:#fff;
@@ -274,91 +174,129 @@
 			}
 				
 		@include old-ie {
-			height:60px !important;
-			line-height:60px !important;
+			height:rem(50px) !important;
+			line-height:rem(50px) !important;
 			}
 			
 		i {
 			opacity:0.5;
 			visibility: visible;
 			}
+				
 		}
 		
 	@include respond-min(75em) {
-		padding:0 lh(.75);
+		padding:0 lh(1);
+		}
+				
+	@include respond-min(90em) {
+		padding:0 lh(1.66);
 		}
 	
 	}
 	
 
-.selected .nav--primary__link {
-	background-color: $dark-blue;
-	border-right: 1px solid $dark-blue;
-	color: #FFFFFF !important;
+.selected .nav-primary__link {
+	@include respond-min(60em) {	
+		border-bottom: 4px solid #fff;
+		color: #FFFFFF !important;
+		}
 	}
 	
-.nav--secondary {
 	
-	@include respond-min(48em) {
-		background-color:$light-grey-3;
+@include respond-min(60em) {	
+	.submenu {
+		margin-bottom:rem(45px);
+		}
+		
+	.nav-secondary {
+		background-color:#fff;
+		display:block !important;
+		font-family:$primary-font;
+		left:0;
+		position:absolute;
+		top:rem(65px);
+		width:100%;
+		}
+		
+	.nav-secondary__list {
+		@include clearfix();
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		max-width: 1200px;
+		width: 100%;		
+		}
+		
+	.nav-secondary__item {
+		@include clearfix();
+		display:block;
+		float:left;
+		}
+		
+	.nav-secondary__link {
+		color:$bright-blue;
 		display:block;
 		font-family:$primary-font;
-		padding:lh(1);
+		font-size:rem(14px);
+		height:rem(45px);
+		line-height:rem(45px);
+		padding:0 lh(1.66);
+		text-align:center;
+		
+		&:hover {
+			background-color:$light-grey-1;
+			}
 		}
-	}
-	
-.nav--secondary__list {
-	display:block;
-	}
-	
-.nav--secondary__link {
-	display:block;
-	padding:lh(.33);
-	&:hover {
-		background-color:$light-grey-1;
-		}
+		
 	}
 
 		
-.nav--vertical {
+.nav-vertical {
 	display:block;
 	@include respond-min(48em) {
 		background-color:$blue-tint;
-		padding:lh(.66);
+		padding:lh(.33) 0;
 		}
 	}		
 
 		
-.nav--vertical__list {
+.nav-vertical__list {
 	display:block;
 	}
 	
-.nav--vertical__item {
+.nav-vertical__item {
 	display:block;
 	}
 	
-.nav--vertical__link {
-	border-bottom: 1px solid darken($blue-tint, 5%);
-	color:$light-blue;
+.nav-vertical__link {
+	/*border-bottom: 1px solid darken($blue-tint, 5%);*/
+	border-left:4px solid transparent;
+	color:$bright-blue;
 	display: block;
 	font-family:$secondary-font;
 	font-size:rem(18px);
 	font-weight:normal;
-	padding:lh(.33) lh(.66);
+	padding:lh(.25) lh(1);
 	text-decoration: none;
 	
-	
 	&:hover {
+		border-left:4px solid $dark-blue;
 		color:$dark-blue !important;
 		text-decoration:none;
 		}	
 		
 	&:visited {
-		color:$light-blue;
+		color:$bright-blue;
 		}
 		
 	}
 	
+.selected .nav-vertical__link {
+	border-left:4px solid $dark-blue;
+	color:$dark-blue;
+	font-weight:bold;	
+	}
 	
 .nav--breadcrumb {
 	> li {
@@ -372,85 +310,133 @@
 		}
 	}
 	
-.nav--tabs {
+.nav-tabs {
 	@include clearfix();
 	display:block;
-	font-family:$secondary-font;
-	margin-left: auto;
-	margin-right: auto;
-	width:100%;
+	font-family:$primary-font;
+	}
 	
+.nav-tabs--centered {
+
 	@include respond-min(48em) {
+		margin-left: auto;
+		margin-right: auto;
 		overflow:hidden;
 		position:relative;
 		width:100%;
 		}
 		
-	}
-	
-.nav--tabs__list {
-
-	@include respond-min(48em) {
+	.nav-tabs__list {
 		clear:left;
    		float:left;
-		left:50%;
-		margin:0;
+		left:50%;	
+		position:relative;
+		}
+		
+	.nav-tabs__item {
+		right:50%;
+		}
+		
+	}
+	
+	
+.nav-tabs__list {
+	@include respond-max(48em) {
+		margin-bottom:lh(1);
+		margin-top:lh(1);
+		}
+	@include respond-min(48em) {
 	   	padding:0;
-	   	position:relative;
 		text-align:center;
 		}
 		
 	}
 		
-.nav--tabs__item {
+.nav-tabs__item {
 	display:block;
-	float:left;
-	margin-bottom:lh(.25);
-	width:50%;
+	padding:0;
 	
 	@include respond-min(48em) {
-		list-style:none;
+		float:left;
 		margin:0;
-		padding:0;
 		position:relative;
-		right:50%;
 		width:auto;
 		}
 		
-	}
+	}	
 	
-	
-.nav--tabs__link {
-	background-color:darken($dark-blue, 10%);
-	color:#fff;
+.nav-tabs__link {
+	color:$bright-blue;
+	border-bottom: 1px solid darken($blue-tint, 5%);
 	display:block;
-	padding:lh(.66);
-	text-align:center;
+	padding:lh(.5);
+	
 	&:visited {
+		color:$bright-blue;
+		}
+			
+	@include respond-max(48em) {
+		position:relative;
+		&:after {
+			color:$orange;
+			content: '\e802'; 
+			display:inline-block;
+			font-family:"fontello";
+			position:absolute;
+			right:0;
+			top:lh(.5);
+			}
+			
+		}
+			
+	@include respond-min(48em) {
+		background-color:darken($dark-blue, 10%);
+		border-bottom:none;
+		border-top:4px solid transparent;
 		color:#fff;
+		font-size:rem(16px);
+		margin-right:lh(.25);
+		padding:lh(.5) lh(1);
+		text-align:center;
+		
+		&:visited {
+			color:#fff;
+			}
+				
+		&:hover {
+			background-color:#fff;
+			color:$bright-blue;
+			text-decoration:none;
+			}
+			
 		}
 		
 	@include respond-min(60em) {
-		border-top:4px solid transparent;
-		font-size:rem(18px);
-		margin-right:lh(.25);
-		padding:lh(.66) lh(1.66);
-		}
-		
-	&:hover {
-		background-color:#fff;
-		color:$light-blue;
-		text-decoration:none;
+		padding:lh(.5) lh(1.66);
 		}
 		
 	}
 	
-.active .nav--tabs__link {		
-	background-color:#fff;
-	color:$light-blue;
 	
-	@include respond-min(60em) {
-		border-top:4px solid $light-blue;
+.active .nav-tabs__link {		
+	
+	@include respond-max(48em) {
+		background-color: darken($blue-tint, 5%);
+		color:$dark-blue;
+		position:relative;
+		
+		&:after {
+			content: none; 
+			}
+			
 		}
+		
+	@include respond-min(48em) {
+		background-color:#fff;
+		border-bottom: none;
+		border-top:4px solid $bright-blue;
+		color:$bright-blue;
+		}
+
 	}
 	

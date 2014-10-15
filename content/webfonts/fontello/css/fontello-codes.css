@@ -8,6 +8,7 @@
 .icon-angle-left:before { content: '\e806'; } /* '' */
 .icon-comment:before { content: '\e807'; } /* '' */
 .icon-link-ext:before { content: '\e808'; } /* '' */
+.icon-angle-up:before { content: '\e809'; } /* '' */
 .icon-calculator:before { content: '\e80a'; } /* '' */
 .icon-scissors:before { content: '\e80b'; } /* '' */
 .icon-help:before { content: '\e80c'; } /* '' */
@@ -41,3 +42,4 @@
 .icon-youtube:before { content: '\e828'; } /* '' */
 .icon-gplus:before { content: '\e829'; } /* '' */
 .icon-play:before { content: '\e82a'; } /* '' */
+.icon-angle-down:before { content: '\e82b'; } /* '' */

@@ -1,5 +1,6 @@
 .masthead {
 	@include respond-min(48em) {
+		height:rem(150px);
 		margin:0 auto;
 		padding:lh(.33) 0 0 0;
 		position:relative;
@@ -7,48 +8,32 @@
 		}	
 	}
 	
-.masthead-panel-colour {
-	background-color:#fff;
-	color:#fff;
-	display:block;
-	height:rem(48px);
-	left:0;
-	padding:0;
-	position:absolute;
-	width:100%;
-	top:0;
-	z-index:-2;
-	i {
-		color:#fff;
-		}
-	@include respond-min(60em) {
-		@include visuallyhidden;
-		}
-	}
-	
+
 .icon-menu {
-	color:$light-blue;
+	color:$bright-blue;
 	}
+		
 		
 .site-logo__img {
 	display:block;
 	height:50px !important;
-	margin:lh(.25) 0 0 3%;
+	margin:lh(.25) 0 lh(.5) 0;
 	width:143px !important;
 	
 	@include respond-min(48em) {
 		height:78px !important;
-		margin:lh(.25) 0 0 3%;
+		margin:lh(.25) 0 0 0;
 		width:220px !important;
 		}
 	
 	@include respond-min(60em) {
-		height:80px !important;
-		margin:0;
-		width:229px !important;
+		height:rem(108px) !important;
+		margin:rem(30px) 0 0 0;
+		width:rem(320px) !important;
 		}
 		
 	}
+	
 	
 	
 .site-logo--fixed {
@@ -57,12 +42,24 @@
 	width:171px !important;
 	}
 	
+.tagline {
+	color:#fff;
+	font-size:rem(16px);
+	@include respond-min(60em) {
+		font-size:rem(32px);
+		margin-top:rem(75px);
+		text-align:right;
+		}
+	}
+	
+	
 .js-scroll-offset {
 	margin-top:rem(62px);
 	}
 	
+	
 .search-link {
-	color:$light-blue;
+	color:$bright-blue;
 	display:block;
 	position:absolute;
 	right:rem(64px);
@@ -74,19 +71,19 @@
 		right:rem(72px);
 		}
 
-
 	@include respond-min(60em) {
 		display:none;
 		}
 		
 	}
 	
+
 .trigger__icon {
-	color:$light-blue;
+	color:#fff;
 	font-size:rem(32px);
 	
 	&:active {
-		color:$dark-blue;
+		color:$bright-blue;
 		}
 		
 	@include respond-min(48em) {

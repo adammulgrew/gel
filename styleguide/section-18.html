@@ -42,47 +42,61 @@
     
   </head>
   
-    <body id="kss-node">
+    <body id="kss-node" class="test-match-height">
     
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
-                <header id="top" class="cf masthead push--bottom" role="banner">
+                <header id="top" class="cf masthead bg-dark-blue" role="banner">
                       
-                    <hr class="masthead-panel-colour" />
+                    <div class="wrap">
                     
-                    <a class="nav-btn" id="nav-open-btn" href="#nav">
-                    
-                        <i class="icon-menu trigger__icon"></i>
-                    
-                        <span class="visuallyhidden">
+                        <hr class="masthead-panel-colour" />
                         
-                            Navigation
+                        <a class="nav-btn" id="nav-open-btn" href="#nav">
                         
-                        </span>
-                    
-                    </a>
+                            <i class="icon-menu trigger__icon"></i>
+                        
+                            <span class="visuallyhidden">
                             
-                    <div class="col large_6 xlarge_4 flush--bottom"> 
-                    
-                        <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                Navigation
                             
-                            <img class="site-logo__img" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
-                
-                        </a> 
+                            </span>
+                        
+                        </a>
+                                
+                        <div class="col large_6 flush--bottom"> 
+                        
+                            <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                
+                                <img class="site-logo__img" src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life logo">
                     
+                            </a> 
+                        
+                        </div>
+                        
+                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        
+                            <div class="tagline">
+                            
+                            	Digital Guidelines
+                            
+                            </div>
+                        
+                        </div>
+                        
                     </div>
                 
                 </header>
     
                 <div id="fixed">
                       
-                  <nav id="nav" class="cf nav nav--primary" role="navigation">
+                  <nav id="nav" class="cf nav nav-primary" role="navigation">
                   
-                    <div class="block">
+                    <div class="block wrap">
                     
-                        <ul class="nav--primary__list">
+                        <ul class="nav-primary__list">
                         
                             <li class="fixed-logo">
                             
@@ -90,9 +104,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item">
+                            <li class="nav-primary__item">
                             
-                                <a title="#" href="http://sldigitalguidelines.com/" class="nav--primary__link">
+                                <a title="#" href="http://sldigitalguidelines.com/" class="nav-primary__link">
                                 
                                     Home
                                 
@@ -100,9 +114,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Digital Principles
                                 
@@ -110,19 +124,73 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item selected"> 
+                            <li class="nav-primary__item selected submenu"> 
                             
-                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Global Experience Language
                                 
                                 </a>
+                                
+                                <span class="js-toggle-link expander">
+                                
+                                	<i class="icon-angle-down alpha"></i>
+                                
+                                </span>
+                                
+                                <nav class="js-toggle-item nav-secondary">
+                                
+                                    <ul class="nav-secondary__list">
+                                    
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel" class="nav-secondary__link">
+                                            
+                                                About GEL
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-secondary__link">
+                                            
+                                                Foundations
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://patterns.sldigitalguidelines.com/" class="nav-secondary__link">
+                                            
+                                                Patterns
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-secondary__link">
+                                            
+                                                CSS and Markup
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                    
+                                    </ul>
+                                
+                                </nav>
                                                          
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Case Studies
                                 
@@ -130,9 +198,9 @@
                             
                             </li>
                             
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
                                 
@@ -142,7 +210,7 @@
                         
                         </ul>
                       
-                        <a class="nav--primary__close-btn" id="nav-close-btn" href="#top">
+                        <a class="nav-primary__close-btn" id="nav-close-btn" href="#top">
                         
                             <i class="icon-cancel giga"></i> 
                             
@@ -164,17 +232,17 @@
                 
                     <div class="bg-pattern panel--push-down">
                 
-                        <div class="wrap white soft-half--ends text--center">
+                        <div class="wrap white soft--ends">
                         
-                            <h1 class="tera push-half--ends">
+                            <h1 class="medium_12 tera push-half--ends">
                 
                                 Patterns
                             
                             </h1>
                             
-                            <hr class="overline_1 bg-yellow" />
+                            <hr class="overline small_1 overline_1 bg-yellow" />
                             
-                            <p class="block secondary-font alpha large_8 push_2 pull_2">
+                            <p class="block secondary-font alpha medium_8 large_7">
                             
                                  We envisage these elements will be the core elements of any new Standard Life project, dealing with layout, navigation, typography, colour and iconography in a modular, device and screen size agnostic manner.
                             
@@ -184,13 +252,13 @@
                     
                     </div>
                 
-                    <nav class="wrap nav nav--tabs panel--pull-up">
+                    <nav class="wrap nav nav-tabs panel--pull-up" style="display:none">
                        
-                        <ul class="cf nav--tabs__list">
+                        <ul class="cf nav-tabs__list medium_12">
                         
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel" class="nav-tabs__link">
                                 
                                     About GEL 
                                 
@@ -198,9 +266,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-tabs__link">
                                 
                                     Foundations
                                 
@@ -208,9 +276,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item active">
+                            <li class="nav-tabs__item active">
                             
-                                <a href="http://patterns.sldigitalguidelines.com/" class="nav--tabs__link">
+                                <a href="http://patterns.sldigitalguidelines.com/" class="nav-tabs__link">
                                 
                                     Patterns
                                 
@@ -218,9 +286,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-tabs__link">
                                 
                                     CSS and Markup
                                 
@@ -232,7 +300,7 @@
                         
                     </nav>
                     
-                    <section class="wrap bg-white soft--ends">
+                    <section class="wrap bg-white soft--ends panel--pull-up">
                 
                         <div class="kss-wrapper wrap">
                         
@@ -265,6 +333,21 @@
                                           <span class="kss-ref">1</span>
                                           
                                           <span class="kss-name">Accordion</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="section-2.html">
+                                      
+                                          <span class="kss-ref">2</span>
+                                          
+                                          <span class="kss-name">Alerts</span>
                                       
                                       </a>
                                   
@@ -561,7 +644,7 @@
                                       
                                           <span class="kss-ref">18.1</span>
                                           
-                                          <span class="kss-name">Meta Standard Life Pro TF</span>
+                                          <span class="kss-name">Standard Life Font</span>
                                       
                                       </a>
                                   
@@ -577,7 +660,7 @@
                                       
                                           <span class="kss-ref">18.2</span>
                                           
-                                          <span class="kss-name">Sizes and recommendations</span>
+                                          <span class="kss-name">Meta Standard Life Pro TF</span>
                                       
                                       </a>
                                   
@@ -592,6 +675,38 @@
                                       <a href="#section-18.3">
                                       
                                           <span class="kss-ref">18.3</span>
+                                          
+                                          <span class="kss-name">Arial</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-18.4">
+                                      
+                                          <span class="kss-ref">18.4</span>
+                                          
+                                          <span class="kss-name">Sizes and recommendations</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-18.5">
+                                      
+                                          <span class="kss-ref">18.5</span>
                                           
                                           <span class="kss-name">Color recommendations</span>
                                       
@@ -612,7 +727,7 @@
                             
                           </div>
                           
-                          <div class="kss-content pull-right--medium col medium_8 large_9">
+                          <div class="kss-content col medium_8">
                           
                             <article class="kss-article">
                             
@@ -621,9 +736,9 @@
                               
                               <section id="section-18" class="kss-section kss-depth-1">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         18
                                     
@@ -637,34 +752,51 @@
                                 
                                 
                                 
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-18.1" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        18.1
+                                    
+                                    </span> 
+                                
+                                    Standard Life Font
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
                                 <div class="kss-description">
                                 
-                                  <div class="row">
-  <div class="col medium_6 primary-font"> <span class="mega dark-blue"> Standard Life </span>
-    <p> We have our own font called Standard Life font. It is unique to Standard Life.
-      It is the only font that should be used for headlines, titles, headers, sub heads.
-      It can also work well for short body copy, especially at larger sizes. </p>
-     <p> To use Standard Life add <code>class=&quot;primary-font&quot;</code> or <code>class=&quot;primary-font-bold&quot;</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold&quot;</code> in the css class</p>
+                                  <div class="row primary-font">
+  <div class="col large_6 soft-right--large">
+    <p class="primary-font">We have our own font called Standard Life font.</p> 
+    <p class="primary-font">It is unique to Standard Life.</p>
+    <p class="primary-font">It is the only font that should be used for headlines, titles, headers, sub heads.</p>
+    <p class="primary-font">It can also work well for short body copy, especially at larger sizes.</p>
+    <p class="soft-half bg-blue-tint">To use Standard Life add <code>class=&quot;primary-font&quot;</code> or <code>class=&quot;primary-font-bold&quot;</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold&quot;</code> in the css class</p>
   </div>
-  <div class="col medium_3 primary-font dark-blue">
-    <div class="tera"> Aa1 </div>
-   <div> Regular </div>
+  <div class="col small_6 large_3 primary-font dark-blue">
+   <div class="peta">Aa1</div>
+   <div class="beta">Regular</div>
   </div>
-  <div class="col medium_3 dark-blue">
-    <div class="tera primary-font-bold"> Aa1 </div>
-    <div class="primary-font-bold"> Bold </div>
+  <div class="col small_6 large_3 dark-blue">
+    <div class="peta primary-font-bold">Aa1</div>
+    <div class="beta primary-font-bold">Bold</div>
   </div>
 </div>
-<div class="push--bottom primary-font giga  dark-blue">
-  <div class="beta primary-font"> Standard Life Regular </div>
-  <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-  <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . &lt; &gt; ? ! &pound; @ &amp; ( ) </div>
-</div>
-<div class="push--bottom primary-font-bold dark-blue giga">
-  <div class="beta"> Standard Life Bold </div>
- <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-  <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . &lt; &gt; ? ! &pound; @ &amp; ( ) </div>
-</div>
+
+
                                   
                                 </div>
                                 
@@ -676,13 +808,13 @@
                               
                               
                               
-                              <section id="section-18.1" class="kss-section kss-depth-2">
+                              <section id="section-18.2" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
-                                        18.1
+                                        18.2
                                     
                                     </span> 
                                 
@@ -697,74 +829,21 @@
                                 <div class="kss-description">
                                 
                                   <div class="row secondary-font">
-  <div class="col medium_6"> <span class="mega dark-blue"> Meta Standard Life Pro TF </span>
-    <p> For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;. </p>
-   <p> To use Standard Life add <code>class=&quot;secondary-font&quot;</code> or <code>class=&quot;secondary-font-bold&quot;</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold&quot;</code> in the css class</p>
+  <div class="col large_6 soft-right--large"> 
+    <p>For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;.</p>
+    <p class="soft-half bg-blue-tint">To use Meta Standard Life  add <code>class=&quot;secondary-font&quot;</code> or <code>class=&quot;secondary-font-bold&quot;</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold&quot;</code> in the css class</p>
   </div>
-  <div class="col medium_3 light-blue secondary-font">
-    <div class="tera"> Aa1 </div>
-    <div class="secondary-font"> Regular </div>
+  <div class="col small_6 large_3 bright-blue secondary-font">
+    <div class="peta">Aa1</div>
+    <div class="secondary-font">Regular</div>
  </div>
-  <div class="col medium_3 light-blue">
-    <div class="tera secondary-font-bold"> Aa1 </div>
-    <div class="secondary-font-bold"> Bold </div>
+  <div class="col small_6 large_3 bright-blue">
+    <div class="peta secondary-font-bold">Aa1</div>
+    <div class="beta secondary-font-bold">Bold</div>
   </div>
 </div>
-<div class="push--bottom secondary-font dark-blue giga">
-  <div class="beta"> Meta Standard Life Pro TF </div>
-  <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-  <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . &lt; &gt; ? ! &pound; @ &amp; ( ) </div>
-</div>
-<div class="push--bottom secondary-font-bold dark-blue giga">
-  <div class="beta"> Meta Standard Life Pro Bold TF </div>
-  <div class="giga"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z </div>
-  <div class="giga"> 1 2 3 4 5 6 7 8 9 0 , . &lt; &gt; ? ! &pound; @ &amp; ( ) </div>
-</div>
-                                  
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                              </section>
-                              
-                              
-                              
-                              <section id="section-18.2" class="kss-section kss-depth-2">
-                              
-                                <h1 class="kss-title giga dark-blue">
-                                
-                                    <span class="kss-ref light-blue">
-                                    
-                                        18.2
-                                    
-                                    </span> 
-                                
-                                    Sizes and recommendations
-                                
-                                </h1>
-                                
-                                
-                                
-                                
-                                
-                                <div class="kss-description">
-                                
-                                  <p><h4> A modular scale </h4>
-</p>
-<p><p> The term Modular Scale refers to a series of harmonious values. As part of the patterns library _typography.scss has a default responsive modular scale tied to the classes below. Note, this is for illutrative purposes only. Each project and a suitable modular scale should be just on an individual basis. </p>
-</p>
-<div class="dark-blue secondary-font">
-  <div class="tera push--bottom"> .Tera </div>
-  <div class="giga push--bottom"> .Giga </div>
-  <div class="mega push--bottom"> .Mega </div>
-  <div class="alpha push--bottom"> .Alpha </div>
-  <div class="beta push--bottom"> .Beta </div>
-  <div class="gamma push--bottom"> .Gamma </div>
-  <div class="delta  push--bottom"> .Delta </div>
-  <div class="epsilon push--bottom"> .Epsilon </div>
-</div>
+
+
                                   
                                 </div>
                                 
@@ -778,11 +857,103 @@
                               
                               <section id="section-18.3" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         18.3
+                                    
+                                    </span> 
+                                
+                                    Arial
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <div class="row arial">
+  <div class="col large_6 soft-right--large">
+    <p class="arial">We use Arial for day to day use of Microsoft software or for web where a generic font is required.</p> 
+    <p class="soft-half bg-blue-tint"> We don&apos;t use any other fonts</p>
+  </div>
+  <div class="col small_6 large_3 arial dark-blue">
+   <div class="peta">Aa1</div>
+   <div class="beta">Regular</div>
+  </div>
+  <div class="col small_6 large_3 dark-blue">
+    <div class="peta arial"><strong>Aa1</strong></div>
+    <div class="beta arial"><strong>Bold</strong></div>
+  </div>
+</div>
+
+
+                                  
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-18.4" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        18.4
+                                    
+                                    </span> 
+                                
+                                    Sizes and recommendations
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p><p class="giga"> A modular scale </p>
+</p>
+<p><p> The term Modular Scale refers to a series of harmonious values. As part of the patterns library _typography.scss has a default responsive modular scale tied to the classes below. Note, this is for illutrative purposes only. Each project and a suitable modular scale should be just on an individual basis. </p>
+</p>
+<div class="dark-blue secondary-font">
+  <div class="tera push-half--bottom"> .Tera </div>
+  <div class="giga push-half--bottom"> .Giga </div>
+  <div class="mega push-half--bottom"> .Mega </div>
+  <div class="alpha push-half--bottom"> .Alpha </div>
+  <div class="beta push-half--bottom"> .Beta </div>
+  <div class="gamma push-half--bottom"> .Gamma </div>
+  <div class="delta push-half--bottom"> .Delta </div>
+  <div class="epsilon push-half--bottom"> .Epsilon </div>
+</div>
+                                  
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-18.5" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        18.5
                                     
                                     </span> 
                                 
@@ -801,12 +972,12 @@
 <div class="row">
   <div class="col medium_4 bg-dark-blue white soft push--bottom">
    <div class="primary-font mega white"> Text in 100% white </div>
-   <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+   <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
    <div class="primary-font mega yellow"> Text in 100% yellow </div>
   </div>
   <div class="col medium_4 bg-white white soft push--bottom border border--dark-blue">
     <div class="primary-font mega dark-blue"> Text in 100% dark-blue </div>
-    <div class="primary-font mega light-blue"> Text in 100% light-blue </div>
+    <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
     <div class="primary-font mega grey"> Text in 100% grey </div>
   </div>
 </div>
@@ -946,7 +1117,7 @@
                     
                     <div class="col medium_6 large_2">
                     
-                        <img src="../content/images/branding/footer-logo.svg" width="400" height="140" data-fallback="../content/images/branding/footer-logo.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
+                        <img src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
                         
                     </div>
                     
@@ -980,9 +1151,13 @@
     
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
     
+    <script src="../content/js/libs/jquery.collapse.js"></script>
+    
     <script src="../content/js/libs/jquery.foundation.tooltips.js"></script>
     
     <script src="../content/js/libs/audioplayer.min.js"></script>
+    
+    <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
     
     <script src="../content/js/core.js"></script>
     

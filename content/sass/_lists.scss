@@ -92,16 +92,13 @@
 //
 // Markup:
 //<ul class="list list--iconed">
-//  <li class="list__item--iconed">
-//    <i class="icon icon-clock"></i>
+//  <li class="list__item--iconed icon-clock soft">
 //    Iconed List item
 //  </li>
-//  <li class="list__item--iconed">
-//    <i class="icon icon-telephone"></i>
+//  <li class="list__item--iconed icon-telephone soft">
 //    Iconed List item
 //  </li>
-//  <li class="list__item--iconed">
-//    <i class="icon icon-alert"></i>
+//  <li class="list__item--iconed icon-alert soft">   
 //    Iconed List item
 //  </li>
 //</ul>
@@ -202,19 +199,17 @@
 	margin-left:lh(1);
 	}
 	
-.list--nav {
-	
-	}
-
-.list__item--nav {
+.list__item--nav,
+.list__item--iconed {
 	border-bottom:1px solid $blue-tint;
 	}
 
 .list__link--nav {
-	
+	color:$bright-blue;
 	display:block;
-	color:$light-blue;
 	padding:lh(.33) 0;
+	padding-right:lh(2);
+	position:relative;
 	
 	&:hover {
 		background-color:$blue-tint;
@@ -223,6 +218,12 @@
 		
 	.icon {
 		color:$orange;
+		position:absolute;
+		right:0;
+		top: 50%; 
+		-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		transform: translate(0,-50%);
 		}
 		
 	}
@@ -258,13 +259,20 @@
 	
 .list--footer {
 	.list__link {
-		color:$light-blue;
+		color:#fff;
 		font-size:rem(13px);
 		text-decoration:none;
+		
 		&:hover {
 			color:$blue-tint;
 			}
+			
+		&:visited {
+			color:#fff;
+			}
+			
 		}
+		
 	}
 	
 	

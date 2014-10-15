@@ -42,47 +42,61 @@
     
   </head>
   
-    <body id="kss-node">
+    <body id="kss-node" class="test-match-height">
     
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
-                <header id="top" class="cf masthead push--bottom" role="banner">
+                <header id="top" class="cf masthead bg-dark-blue" role="banner">
                       
-                    <hr class="masthead-panel-colour" />
+                    <div class="wrap">
                     
-                    <a class="nav-btn" id="nav-open-btn" href="#nav">
-                    
-                        <i class="icon-menu trigger__icon"></i>
-                    
-                        <span class="visuallyhidden">
+                        <hr class="masthead-panel-colour" />
                         
-                            Navigation
+                        <a class="nav-btn" id="nav-open-btn" href="#nav">
                         
-                        </span>
-                    
-                    </a>
+                            <i class="icon-menu trigger__icon"></i>
+                        
+                            <span class="visuallyhidden">
                             
-                    <div class="col large_6 xlarge_4 flush--bottom"> 
-                    
-                        <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                Navigation
                             
-                            <img class="site-logo__img" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
-                
-                        </a> 
+                            </span>
+                        
+                        </a>
+                                
+                        <div class="col large_6 flush--bottom"> 
+                        
+                            <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                
+                                <img class="site-logo__img" src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life logo">
                     
+                            </a> 
+                        
+                        </div>
+                        
+                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        
+                            <div class="tagline">
+                            
+                            	Digital Guidelines
+                            
+                            </div>
+                        
+                        </div>
+                        
                     </div>
                 
                 </header>
     
                 <div id="fixed">
                       
-                  <nav id="nav" class="cf nav nav--primary" role="navigation">
+                  <nav id="nav" class="cf nav nav-primary" role="navigation">
                   
-                    <div class="block">
+                    <div class="block wrap">
                     
-                        <ul class="nav--primary__list">
+                        <ul class="nav-primary__list">
                         
                             <li class="fixed-logo">
                             
@@ -90,9 +104,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item">
+                            <li class="nav-primary__item">
                             
-                                <a title="#" href="http://sldigitalguidelines.com/" class="nav--primary__link">
+                                <a title="#" href="http://sldigitalguidelines.com/" class="nav-primary__link">
                                 
                                     Home
                                 
@@ -100,9 +114,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Digital Principles
                                 
@@ -110,19 +124,73 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item selected"> 
+                            <li class="nav-primary__item selected submenu"> 
                             
-                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Global Experience Language
                                 
                                 </a>
+                                
+                                <span class="js-toggle-link expander">
+                                
+                                	<i class="icon-angle-down alpha"></i>
+                                
+                                </span>
+                                
+                                <nav class="js-toggle-item nav-secondary">
+                                
+                                    <ul class="nav-secondary__list">
+                                    
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel" class="nav-secondary__link">
+                                            
+                                                About GEL
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-secondary__link">
+                                            
+                                                Foundations
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://patterns.sldigitalguidelines.com/" class="nav-secondary__link">
+                                            
+                                                Patterns
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-secondary__link">
+                                            
+                                                CSS and Markup
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                    
+                                    </ul>
+                                
+                                </nav>
                                                          
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Case Studies
                                 
@@ -130,9 +198,9 @@
                             
                             </li>
                             
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
                                 
@@ -142,7 +210,7 @@
                         
                         </ul>
                       
-                        <a class="nav--primary__close-btn" id="nav-close-btn" href="#top">
+                        <a class="nav-primary__close-btn" id="nav-close-btn" href="#top">
                         
                             <i class="icon-cancel giga"></i> 
                             
@@ -164,17 +232,17 @@
                 
                     <div class="bg-pattern panel--push-down">
                 
-                        <div class="wrap white soft-half--ends text--center">
+                        <div class="wrap white soft--ends">
                         
-                            <h1 class="tera push-half--ends">
+                            <h1 class="medium_12 tera push-half--ends">
                 
                                 Patterns
                             
                             </h1>
                             
-                            <hr class="overline_1 bg-yellow" />
+                            <hr class="overline small_1 overline_1 bg-yellow" />
                             
-                            <p class="block secondary-font alpha large_8 push_2 pull_2">
+                            <p class="block secondary-font alpha medium_8 large_7">
                             
                                  We envisage these elements will be the core elements of any new Standard Life project, dealing with layout, navigation, typography, colour and iconography in a modular, device and screen size agnostic manner.
                             
@@ -184,13 +252,13 @@
                     
                     </div>
                 
-                    <nav class="wrap nav nav--tabs panel--pull-up">
+                    <nav class="wrap nav nav-tabs panel--pull-up" style="display:none">
                        
-                        <ul class="cf nav--tabs__list">
+                        <ul class="cf nav-tabs__list medium_12">
                         
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel" class="nav-tabs__link">
                                 
                                     About GEL 
                                 
@@ -198,9 +266,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-tabs__link">
                                 
                                     Foundations
                                 
@@ -208,9 +276,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item active">
+                            <li class="nav-tabs__item active">
                             
-                                <a href="http://patterns.sldigitalguidelines.com/" class="nav--tabs__link">
+                                <a href="http://patterns.sldigitalguidelines.com/" class="nav-tabs__link">
                                 
                                     Patterns
                                 
@@ -218,9 +286,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-tabs__link">
                                 
                                     CSS and Markup
                                 
@@ -232,7 +300,7 @@
                         
                     </nav>
                     
-                    <section class="wrap bg-white soft--ends">
+                    <section class="wrap bg-white soft--ends panel--pull-up">
                 
                         <div class="kss-wrapper wrap">
                         
@@ -265,6 +333,21 @@
                                           <span class="kss-ref">1</span>
                                           
                                           <span class="kss-name">Accordion</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="section-2.html">
+                                      
+                                          <span class="kss-ref">2</span>
+                                          
+                                          <span class="kss-name">Alerts</span>
                                       
                                       </a>
                                   
@@ -564,7 +647,7 @@
                             
                           </div>
                           
-                          <div class="kss-content pull-right--medium col medium_8 large_9">
+                          <div class="kss-content col medium_8">
                           
                             <article class="kss-article">
                             
@@ -573,9 +656,9 @@
                               
                               <section id="section-19" class="kss-section kss-depth-1">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         19
                                     
@@ -747,7 +830,7 @@
                     
                     <div class="col medium_6 large_2">
                     
-                        <img src="../content/images/branding/footer-logo.svg" width="400" height="140" data-fallback="../content/images/branding/footer-logo.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
+                        <img src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
                         
                     </div>
                     
@@ -781,9 +864,13 @@
     
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
     
+    <script src="../content/js/libs/jquery.collapse.js"></script>
+    
     <script src="../content/js/libs/jquery.foundation.tooltips.js"></script>
     
     <script src="../content/js/libs/audioplayer.min.js"></script>
+    
+    <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
     
     <script src="../content/js/core.js"></script>
     

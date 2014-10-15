@@ -1,9 +1,11 @@
-.editor-content {	
+.editor-content,
+.ms-rtestate-field {	
 
+		
 	h2, h3 ,h4 {
 		color:$dark-blue;
 		font-family:$primary-font;
-		
+		margin-bottom:rem(4px);
 		}
 	
 	h3 ,h4 {
@@ -14,7 +16,8 @@
 	h2 { 
 		font-size:rem(26px);
 		line-height:1.15;	
-		margin-bottom:lh(.75);
+		/* margin-bottom:lh(.75); */
+		
 		@include respond-min(48em) {
 			font-size:rem(32px);
 			line-height:1.25;
@@ -28,19 +31,14 @@
 		}
 	
 	h3 { 
-		font-size:rem(22px);
+		font-size:rem(21px);
 		line-height: 1.136;
 		
 		@include respond-min(48em) {
-			font-size:rem(24px);
+			font-size:rem(22px);
 			line-height:1.25;
 			}
 			
-		@include respond-min(60em) {
-			font-size:rem(28px);
-			line-height:1.25;
-			}
-
 		}
 	
 	h4 { 
@@ -56,39 +54,39 @@
 	p, ul, ol {
 		color:$grey;
 		font-family:$secondary-font;
-		font-size:rem(18px);
-		margin-bottom:lh(.75);
+		font-size:rem(19px);
+		line-height:1.4;
+		margin-bottom:rem(19px);
 		}
 		
 	ul, ol {
-		margin-bottom:lh(1);
-		margin-left:lh(1);
+		margin-left:lh(2);
 		margin-right:lh(1);
 		}
 		
 	li {
-		margin-bottom:lh(.25);
+		margin-bottom:rem(8px);
 		}
 		
 	a {
 		&:hover {
 			@include transitions();
+			color:$dark-blue;
+			text-decoration:underline;
 			}
+
 		}
 		
 	.run-in { 
 		font-size:rem(22px);
 		line-height: 1.136;
+		margin-bottom:rem(22px);
 		
 		@include respond-min(48em) {
 			font-size:rem(24px);
 			line-height:1.25;
 			}
 			
-		@include respond-min(60em) {
-			font-size:rem(28px);
-			line-height:1.25;
-			}
 		}
 		
 	.drop-cap {
@@ -130,6 +128,7 @@
 		@include respond-min(75em) {
 			margin-left: -11%;
 			margin-right: -34%;
+			max-width:145%;
 			width:145%;
 			}
 		}

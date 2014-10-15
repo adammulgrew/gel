@@ -15,18 +15,25 @@
 
 
 /* Tooltips ---------------------- */
-.has-tip { border-bottom: dotted 1px #cccccc; cursor: help; font-weight: bold; color: #333333; }
-.has-tip:hover { border-bottom: dotted 1px #196177; color: #2ba6cb; }
+.has-tip { 
+	border-bottom: dotted 1px #cccccc; 
+	cursor: help; 
+	}
+	
+.has-tip:hover { 
+	border-bottom: dotted 1px #196177; 
+	color: #2ba6cb; 
+	}
 
 .tooltip { 
-	display: none; 
 	background: black; 
 	background: rgba(0, 0, 0, 0.85); 
-	position: absolute; 
-	color: white; 
-	font-size: rem(12px); 
-	padding: lh(.33); 
+	color: white;
+	display: none; 
+	font-size: rem(12px);
 	line-height: normal;
+	padding: lh(.33);
+	position: absolute; 
 	z-index: 999; 
 	}
 	
@@ -51,13 +58,13 @@
 .tooltip.tip-top > .nub { 
 	border-color: black transparent transparent transparent; 
 	border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent; 
-	top: -10px; 
 	left: 10px;
+	top: -10px; 
 	}
 	
 .tooltip.opened { 
-	color: #2ba6cb !important; 
 	border-bottom: dotted 1px #196177 !important;
+	color: #2ba6cb !important; 
 	}
 
 .tap-to-close { display: block; font-size: rem(10px); color: #888888; font-weight: normal; }
@@ -65,23 +72,24 @@
 
 @media only screen and (max-width: 767px) { 
 	.tooltip { 
-		font-size: rem(14px); 
+		
 		float:none;
-		line-height: 1.4;
-		padding: 7px 10px 9px 10px; 
+		font-size: rem(14px); 
 		left: 50% !important; 
-		max-width: 85% !important; 
-		width: auto !important; 
+		line-height: 1.4;
 		margin-left: -42.5%;
+		max-width: 85% !important; 
+		padding: 7px 10px 9px 10px; 
+		width: auto !important; 
 		}
 		
 	.tooltip > .nub, 
 	.tooltip.top > .nub { 
 		border-color: transparent transparent black transparent;
 		border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
-		top: -12px; 
 		left: auto !important;
-		right: 6%!important
+		right: 6%!important;
+		top: -12px; 
 		}
 		
 	}

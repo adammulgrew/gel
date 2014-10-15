@@ -490,6 +490,12 @@ $xlarge:90em;
 		}
 	}
 	
+.xlarge_7 {
+	@include respond-min($xlarge) {
+		@include column(7);
+		}
+	}
+	
 .xlarge_8 {
 	@include respond-min($xlarge) {
 		@include column(8);
@@ -583,13 +589,17 @@ $xlarge:90em;
 	
 .row--equal-height {
 	.col {
+		display:block;
+		
 		@include respond-min(48em) {
-			min-height:rem(260px);
+			min-height:rem(220px);
 			}
 		
 		@include respond-min(60em) {
-			min-height:rem(300px);
+			
 			}
+			
 		}
+		
 	}
 	

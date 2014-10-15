@@ -7,11 +7,9 @@
 		position: relative;
 		width: 100%;
 		}
-		
 
-	
 	.masthead .block,
-	.nav--primary .block {
+	.nav-primary .block {
 		position: relative;
 		margin: 0 auto;
 		padding: lh(.66) lh(1);
@@ -24,7 +22,7 @@
 			}
 		}
 
-	.nav--primary__close-btn {
+	.nav-primary__close-btn {
 		color:#fff;
 		display: block;
 		@include opacity(1);
@@ -58,14 +56,14 @@
 		width: 100%;
 		}
 
-	.nav--primary {
+	.nav-primary {
 		color: #fff;
 		overflow: hidden;
 		position: relative;
 		width: 100%;
 		z-index: 200;
 		
-		.nav--primary__close-btn {
+		.nav-primary__close-btn {
 			display: none;
 			}
 	
@@ -78,24 +76,23 @@
 
 		}
 		
-	.nav--primary__item {
+	.nav-primary__item {
 		display: block;
 
 		&.is-active {
-		.nav--primary__link {
+		.nav-primary__link {
 			color: #fff;
 			}
 		}	
 	
-	.nav--primary__list {
+	.nav-primary__list {
 		@include clearfix;
 		display: block;
 		}
 		
-	.nav--primary__link {
+	.nav-primary__link {
 		display: block;
 		color: #ccc;
-		font-weight: bold;
 		outline: none;
 
 		&:focus,
@@ -105,7 +102,30 @@
 			background-color:$primary-color;
 			opacity:1;
 			}
+			
 		}
+	
+	.nav-secondary {
+		display:none;
+		}
+		
+	.nav-secondary__list {
+		display:block;
+		}
+	
+	.nav-secondary__item {
+		border-top: 1px solid rgba(255,255,255, 0.1);
+		display:block;
+		}
+		
+	.nav-secondary__link {
+		display:block;
+		color:#fff;
+		font-family:$secondary-font;
+		padding:lh(.33) lh(2);
+		}
+	
+		
 	
 	}
 
@@ -121,7 +141,8 @@
 			
 		}
 
-	.nav--primary {
+	.nav-primary {
+		font-family:$primary-font;
 		padding-top: rem(72px);
 		position: absolute;
 		top: 0;
@@ -132,15 +153,15 @@
 			}
 	
 		&:target {
-			.nav--primary__close-btn {
+			.nav-primary__close-btn {
 				display: block;
 				}
 			}
 	
-		.nav--primary__close-btn {
+		.nav-primary__close-btn {
 			position: absolute;
-			top: rem(-60px);
-			right: rem(24px);
+			top: rem(-56px);
+			right: 0;
 			}
 	
 		.block {
@@ -148,7 +169,7 @@
 			padding: 0;
 			}
 	
-		li {
+		.nav-primary__item {
 			position: relative;
 			border-top: 1px solid rgba(255,255,255, 0.1);
 	
@@ -164,23 +185,24 @@
 				top: 50%;
 				left: rem(-0.5px);
 				margin-top: rem(-10px);
-				border-top: rem(10px) transparent solid;
-				border-bottom: rem(10px) transparent solid;
+				border-top: rem(10px) #fff solid;
+				border-bottom: rem(10px) #fff solid;
 				border-left: rem(10px) #fff solid;
 				}
 	
-			a {
+			.nav-primary__link {
 				padding: lh(.66) lh(1);
 				}
 				
 			}
+			
 			
 		}
 	
 	
 		.js-ready {
 	
-			.nav--primary {
+			.nav-primary {
 				height: 100%;
 				width: $nav-off-canvas-width;
 				background: $background-color;
@@ -189,7 +211,7 @@
 					background: transparent;
 					}
 	
-				.nav--primary__close-btn {
+				.nav-primary__close-btn {
 					display: block;
 					@include opacity(0.7);
 	
@@ -205,7 +227,7 @@
 	
 		.js-ready {
 	
-			.nav--primary {
+			.nav-primary {
 				right: (0 - $nav-off-canvas-width);
 				}
 	
@@ -222,7 +244,7 @@
 			
 			}
 	
-	  .csstransforms3d.csstransitions.js-ready .nav--primary {
+	  .csstransforms3d.csstransitions.js-ready .nav-primary {
 			right: 0;
 			-webkit-transform: translate3d(100%, 0, 0);
 			-moz-transform: translate3d(100%, 0, 0);
@@ -262,7 +284,7 @@
 			transform: translate3d(-$nav-off-canvas-width, 0, 0) scale3d(1, 1, 1);
 		  }
 		
-		  .csstransforms3d.csstransitions.js-ready .nav--primary .block {
+		  .csstransforms3d.csstransitions.js-ready .nav-primary .block {
 			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 			opacity: 0.7;
 			-webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
@@ -282,7 +304,7 @@
 			transform-origin: 50% 0%;
 		  }
 		
-		  .csstransforms3d.csstransitions.js-nav .nav--primary .block {
+		  .csstransforms3d.csstransitions.js-nav .nav-primary .block {
 			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 			opacity: 1;
 			-webkit-transform: translate3d(0, 0, 0);
@@ -305,8 +327,8 @@
 			}
 		}
 	
-	.nav--primary {
-		.nav--primary__close-btn {
+	.nav-primary {
+		.nav-primary__close-btn {
 			@include visuallyhidden;
 			}
 	
@@ -318,6 +340,26 @@
 	
 	}
 	
+	
+	
+.expander{
+	background: transparent;
+	border-left: 1px solid #666666;
+	color: $light-grey-1;
+	cursor: pointer;
+	display: block;
+	padding: 0.99em 1.5em;
+	position: absolute;
+	right: 0;
+	text-align:center;
+	top: 0;
+	width: 20%;
+	z-index: 1000;
+	
+	@include respond-min(60em) {
+		display: none;
+		}
+	}
 	
 	
 	

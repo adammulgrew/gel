@@ -31,21 +31,14 @@ function toggleNavSearch(container, e) {
 }
 
 
-
-/* ACCORDION TOGGLES ------------ */
-$(".js-toggle-content").hide();
-$(".js-toggle.js-toggle--open").addClass("js-toggle--active").next().show();
-
-var toggleNavFilter = function (elem) {
-	elem.siblings('div').toggle();
-	elem.children('i').toggleClass("icon-plus").toggleClass("icon-minus");
-	elem.toggleClass("js-toggle--active");
-};
-
-var toggle = $('.js-toggle');
-
-toggle.on('click', function () {
-	toggleNavFilter($(this));
+/* PRIMARY NAV EXPANDER ------------ */
+$(function () {
+	
+    $('.js-toggle-link').click(function(e){
+         var item = $(e.currentTarget);
+        item.parent().find(".js-toggle-item").toggle();
+    });
+    
 });
 
 
@@ -61,19 +54,3 @@ function loadAsync(url, loadFn) {
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
 	});
 }
-
-
-/* FONTELLO FOE IE7 ------------ */
-  function toggleCodes(on) {
-	var obj = document.getElementById('icons');
-	
-	if (on) {
-	  obj.className += ' codesOn';
-	} else {
-	  obj.className = obj.className.replace(' codesOn', '');
-	}
-  }
-  
-  
-
- 

@@ -42,47 +42,61 @@
     
   </head>
   
-    <body id="kss-node">
+    <body id="kss-node" class="test-match-height">
     
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
-                <header id="top" class="cf masthead push--bottom" role="banner">
+                <header id="top" class="cf masthead bg-dark-blue" role="banner">
                       
-                    <hr class="masthead-panel-colour" />
+                    <div class="wrap">
                     
-                    <a class="nav-btn" id="nav-open-btn" href="#nav">
-                    
-                        <i class="icon-menu trigger__icon"></i>
-                    
-                        <span class="visuallyhidden">
+                        <hr class="masthead-panel-colour" />
                         
-                            Navigation
+                        <a class="nav-btn" id="nav-open-btn" href="#nav">
                         
-                        </span>
-                    
-                    </a>
+                            <i class="icon-menu trigger__icon"></i>
+                        
+                            <span class="visuallyhidden">
                             
-                    <div class="col large_6 xlarge_4 flush--bottom"> 
-                    
-                        <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                Navigation
                             
-                            <img class="site-logo__img" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
-                
-                        </a> 
+                            </span>
+                        
+                        </a>
+                                
+                        <div class="col large_6 flush--bottom"> 
+                        
+                            <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
+                                
+                                <img class="site-logo__img" src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life logo">
                     
+                            </a> 
+                        
+                        </div>
+                        
+                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        
+                            <div class="tagline">
+                            
+                            	Digital Guidelines
+                            
+                            </div>
+                        
+                        </div>
+                        
                     </div>
                 
                 </header>
     
                 <div id="fixed">
                       
-                  <nav id="nav" class="cf nav nav--primary" role="navigation">
+                  <nav id="nav" class="cf nav nav-primary" role="navigation">
                   
-                    <div class="block">
+                    <div class="block wrap">
                     
-                        <ul class="nav--primary__list">
+                        <ul class="nav-primary__list">
                         
                             <li class="fixed-logo">
                             
@@ -90,9 +104,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item">
+                            <li class="nav-primary__item">
                             
-                                <a title="#" href="http://sldigitalguidelines.com/" class="nav--primary__link">
+                                <a title="#" href="http://sldigitalguidelines.com/" class="nav-primary__link">
                                 
                                     Home
                                 
@@ -100,9 +114,9 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Digital Principles
                                 
@@ -110,19 +124,73 @@
                             
                             </li>
                         
-                            <li class="nav--primary__item selected"> 
+                            <li class="nav-primary__item selected submenu"> 
                             
-                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Global Experience Language
                                 
                                 </a>
+                                
+                                <span class="js-toggle-link expander">
+                                
+                                	<i class="icon-angle-down alpha"></i>
+                                
+                                </span>
+                                
+                                <nav class="js-toggle-item nav-secondary">
+                                
+                                    <ul class="nav-secondary__list">
+                                    
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel" class="nav-secondary__link">
+                                            
+                                                About GEL
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-secondary__link">
+                                            
+                                                Foundations
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://patterns.sldigitalguidelines.com/" class="nav-secondary__link">
+                                            
+                                                Patterns
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-secondary__item">
+                                        
+                                            <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-secondary__link">
+                                            
+                                                CSS and Markup
+                                            
+                                            </a>
+                                        
+                                        </li>
+                                    
+                                    </ul>
+                                
+                                </nav>
                                                          
                             </li>
                         
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Case Studies
                                 
@@ -130,9 +198,9 @@
                             
                             </li>
                             
-                            <li class="nav--primary__item"> 
+                            <li class="nav-primary__item"> 
                             
-                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav--primary__link">
+                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
                                 
@@ -142,7 +210,7 @@
                         
                         </ul>
                       
-                        <a class="nav--primary__close-btn" id="nav-close-btn" href="#top">
+                        <a class="nav-primary__close-btn" id="nav-close-btn" href="#top">
                         
                             <i class="icon-cancel giga"></i> 
                             
@@ -164,17 +232,17 @@
                 
                     <div class="bg-pattern panel--push-down">
                 
-                        <div class="wrap white soft-half--ends text--center">
+                        <div class="wrap white soft--ends">
                         
-                            <h1 class="tera push-half--ends">
+                            <h1 class="medium_12 tera push-half--ends">
                 
                                 Patterns
                             
                             </h1>
                             
-                            <hr class="overline_1 bg-yellow" />
+                            <hr class="overline small_1 overline_1 bg-yellow" />
                             
-                            <p class="block secondary-font alpha large_8 push_2 pull_2">
+                            <p class="block secondary-font alpha medium_8 large_7">
                             
                                  We envisage these elements will be the core elements of any new Standard Life project, dealing with layout, navigation, typography, colour and iconography in a modular, device and screen size agnostic manner.
                             
@@ -184,13 +252,13 @@
                     
                     </div>
                 
-                    <nav class="wrap nav nav--tabs panel--pull-up">
+                    <nav class="wrap nav nav-tabs panel--pull-up" style="display:none">
                        
-                        <ul class="cf nav--tabs__list">
+                        <ul class="cf nav-tabs__list medium_12">
                         
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel" class="nav-tabs__link">
                                 
                                     About GEL 
                                 
@@ -198,9 +266,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-tabs__link">
                                 
                                     Foundations
                                 
@@ -208,9 +276,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item active">
+                            <li class="nav-tabs__item active">
                             
-                                <a href="http://patterns.sldigitalguidelines.com/" class="nav--tabs__link">
+                                <a href="http://patterns.sldigitalguidelines.com/" class="nav-tabs__link">
                                 
                                     Patterns
                                 
@@ -218,9 +286,9 @@
                             
                             </li>
                             
-                            <li class="nav--tabs__item">
+                            <li class="nav-tabs__item">
                             
-                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav--tabs__link">
+                                <a href="http://sldigitalguidelines.com/gel/css-and-markup" class="nav-tabs__link">
                                 
                                     CSS and Markup
                                 
@@ -232,7 +300,7 @@
                         
                     </nav>
                     
-                    <section class="wrap bg-white soft--ends">
+                    <section class="wrap bg-white soft--ends panel--pull-up">
                 
                         <div class="kss-wrapper wrap">
                         
@@ -265,6 +333,21 @@
                                           <span class="kss-ref">1</span>
                                           
                                           <span class="kss-name">Accordion</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="section-2.html">
+                                      
+                                          <span class="kss-ref">2</span>
+                                          
+                                          <span class="kss-name">Alerts</span>
                                       
                                       </a>
                                   
@@ -580,7 +663,7 @@
                             
                           </div>
                           
-                          <div class="kss-content pull-right--medium col medium_8 large_9">
+                          <div class="kss-content col medium_8">
                           
                             <article class="kss-article">
                             
@@ -589,9 +672,9 @@
                               
                               <section id="section-6" class="kss-section kss-depth-1">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         6
                                     
@@ -633,20 +716,20 @@
  <ul>
    <li>
      <label for="exampleText1">Textfield <em>Optional</em></label>
-     <input type="text" id="exampleText1" name="exampleText1">
+     <input type="text" id="exampleText1" name="exampleText1" />
    </li>
    <li>
      <label for="exampleInputEmail1">Email address</label>
-     <input type="email" placeholder="Enter email" title="Example help text">
+     <input type="email" placeholder="Enter email" title="Example help text" />
      <p class="gamma">Example help text</p>
    </li>
    <li>
      <label for="exampleInputPassword1">Password</label>
-     <input type="password" placeholder="Password" id="exampleInputPassword1">
+     <input type="password" placeholder="Password" id="exampleInputPassword1" />
    </li>
    <li class="form__alert form__alert--danger" tabindex="7">
      <label for="exampleInputPassword2">Confirm Password</label>
-     <input type="password" placeholder="Confirm Password" id="exampleInputPassword2">
+     <input type="password" placeholder="Confirm Password" id="exampleInputPassword2" />
    </li>
    <li>
      <label for="exampleTextarea1">Text area</label>	
@@ -655,7 +738,7 @@
    <li class="row">
      <label for="inlineInput1" class="col medium_12">Inline input</label>
      <div class="col medium_9">
-       <input type="text" id="inlineInput1" size="50" maxlength="50" class=""> 
+       <input type="text" id="inlineInput1" size="50" maxlength="50" />
      </div>
      <div class="col medium_3">
        <button class="btn btn--block" class="">Search</button>
@@ -673,21 +756,21 @@
    </li>
    <li>
      <label for="exampleInputFile">File input</label>
-     <input type="file" id="exampleInputFile">
+     <input type="file" id="exampleInputFile" />
    <li>
    <li>
      <fieldset>
        <legend>Checkbox</legend>	
        <label for="exampleCheckbox1">
-         <input type="checkbox" checked="checked" value="Forms" id="exampleCheckbox1"> 
+         <input type="checkbox" checked="checked" value="Forms" id="exampleCheckbox1" /> 
          Forms
        </label>
        <label for="exampleCheckbox2">
-         <input type="checkbox" value="Pages" id="exampleCheckbox2"> 
+         <input type="checkbox" value="Pages" id="exampleCheckbox2" />
          Pages
        </label>
        <label for="exampleCheckbox3">
-         <input type="checkbox" value="Directories" id="exampleCheckbox3"> 
+         <input type="checkbox" value="Directories" id="exampleCheckbox3" /> 
          Directories
        </label>
      </fieldset>
@@ -696,15 +779,15 @@
      <fieldset>
        <legend>Radio</legend>	
        <label for="exampleradio1">
-         <input type="radio" class="checkbox" value="One" id="xforms_Radio_0"> 
+         <input type="radio" class="checkbox" value="One" id="xforms_Radio_0" /> 
          One
        </label>
        <label for="exampleradio2">
-       <input type="radio" class="checkbox" checked="checked" value="Two" id="exampleradio2"> 
+       <input type="radio" class="checkbox" checked="checked" value="Two" id="exampleradio2" />
          Two
        </label>
        <label for="exampleradio3">
-         <input type="radio" class="checkbox" value="Three" id="exampleradio3"> 
+         <input type="radio" class="checkbox" value="Three" id="exampleradio3" /> 
          Three
        </label>
      </fieldset>
@@ -734,20 +817,20 @@
  &lt;ul&gt;
    &lt;li&gt;
      &lt;label for=&quot;exampleText1&quot;&gt;Textfield &lt;em&gt;Optional&lt;/em&gt;&lt;/label&gt;
-     &lt;input type=&quot;text&quot; id=&quot;exampleText1&quot; name=&quot;exampleText1&quot;&gt;
+     &lt;input type=&quot;text&quot; id=&quot;exampleText1&quot; name=&quot;exampleText1&quot; /&gt;
    &lt;/li&gt;
    &lt;li&gt;
      &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
-     &lt;input type=&quot;email&quot; placeholder=&quot;Enter email&quot; title=&quot;Example help text&quot;&gt;
+     &lt;input type=&quot;email&quot; placeholder=&quot;Enter email&quot; title=&quot;Example help text&quot; /&gt;
      &lt;p class=&quot;gamma&quot;&gt;Example help text&lt;/p&gt;
    &lt;/li&gt;
    &lt;li&gt;
      &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
-     &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; id=&quot;exampleInputPassword1&quot;&gt;
+     &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; id=&quot;exampleInputPassword1&quot; /&gt;
    &lt;/li&gt;
    &lt;li class=&quot;form__alert form__alert--danger&quot; tabindex=&quot;7&quot;&gt;
      &lt;label for=&quot;exampleInputPassword2&quot;&gt;Confirm Password&lt;/label&gt;
-     &lt;input type=&quot;password&quot; placeholder=&quot;Confirm Password&quot; id=&quot;exampleInputPassword2&quot;&gt;
+     &lt;input type=&quot;password&quot; placeholder=&quot;Confirm Password&quot; id=&quot;exampleInputPassword2&quot; /&gt;
    &lt;/li&gt;
    &lt;li&gt;
      &lt;label for=&quot;exampleTextarea1&quot;&gt;Text area&lt;/label&gt;	
@@ -756,7 +839,7 @@
    &lt;li class=&quot;row&quot;&gt;
      &lt;label for=&quot;inlineInput1&quot; class=&quot;col medium_12&quot;&gt;Inline input&lt;/label&gt;
      &lt;div class=&quot;col medium_9&quot;&gt;
-       &lt;input type=&quot;text&quot; id=&quot;inlineInput1&quot; size=&quot;50&quot; maxlength=&quot;50&quot; class=&quot;&quot;&gt; 
+       &lt;input type=&quot;text&quot; id=&quot;inlineInput1&quot; size=&quot;50&quot; maxlength=&quot;50&quot; /&gt;
      &lt;/div&gt;
      &lt;div class=&quot;col medium_3&quot;&gt;
        &lt;button class=&quot;btn btn--block&quot; class=&quot;&quot;&gt;Search&lt;/button&gt;
@@ -774,21 +857,21 @@
    &lt;/li&gt;
    &lt;li&gt;
      &lt;label for=&quot;exampleInputFile&quot;&gt;File input&lt;/label&gt;
-     &lt;input type=&quot;file&quot; id=&quot;exampleInputFile&quot;&gt;
+     &lt;input type=&quot;file&quot; id=&quot;exampleInputFile&quot; /&gt;
    &lt;li&gt;
    &lt;li&gt;
      &lt;fieldset&gt;
        &lt;legend&gt;Checkbox&lt;/legend&gt;	
        &lt;label for=&quot;exampleCheckbox1&quot;&gt;
-         &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; value=&quot;Forms&quot; id=&quot;exampleCheckbox1&quot;&gt; 
+         &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; value=&quot;Forms&quot; id=&quot;exampleCheckbox1&quot; /&gt; 
          Forms
        &lt;/label&gt;
        &lt;label for=&quot;exampleCheckbox2&quot;&gt;
-         &lt;input type=&quot;checkbox&quot; value=&quot;Pages&quot; id=&quot;exampleCheckbox2&quot;&gt; 
+         &lt;input type=&quot;checkbox&quot; value=&quot;Pages&quot; id=&quot;exampleCheckbox2&quot; /&gt;
          Pages
        &lt;/label&gt;
        &lt;label for=&quot;exampleCheckbox3&quot;&gt;
-         &lt;input type=&quot;checkbox&quot; value=&quot;Directories&quot; id=&quot;exampleCheckbox3&quot;&gt; 
+         &lt;input type=&quot;checkbox&quot; value=&quot;Directories&quot; id=&quot;exampleCheckbox3&quot; /&gt; 
          Directories
        &lt;/label&gt;
      &lt;/fieldset&gt;
@@ -797,15 +880,15 @@
      &lt;fieldset&gt;
        &lt;legend&gt;Radio&lt;/legend&gt;	
        &lt;label for=&quot;exampleradio1&quot;&gt;
-         &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; value=&quot;One&quot; id=&quot;xforms_Radio_0&quot;&gt; 
+         &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; value=&quot;One&quot; id=&quot;xforms_Radio_0&quot; /&gt; 
          One
        &lt;/label&gt;
        &lt;label for=&quot;exampleradio2&quot;&gt;
-       &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; checked=&quot;checked&quot; value=&quot;Two&quot; id=&quot;exampleradio2&quot;&gt; 
+       &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; checked=&quot;checked&quot; value=&quot;Two&quot; id=&quot;exampleradio2&quot; /&gt;
          Two
        &lt;/label&gt;
        &lt;label for=&quot;exampleradio3&quot;&gt;
-         &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; value=&quot;Three&quot; id=&quot;exampleradio3&quot;&gt; 
+         &lt;input type=&quot;radio&quot; class=&quot;checkbox&quot; value=&quot;Three&quot; id=&quot;exampleradio3&quot; /&gt; 
          Three
        &lt;/label&gt;
      &lt;/fieldset&gt;
@@ -826,9 +909,9 @@
                               
                               <section id="section-6.1" class="kss-section kss-depth-2">
                               
-                                <h1 class="kss-title giga dark-blue">
+                                <h1 class="kss-title giga dark-blue push--bottom">
                                 
-                                    <span class="kss-ref light-blue">
+                                    <span class="kss-ref bright-blue">
                                     
                                         6.1
                                     
@@ -862,25 +945,25 @@
    <li class="row">
 		  <label for="exampleInputEmail5" class="col medium_3">Email address</label>
 		  <div class="col medium_9">
-			  <input type="email" id="exampleInputEmail5"  placeholder="Enter email">
+			  <input type="email" id="exampleInputEmail5"  placeholder="Enter email" />
 		  </div>
 	  </li>
 	  <li class="row">
 		  <label for="exampleInputPassword5" class="col medium_3">Password</label>
 		  <div class="col medium_9">
-			  <input type="password" id="exampleInputPassword5" placeholder="Password">
+			  <input type="password" id="exampleInputPassword5" placeholder="Password" />
 		  </div>
 	  </li>
    <li class="row">
      <label for="exampleInputFile5" class="col medium_3">File input</label>
 	    <div class="col medium_9">
-    	  <input type="file" id="exampleInputFile5">
+    	  <input type="file" id="exampleInputFile5" />
     	  <p class="gamma">Example block-level help text here.</p>
      </div>
    </li>
    <li class="checkbox push_3">
      <label>
-       <input type="checkbox"> Check me out
+       <input type="checkbox" /> Check me out
      </label>
    </li>
    <button type="submit" class="btn pull-right">Submit</button>
@@ -900,25 +983,25 @@
    &lt;li class=&quot;row&quot;&gt;
 		  &lt;label for=&quot;exampleInputEmail5&quot; class=&quot;col medium_3&quot;&gt;Email address&lt;/label&gt;
 		  &lt;div class=&quot;col medium_9&quot;&gt;
-			  &lt;input type=&quot;email&quot; id=&quot;exampleInputEmail5&quot;  placeholder=&quot;Enter email&quot;&gt;
+			  &lt;input type=&quot;email&quot; id=&quot;exampleInputEmail5&quot;  placeholder=&quot;Enter email&quot; /&gt;
 		  &lt;/div&gt;
 	  &lt;/li&gt;
 	  &lt;li class=&quot;row&quot;&gt;
 		  &lt;label for=&quot;exampleInputPassword5&quot; class=&quot;col medium_3&quot;&gt;Password&lt;/label&gt;
 		  &lt;div class=&quot;col medium_9&quot;&gt;
-			  &lt;input type=&quot;password&quot; id=&quot;exampleInputPassword5&quot; placeholder=&quot;Password&quot;&gt;
+			  &lt;input type=&quot;password&quot; id=&quot;exampleInputPassword5&quot; placeholder=&quot;Password&quot; /&gt;
 		  &lt;/div&gt;
 	  &lt;/li&gt;
    &lt;li class=&quot;row&quot;&gt;
      &lt;label for=&quot;exampleInputFile5&quot; class=&quot;col medium_3&quot;&gt;File input&lt;/label&gt;
 	    &lt;div class=&quot;col medium_9&quot;&gt;
-    	  &lt;input type=&quot;file&quot; id=&quot;exampleInputFile5&quot;&gt;
+    	  &lt;input type=&quot;file&quot; id=&quot;exampleInputFile5&quot; /&gt;
     	  &lt;p class=&quot;gamma&quot;&gt;Example block-level help text here.&lt;/p&gt;
      &lt;/div&gt;
    &lt;/li&gt;
    &lt;li class=&quot;checkbox push_3&quot;&gt;
      &lt;label&gt;
-       &lt;input type=&quot;checkbox&quot;&gt; Check me out
+       &lt;input type=&quot;checkbox&quot; /&gt; Check me out
      &lt;/label&gt;
    &lt;/li&gt;
    &lt;button type=&quot;submit&quot; class=&quot;btn pull-right&quot;&gt;Submit&lt;/button&gt;
@@ -1049,7 +1132,7 @@
                     
                     <div class="col medium_6 large_2">
                     
-                        <img src="../content/images/branding/footer-logo.svg" width="400" height="140" data-fallback="../content/images/branding/footer-logo.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
+                        <img src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
                         
                     </div>
                     
@@ -1083,9 +1166,13 @@
     
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
     
+    <script src="../content/js/libs/jquery.collapse.js"></script>
+    
     <script src="../content/js/libs/jquery.foundation.tooltips.js"></script>
     
     <script src="../content/js/libs/audioplayer.min.js"></script>
+    
+    <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
     
     <script src="../content/js/core.js"></script>
     

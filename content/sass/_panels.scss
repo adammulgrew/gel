@@ -70,14 +70,23 @@
 .circle {
 	@include border-radius(50%);
 	display:inline-block;
-	overflow:hidden;	
+	height:lh(1.5);
+	line-height:lh(1.5);
+	overflow:hidden;
+	text-align:center;
+	width:lh(1.5);
 	}
 	
 .circle--small {
 	height:lh(.66);
 	line-height:lh(.66);		
-	text-align:center;
 	width:lh(.66);	
+	}
+	
+.circle--large {
+	height:rem(120px);
+	line-height:rem(120px);
+	width:rem(120px);
 	}
 	
 .panel--flush {
@@ -108,3 +117,5 @@
 	margin-bottom:lh(1);
 	padding:lh(1) 0;
 	}
+	
+	

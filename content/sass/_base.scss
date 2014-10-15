@@ -354,12 +354,17 @@ td {
 main {
 	display: block
 	}
-		
-* {
+	
+#kss-node *,	
+#SharePointWrapper * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 	}
+	
+#s4-workspace {
+	 -webkit-overflow-scrolling: touch;
+	 }
 	
 
 	
