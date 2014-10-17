@@ -1,6 +1,5 @@
 .masthead {
 	@include respond-min(48em) {
-		height:rem(150px);
 		margin:0 auto;
 		padding:lh(.33) 0 0 0;
 		position:relative;
@@ -26,28 +25,28 @@
 		width:220px !important;
 		}
 	
-	@include respond-min(60em) {
+	/** @include respond-min(60em) {
 		height:rem(108px) !important;
 		margin:rem(30px) 0 0 0;
 		width:rem(320px) !important;
-		}
+		} **/
 		
 	}
 	
-	
-	
+
 .site-logo--fixed {
 	display:block;
 	height:60px !important;
 	width:171px !important;
 	}
 	
+	
 .tagline {
-	color:#fff;
+	color:$bright-blue;
 	font-size:rem(16px);
 	@include respond-min(60em) {
 		font-size:rem(32px);
-		margin-top:rem(75px);
+		margin-top:rem(25px);
 		text-align:right;
 		}
 	}
@@ -79,7 +78,7 @@
 	
 
 .trigger__icon {
-	color:#fff;
+	color:$bright-blue;
 	font-size:rem(32px);
 	
 	&:active {

@@ -567,6 +567,12 @@ $xlarge:90em;
 		@include pull(2);
 		}
 	}
+	
+.pull_2--large {
+	@include respond-min($large) {
+		@include pull(2);
+		}
+	}
 
 .pull_3 {
 	@include respond-min($medium) {

@@ -122,7 +122,9 @@
 	
 .nav-primary {
 	@include respond-min(60em) {
-		background-color:$bright-blue;
+		background-color:#fff;
+		border-bottom:4px solid $bright-blue;
+		border-top:1px solid $light-grey-2;
 		position:relative;
 		}	
 	}
@@ -149,24 +151,26 @@
 				
 .nav-primary__link {
 	@include respond-min(60em) {
-		color:#fff;
+		border-right:1px solid $light-grey-2;
+		color:$dark-blue;
 		display:block;
 		font-family:$primary-font;
 		font-size:rem(16px);
-		height:rem(65px);
-		line-height:rem(65px);
+		height:rem(50px);
+		line-height:rem(50px);
 		padding:0 lh(.66);
 		text-align:center;
 		
 		&:hover,
 		&:focus {
 			background-color:$bright-blue;
+			border-right:1px solid $bright-blue;
 			color:#fff;
 			text-decoration:none;
 			}
 			
 		&:visited {
-			color:#fff;
+			color:$dark-blue;
 			
 			&:hover {
 				color:#fff;
@@ -195,11 +199,15 @@
 	
 	}
 	
-
+.nav-primary__list .nav-primary__link:first:child {
+	border-left:1px solid $light-grey-2;
+	}
+	
+	
 .selected .nav-primary__link {
 	@include respond-min(60em) {	
-		border-bottom: 4px solid #fff;
-		color: #FFFFFF !important;
+		background-color:$bright-blue;
+		color:#fff;
 		}
 	}
 	
@@ -210,12 +218,12 @@
 		}
 		
 	.nav-secondary {
-		background-color:#fff;
+		background-color:$bright-blue;
 		display:block !important;
 		font-family:$primary-font;
 		left:0;
 		position:absolute;
-		top:rem(65px);
+		top:rem(50px);
 		width:100%;
 		}
 		
@@ -235,7 +243,7 @@
 		}
 		
 	.nav-secondary__link {
-		color:$bright-blue;
+		color:#fff;
 		display:block;
 		font-family:$primary-font;
 		font-size:rem(14px);
@@ -245,7 +253,7 @@
 		text-align:center;
 		
 		&:hover {
-			background-color:$light-grey-1;
+			color:$dark-blue;
 			}
 		}
 		

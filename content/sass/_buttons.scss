@@ -232,14 +232,14 @@
 
 .btn--primary {
 	background-color:$bright-blue;
-	border-color:darken($bright-blue, 5%);
+	border-color:shade($bright-blue, 25%);
 	color:#fff;
 
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($bright-blue, 5%);
+		background-color:tint($bright-blue, 25%);
 		color:#fff;
 		}
 		
@@ -252,7 +252,7 @@
 // Warning appears are orange
 .btn--warning {
 	background-color:$warning-color;
-	border-color:darken($warning-color, 5%);
+	border-color:shade($warning-color, 25%);
 	color:#fff;
 	&:visited {
 		color:#fff;
@@ -262,7 +262,7 @@
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($warning-color, 5%);
+		background-color:tint($warning-color, 25%);
 		color:#fff;
 		}
 		
@@ -274,14 +274,14 @@
 // Danger and error appear as red
 .btn--danger {
 	background-color:$danger-color;
-	border-color:darken($danger-color, 5%);
+	border-color:shade($danger-color, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($danger-color, 5%);
+		background-color:tint($danger-color, 25%);
 		color:#fff;
 		}
 		
@@ -295,14 +295,14 @@
 // Success appears as green
 .btn--success {
 	background-color:$success-color;
-	border-color:darken($success-color, 5%);
+	border-color:shade($success-color, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($success-color, 5%);
+		background-color:tint($success-color, 25%);
 		color:#fff;
 		}
 		
@@ -315,15 +315,15 @@
 // Info appears as a neutral blue
 .btn--info {
 	background-color:$info-color;
-	border-color:darken($info-color, 5%);
+	border-color:shade($info-color, 25%);
 	color:$dark-blue;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($info-color, 5%);
-		color:#fff;
+		background-color:tint($info-color, 25%);
+		color:$dark-blue;
 		}
 		
 	&:visited {
@@ -353,14 +353,14 @@
 
 .btn--dark-blue {
 	background-color:$dark-blue;
-	border-color:darken($dark-blue, 5%);
+	border-color:shade($dark-blue, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($dark-blue, 5%);
+		background-color:tint($dark-blue, 25%);
 		color:#fff;
 		}
 		
@@ -372,14 +372,14 @@
 	
 .btn--bright-blue {
 	background-color:$bright-blue;
-	border-color:darken($bright-blue, 5%);
+	border-color:shade($bright-blue, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($bright-blue, 5%);
+		background-color:tint($bright-blue, 25%);
 		color:#fff;
 		}
 		
@@ -391,15 +391,15 @@
 	
 .btn--yellow {
 	background-color:$yellow;
-	border-color:darken($yellow, 5%);
+	border-color:shade($yellow, 25%);
 	color:$dark-blue;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($yellow, 5%);
-		color:#fff;
+		background-color:tint($yellow, 25%);
+		color:$dark-blue;
 		}
 		
 	&:visited, 
@@ -410,14 +410,14 @@
 	
 .btn--orange {
 	background-color:$orange;
-	border-color:darken($orange, 5%);
+	border-color:shade($orange, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($orange, 5%);
+		background-color:tint($orange, 25%);
 		color:#fff;
 		}
 		
@@ -428,14 +428,14 @@
 	
 .btn--grey {
 	background-color:$grey;
-	border-color:darken($grey, 5%);
+	border-color:shade($grey, 25%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($grey, 5%);
+		background-color:tint($grey, 25%);
 		color:#fff;
 		}
 		
@@ -446,14 +446,14 @@
 	
 .btn--blue-tint {
 	background-color:$blue-tint;
-	border-color:darken($blue-tint, 5%);
+	border-color:shade($blue-tint, 25%);
 	color:$dark-blue;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:darken($blue-tint, 5%);
+		background-color:tint($blue-tint, 25%);
 		color:#fff;
 		}
 		

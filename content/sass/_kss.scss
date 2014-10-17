@@ -377,6 +377,7 @@ pre .regexp {
 	}
 	
 .kss-title .kss-ref {
+	font-size:rem(18px);
 	margin-right: .2em;
 	}
 .kss-description {
@@ -622,7 +623,7 @@ pre .regexp {
 	}
 	
 .kss-modifier-example {
-	padding: 25px 20px 35px
+	padding: rem(25px) rem(25px) rem(35px) rem(25px)
 	}
 	
 .kss-modifier-example:before, 
