@@ -66,29 +66,20 @@ pre .regexp {
 	
 	height:auto !important;
 
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		margin-left: 1.25%;
 		margin-right: 1.25%;
-
 		overflow: hidden;
 		}
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding-right:lh(1.66);
-		}
-		
-	@include respond-min(75em) {
-		
-		}
-		
-	@include respond-min(90em) {
-		
 		}
 
 	}
 
 .kss-sidebar.kss-fixed {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		/**position: fixed;
 		top: 0 **/
 		}
@@ -98,17 +89,12 @@ pre .regexp {
 	padding-top: 0;
 	}
 
-.kss-sidebar-inner {
-	@include respond-min(48em) {
-		padding: 40px 0 10px;
-		}
-	}
 
 .kss-nav {
 	background-color:$blue-tint;
 	padding:0 lh(1);
 	margin: 0 0 lh(2) 0;
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		margin: 0;
 		}
 	}
@@ -264,12 +250,12 @@ pre .regexp {
 	font-size:rem(26px);
 	line-height:1.15;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(32px);
 		line-height:1.25;
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		font-size:rem(36px);
 		line-height:1.25;
 		}

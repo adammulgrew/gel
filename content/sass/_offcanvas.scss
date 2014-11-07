@@ -17,7 +17,7 @@
 		
 	.masthead .block {
 		padding:rem(52px) 0 0 0;
-		@include respond-min(48em) {	
+		@include respond-min($medium) {	
 			padding-right:0;
 			}
 		}
@@ -32,6 +32,7 @@
 			&:hover {
 				@include opacity(1);
 			}
+			
 		}
 
 	.nav-btn {
@@ -122,7 +123,7 @@
 		display:block;
 		color:#fff;
 		font-family:$secondary-font;
-		padding:lh(.33) lh(2);
+		padding:lh(.33) lh(0) lh(.33) lh(1);
 		}
 	
 		
@@ -191,7 +192,7 @@
 				}
 	
 			.nav-primary__link {
-				padding: lh(.66) lh(1);
+				padding: lh(.66) 0;
 				}
 				
 			}
@@ -320,7 +321,7 @@
 	
 	
 	
-@include respond-min(60em) {
+@include respond-min($large) {
 	.masthead {
 		.nav-btn {
 			@include visuallyhidden;
@@ -356,7 +357,7 @@
 	width: 20%;
 	z-index: 1000;
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display: none;
 		}
 	}

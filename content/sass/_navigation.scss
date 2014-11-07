@@ -54,14 +54,14 @@
 	
 .js-trigger__nav--utility {
 	display:block;
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display:none !important;
 		}
 	}
 	
 .js-panel__nav--utility {
 	display:none;
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display:block !important;
 		}
 	}
@@ -86,7 +86,7 @@
 			}
 		}
 		
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display:none;
 		}
 		
@@ -94,7 +94,7 @@
 		
 
 .fixed .nav-primary {	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.50);
 		-moz-box-shadow: 0 8px 6px -6px  rgba(0,0,0,0.50);
 		box-shadow: 0 8px 6px -6px rgba(0,0,0,0.50);
@@ -113,7 +113,7 @@
 	}
 	
 .fixed .fixed-logo {	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display:block;
 		float:left;
 		max-width:160px;
@@ -121,7 +121,7 @@
 	}
 	
 .nav-primary {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		background-color:#fff;
 		border-bottom:4px solid $bright-blue;
 		border-top:1px solid $light-grey-2;
@@ -130,16 +130,16 @@
 	}
 	
 .nav-primary__list {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		height:rem(50px);
 		margin:0 auto;
-		padding:0 lh(1);
+		padding:0;
 		}
 			
 	}
 		
 .nav-primary__item { 
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		border:none;
 		float: left; 
 		margin:0;
@@ -150,7 +150,7 @@
 	}
 				
 .nav-primary__link {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		border-right:1px solid $light-grey-2;
 		color:$dark-blue;
 		display:block;
@@ -193,26 +193,42 @@
 		padding:0 lh(1);
 		}
 				
-	@include respond-min(90em) {
+	@include respond-min($xlarge) {
 		padding:0 lh(1.66);
 		}
 	
 	}
 	
-.nav-primary__list .nav-primary__link:first:child {
-	border-left:1px solid $light-grey-2;
+	
+.nav-primary__list li:first-child .nav-primary__link {
+	@include respond-min($large) {	
+		border-left:1px solid $light-grey-2;
+		}
 	}
 	
-	
 .selected .nav-primary__link {
-	@include respond-min(60em) {	
+	@include respond-min($large) {	
 		background-color:$bright-blue;
 		color:#fff;
 		}
 	}
 	
+.nav-primary__list .icon-search {
 	
-@include respond-min(60em) {	
+	margin-top:rem(8px);
+	
+	&:visited {
+		color:$dark-blue;
+		
+		&:hover {
+			color:$bright-blue;
+			}
+			
+		}
+		
+	}
+		
+@include respond-min($large) {	
 	.submenu {
 		margin-bottom:rem(45px);
 		}
@@ -255,22 +271,34 @@
 		&:hover {
 			color:$dark-blue;
 			}
+			
+		&:visited {
+			color:#fff;
+			
+			&:hover {
+				color:$dark-blue;
+				}
+			}
 		}
 		
 	}
-
 		
+.nav-secondary__item.selected .nav-secondary__link {
+	@include respond-min($large) {	
+		border-bottom:4px solid #fff;
+		}
+	}
+
 .nav-vertical {
-	display:block;
-	@include respond-min(48em) {
-		background-color:$blue-tint;
-		padding:lh(.33) 0;
+	@include respond-min($large) {
+		padding-right:lh(1.66);
 		}
 	}		
-
 		
 .nav-vertical__list {
+	background-color:$blue-tint;
 	display:block;
+	padding:0 lh(1);
 	}
 	
 .nav-vertical__item {
@@ -278,14 +306,13 @@
 	}
 	
 .nav-vertical__link {
-	/*border-bottom: 1px solid darken($blue-tint, 5%);*/
-	border-left:4px solid transparent;
+	border-left:4px solid #fff;
 	color:$bright-blue;
 	display: block;
-	font-family:$secondary-font;
-	font-size:rem(18px);
+	font-family:$primary-font;
+	font-size:rem(16px);
 	font-weight:normal;
-	padding:lh(.25) lh(1);
+	padding: lh(.25) 0 lh(.25) lh(.66);
 	text-decoration: none;
 	
 	&:hover {
@@ -303,7 +330,6 @@
 .selected .nav-vertical__link {
 	border-left:4px solid $dark-blue;
 	color:$dark-blue;
-	font-weight:bold;	
 	}
 	
 .nav--breadcrumb {
@@ -326,7 +352,7 @@
 	
 .nav-tabs--centered {
 
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		margin-left: auto;
 		margin-right: auto;
 		overflow:hidden;
@@ -353,7 +379,7 @@
 		margin-bottom:lh(1);
 		margin-top:lh(1);
 		}
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 	   	padding:0;
 		text-align:center;
 		}
@@ -364,7 +390,7 @@
 	display:block;
 	padding:0;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		float:left;
 		margin:0;
 		position:relative;
@@ -397,7 +423,7 @@
 			
 		}
 			
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		background-color:darken($dark-blue, 10%);
 		border-bottom:none;
 		border-top:4px solid transparent;
@@ -419,7 +445,7 @@
 			
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding:lh(.5) lh(1.66);
 		}
 		
@@ -439,7 +465,7 @@
 			
 		}
 		
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		background-color:#fff;
 		border-bottom: none;
 		border-top:4px solid $bright-blue;

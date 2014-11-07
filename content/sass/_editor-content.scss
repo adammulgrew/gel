@@ -1,11 +1,10 @@
 .editor-content,
 .ms-rtestate-field {	
-
 		
 	h2, h3 ,h4 {
 		color:$dark-blue;
 		font-family:$primary-font;
-		margin-bottom:rem(4px);
+		margin-bottom:rem(18px);
 		}
 	
 	h3 ,h4 {
@@ -16,14 +15,14 @@
 	h2 { 
 		font-size:rem(26px);
 		line-height:1.15;	
-		/* margin-bottom:lh(.75); */
+		margin-bottom:lh(1.5);
 		
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			font-size:rem(32px);
 			line-height:1.25;
 			}
 			
-		@include respond-min(60em) {
+		@include respond-min($large) {
 			font-size:rem(36px);
 			line-height:1.25;
 			}
@@ -33,8 +32,7 @@
 	h3 { 
 		font-size:rem(21px);
 		line-height: 1.136;
-		
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			font-size:rem(22px);
 			line-height:1.25;
 			}
@@ -45,7 +43,7 @@
 		font-size:rem(18px);
 		line-height: 1.1;
 		
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			line-height:1.2;
 			}
 
@@ -54,9 +52,18 @@
 	p, ul, ol {
 		color:$grey;
 		font-family:$secondary-font;
-		font-size:rem(19px);
-		line-height:1.4;
-		margin-bottom:rem(19px);
+		font-size: 1.25rem;
+		line-height: 1.4;
+		margin-bottom:lh(1);
+		}
+		
+	small {
+		color:$grey;
+		display:block;
+		font-family:$secondary-font;
+		font-size:rem(13px);
+		line-height:1h(.5);
+		margin-bottom:rem(14px);
 		}
 		
 	ul, ol {
@@ -82,7 +89,7 @@
 		line-height: 1.136;
 		margin-bottom:rem(22px);
 		
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			font-size:rem(24px);
 			line-height:1.25;
 			}
@@ -101,14 +108,14 @@
 
 	.pull-center {
 		float:none;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			text-align:center;
 			}
 		}
 		
 	.pull-left {
 		float:none;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			float:left;
 			margin:0 lh(1) lh(1) 0;
 			width:45%;
@@ -117,14 +124,14 @@
 		
 	.pull-right {
 		float:none;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			float:right;
 			margin:0 0 lh(1) lh(1);
 			width:45%;
 			}
 		}
 
-	 table {
+	 table--indented {
 		@include respond-min(75em) {
 			margin-left: -11%;
 			margin-right: -34%;
@@ -157,6 +164,13 @@
 		font-family:"fontello";
 		font-size: rem(14px); 
 		margin-right:lh(.33);
+		}
+		
+	*.row {
+		@include row;
+		}
+	*.col {
+		list-style:none;
 		}
 
 	}

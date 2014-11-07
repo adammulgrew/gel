@@ -42,15 +42,39 @@
     
   </head>
   
+        <div class="remodal" data-remodal-id="modal">
+        
+			<div class="search">
+							                    
+                <label class="search__label">
+                
+                    Search the Digital Guidelines
+                    
+                </label>
+                
+                <input type="text" id="siteSearch" class="search__input" placeholder="Search the Digital Guidelines...">
+                
+                <a class="search__btn" href="javascript:goSearch();">
+                
+                    <i class="icon icon-search"></i>
+                    
+                    <span class="visuallyhidden">Search</span>
+                    
+                </a>
+                
+            </div>
+            
+        </div>
+  
     <body id="kss-node" class="test-match-height">
-    
+        
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
                 <header id="top" class="cf masthead" role="banner">
                       
-                    <div class="wrap">
+                    <div class="wrap relative">
                     
                         <hr class="masthead-panel-colour" />
                         
@@ -66,7 +90,7 @@
                         
                         </a>
                                 
-                        <div class="col large_6 flush--bottom"> 
+                        <div class="col small_12 large_6 flush--bottom"> 
                         
                             <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
                                 
@@ -76,7 +100,7 @@
                         
                         </div>
                         
-                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        <div class="col small_12 large_6 primary-font flush--bottom"> 
                         
                             <div class="tagline">
                             
@@ -100,7 +124,7 @@
                         
                             <li class="fixed-logo">
                             
-                                <img class="site-logo--fixed" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
+                                <img class="site-logo--fixed" src="../content/images/branding/Header-logo.svg" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
                             
                             </li>
                         
@@ -132,11 +156,7 @@
                                 
                                 </a>
                                 
-                                <span class="js-toggle-link expander">
-                                
-                                	<i class="icon-angle-down alpha"></i>
-                                
-                                </span>
+                                <span class="js-toggle-link expander icon-angle-down alpha"></span>
                                 
                                 <nav class="js-toggle-item nav-secondary">
                                 
@@ -203,6 +223,20 @@
                                 <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
+                                
+                                </a>
+                            
+                            </li>
+                            
+                            <li class="nav-primary__item show-for-medium-up pull-right--medium"> 
+                            
+                                <a href="#modal" class="block mega icon-search">
+                                
+                                    <span class="visuallyhidden">
+                                    
+                                    	Search
+                                    
+                                    </span>
                                 
                                 </a>
                             
@@ -304,7 +338,7 @@
                 
                         <div class="kss-wrapper wrap">
                         
-                          <div class="kss-sidebar col medium_4 large_3">
+                          <div class="kss-sidebar col small_12 medium_4 large_3">
                           
                             <div class="kss-sidebar-inner">
                               
@@ -692,36 +726,35 @@
                                 <div class="kss-description">
                                 
                                   <p>There are the icons included by default for use in the user interface. You can easily add any of the below icons with just the class name. The icons are vector based, so there is no pixelation or blurring on high-resolution screens as there would be if the graphic was raster and needed to scale up. They can be controlled with CSS, like the size, color, shadow, etc.
+
 </p>
-<div class="row">
- <ul class="text--center">
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-comment tera block"></i> .icon-comment </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-calculator tera block"></i> .icon-calculator </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-scissors tera block"></i> .icon-scissors </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-help tera block"></i> .icon-help </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-email tera block"></i> .icon-email </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-alert tera block"></i> .icon-alert </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-mouse tera block"></i> .icon-mouse </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-edit tera block"></i> .icon-edit </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-info tera block"></i> .icon-info </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-telephone tera block"></i> .icon-telephone </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-wrench tera block"></i> .icon-wrench </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-email-alt tera block"></i> .icon-email-alt </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-printer tera block"></i> .icon-printer </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-minus tera block"></i> .icon-minus </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-asterisk tera block"></i> .icon-asterisk </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-user-alt tera block"></i> .icon-user-alt </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-user tera block"></i> .icon-user </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-add tera block"></i> .icon-add </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-book tera block"></i> .icon-books </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-pages tera block"></i> .icon-pages </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-delete tera block"></i> .icon-delete </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-lightbulb tera block"></i> .icon-lightbulb </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-right-big tera block"></i> .icon-right-big </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-clock tera block"></i> .icon-clock </li>
-   <li class="col small_4 medium_2 push--bottom"> <i class="icon-lock tera block"></i> .icon-lock </li>
+ <ul class="row text--center hard list--plain items-container">
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-comment tera block"></i> .icon-comment </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-calculator tera block"></i> .icon-calculator </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-scissors tera block"></i> .icon-scissors </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-help tera block"></i> .icon-help </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-email tera block"></i> .icon-email </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-alert tera block"></i> .icon-alert </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-mouse tera block"></i> .icon-mouse </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-edit tera block"></i> .icon-edit </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-info tera block"></i> .icon-info </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-telephone tera block"></i> .icon-telephone </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-wrench tera block"></i> .icon-wrench </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-email-alt tera block"></i> .icon-email-alt </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-printer tera block"></i> .icon-printer </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-minus tera block"></i> .icon-minus </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-asterisk tera block"></i> .icon-asterisk </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-user-alt tera block"></i> .icon-user-alt </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-user tera block"></i> .icon-user </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-add tera block"></i> .icon-add </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-book tera block"></i> .icon-books </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-pages tera block"></i> .icon-pages </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-delete tera block"></i> .icon-delete </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-lightbulb tera block"></i> .icon-lightbulb </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-right-big tera block"></i> .icon-right-big </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-clock tera block"></i> .icon-clock </li>
+   <li class="col small_4 medium_2 push--bottom bg-blue-tint dark-blue gamma soft-half item"> <i class="icon-lock tera block"></i> .icon-lock </li>
  </ul>
-</div>
                                   
                                 </div>
                                 
@@ -1354,7 +1387,7 @@
     	</div>
     
     </div>
-    
+
     <script src="public/kss.js"></script>
     
     <script src="public/jquery-1.9.1.min.js"></script>
@@ -1374,6 +1407,8 @@
     <script src="../content/js/libs/audioplayer.min.js"></script>
     
     <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
+    
+    <script src="../content/js/libs/jquery.remodal.min.js"></script>
     
     <script src="../content/js/core.js"></script>
     
@@ -1397,6 +1432,7 @@
     	<script src="public/rainbow.min.js"></script>
     
     <!--<![endif]-->
+    
     
   </body>
   

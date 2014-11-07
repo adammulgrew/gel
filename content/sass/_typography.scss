@@ -195,12 +195,12 @@
 	font-size:rem(68px);
 	line-height: 1.05;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(82px);
 		line-height:1.125;
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		font-size: rem(110px);
 		line-height:1.05
 		}
@@ -211,12 +211,12 @@
 	font-size:rem(32px);
 	line-height: 1.05;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(40px);
 		line-height:1.125;
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		font-size: rem(44px);
 		line-height:1.05
 		}
@@ -227,14 +227,14 @@
 	font-size:rem(26px);
 	line-height:1.15;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(32px);
 		line-height:1.25;
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		font-size:rem(36px);
-		line-height:1.25;
+		line-height:1;
 		}
 	}
 
@@ -242,12 +242,12 @@
 	font-size:rem(22px);
 	line-height: 1.136;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(24px);
 		line-height:1.25;
 		}
 		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		font-size:rem(28px);
 		line-height:1.25;
 		}
@@ -258,7 +258,7 @@
 	font-size:rem(18px);
 	line-height: 1.1;
 	
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		line-height:1.2;
 		}
 		
@@ -401,7 +401,7 @@ figure.quote cite:before {
 	}
 	
 .quote--pull-left {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		float:left;
 		margin-left:perc(-60,700);
 		margin-right:lh(.66);
@@ -410,7 +410,7 @@ figure.quote cite:before {
 	}
 	
 .quote--pull-right {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		border-left: none;
 		border-right: 8px solid $dark-blue;
 		float:right;

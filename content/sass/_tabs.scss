@@ -3,7 +3,7 @@
 // Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
 //
 // Markup:
-//<dl class="cf tabs__list">
+//<dl class="cf tabs tabs__list">
 //  <dd class="active tabs__item">
 //    <a href="#simple1" class="tabs__link">
 //      Tab 1
@@ -26,16 +26,16 @@
 //  </dd>
 //</dl>
 //<ul class="cf tabs__content">
-//  <li id="simple1Tab" class="active">
+//  <li id="simple1Tab" class="active soft">
 //    First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 //  </li>
-//  <li id="simple2Tab">
+//  <li id="simple2Tab" class="soft">
 //    Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 //  </li>
-//  <li id="simple3Tab">
+//  <li id="simple3Tab" class="soft">
 //    Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 //  </li>
-//  <li id="simple4Tab">
+//  <li id="simple4Tab" class="soft">
 //    Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 //  </li>
 //</ul>
@@ -124,7 +124,7 @@
 		text-decoration:none;
 		}
 		
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		font-size:rem(18px);
 		padding: 0 lh(1);
 		}
@@ -283,7 +283,7 @@ ul.tabs__content > li.active {
 	background-color: #fff;
 	clear: left;
 	padding: 0px;
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding: lh(.66) 0;
 		}
 	}

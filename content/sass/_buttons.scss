@@ -119,7 +119,7 @@
 	position: relative;
 	text-decoration: none;
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		-webkit-transition: background-color 0.25s ease-in-out;
 		-moz-transition: background-color 0.25s ease-in-out;
 		-o-transition: background-color 0.25s ease-in-out;

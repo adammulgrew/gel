@@ -509,7 +509,7 @@
 		}
 		
 	.bg-blue-tint--large {
-		@include respond-min(60em) {
+		@include respond-min($large) {
 			background-color:$blue-tint;	
 			}
 		}
@@ -993,10 +993,10 @@
 .overline {
 	background-color:$bright-blue;
 	display:block;
-	float:none;
 	height:2px;
 	margin-bottom:lh(.66);
 	margin-top:lh(.66);
+	text-align:left;
 	&.bg-yellow {
 		background-color:$yellow;
 		}
@@ -1013,7 +1013,7 @@
 	
 .bg-pattern {
 	background-color:$dark-blue;	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		background-image:url(../images/branding/sl-pattern-01.png);
 		background-position:right top;
 		background-repeat:no-repeat;

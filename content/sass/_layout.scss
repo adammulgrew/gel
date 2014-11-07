@@ -144,7 +144,7 @@
 	}
 	
 .fixed {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		margin-left: auto;
     	margin-right: auto;
 		position: fixed;
@@ -167,13 +167,13 @@
 	}
 	
 .pull-right--medium {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		float:right !important;
 		}
 	}
 	
 .pull-right--large {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		float:right !important;
 		}
 	}
@@ -183,13 +183,13 @@
 	}
 	
 .pull-left--medium {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		float:left;
 		}
 	}
 	
 .pull-left--large {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		float:left;
 		}	
 	}
@@ -205,7 +205,7 @@
 	}
 	
 .push--medium {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		margin:rem($font-base-line-height) !important;
 		}
 	}
@@ -266,6 +266,10 @@
 	margin-left: rem($font-base-line-height-half) !important; 
 	}
 	
+.push-double--top { 
+	margin-top:rem($font-base-line-height-half) * 2 !important; 
+	}
+	
 
 
 .flush { 
@@ -307,13 +311,13 @@
 	}
 	
 .soft--medium {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		padding:rem($font-base-line-height) !important;
 		}
 	}
 	
 .soft--large {	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding:rem($font-base-line-height) !important;
 		}
 	}
@@ -327,7 +331,7 @@
 	}
 	
 .soft-right--large { 
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding-right:$font-base-line-height !important;
 		}
 	}
@@ -355,7 +359,7 @@
 	}
 	
 .soft-half--large { 
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		padding:rem($font-base-line-height-half) !important;
 		}
 	}
@@ -416,7 +420,6 @@
 	padding-left:  0!important;
 	}
 	
-
 .text--center {
 	text-align:center;
 	}
@@ -475,12 +478,12 @@ pre {
 	margin: 0 auto;
 	width: 94%;
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		max-width: 1200px;
 		width: 100%;
 		}
 		
-	@include respond-min(90em) {
+	@include respond-min($xlarge) {
 		max-width: 1500px;
 		width: 100%;
 		}
@@ -493,45 +496,39 @@ pre {
 	}
 
 .panel--pull-up {
-	@include respond-min(48em)  {
+	@include respond-min($medium)  {
 		margin-top: -120px;
 		}
 	}
 
 .panel--push-down {
-	@include respond-min(48em)  {
+	@include respond-min($medium)  {
 		padding-bottom: 140px;
 		}
 	}	
 	
-.circle--medium {
-    border-radius: 50%;
-    display: block;
-    font-size: 2.625rem;
-    height: 5.49rem;
-    line-height: 5.49rem;
-    text-align: center;
-    width: 5.49rem;
-	}
-	
 	
 .panel-text-home {
-    @include respond-min(48em)  {
+    @include respond-min($medium)  {
 		height:rem(140px);
 		}
 		
-	@include respond-min(60em)  {
-		height:rem(220px);
+	@include respond-min($large)  {
+		height:rem(100px);
 		}
 	
-	@include respond-min(90em)  {
+	@include respond-min($xlarge)  {
 		height:rem(80px);
 		}
 		
 	}
 	
 .panel-text-landing {  	
-	@include respond-min(60em)  {
+	@include respond-min($large)  {
+		height:rem(180px);
+		}
+		
+	@include respond-min($xlarge)  {
 		height:rem(140px);
 		}
 	}

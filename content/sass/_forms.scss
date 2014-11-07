@@ -167,8 +167,7 @@ textarea {
 	-moz-transition: -moz-box-shadow 0.15s, border-color 0.15s ease-in-out;
 	transition: box-shadow 0.15s, border-color 0.15s ease-in-out; 
 	}
-	
-	
+		
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -230,7 +229,7 @@ textarea[disabled] {
 		padding-top:lh(.5);
 		}
 		
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		.error {
 			display:block;
 			}
@@ -284,7 +283,7 @@ textarea[disabled] {
 	font-size:rem(13px);
 	label {
 		padding:0;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			border-bottom:none;
 			padding:0;
 			}
@@ -300,7 +299,7 @@ textarea[disabled] {
 		margin:0 lh(.33) lh(.33) 0;
 		padding:0;
 		width:100%;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			float:left;
 			margin:0 lh(1) 0 0;
 			padding:lh(.33) 0 0 0;
@@ -314,7 +313,7 @@ textarea[disabled] {
 		float:left;
 		margin:0 lh(.33) 0 0 ;
 		width:80%;
-		@include respond-min(48em) {
+		@include respond-min($medium) {
 			float:left;
 			margin:0 lh(.33) 0 0;
 			min-width:33%;

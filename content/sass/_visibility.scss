@@ -1,11 +1,12 @@
 // Visibility
 //
-//Visibility classes let you show or hide elements based on screen size or device orientation. You can use visibility classes to control which elements. You can use visibility classes to control which elements users see depending on their browsing environment.
+// Visibility classes let you show or hide elements based on screen size or device orientation. You can use visibility classes to control which elements. You can use visibility classes to control which elements users see depending on their browsing environment.
 // 
 // Styleguide 20.0
 
 // Show by Screen Size
-//In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class's conditions, the element will be shown. If not, it will be hidden.
+//
+// In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class's conditions, the element will be shown. If not, it will be hidden.
 //
 // Markup:
 //<div class="panel">
@@ -23,7 +24,7 @@
 
 // Hide by Screen Size
 //
-//This example shows the opposite: It uses the hide visibility classes to state which elements should disappear based on your device's screen size or orientation. Users will see elements on every browser except those that meet these conditions.
+// This example shows the opposite: It uses the hide visibility classes to state which elements should disappear based on your device's screen size or orientation. Users will see elements on every browser except those that meet these conditions.
 //
 //
 // Markup:
@@ -53,7 +54,7 @@
 
 
 .show-for-small-only {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: none !important;
 		}
 	}
@@ -62,7 +63,7 @@
 	@include respond-max(47.95em) {
 		display: none !important;
 		}
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: inherit !important;
 		}
 	}
@@ -71,10 +72,10 @@
 	@include respond-max(47.95em) {
 		display: none !important;
 		}
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: inherit !important;
 		}
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display: none !important;
 		}	
 	}
@@ -89,7 +90,7 @@
 	@include respond-max(59.95em) {
 		display: none !important;
 		}		
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display: inherit !important;
 		}		
 	@include respond-min(75em) {
@@ -116,22 +117,22 @@
 	
 .hide-for-small-only {
 	display:none;
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: inherit !important;
 		}
 	}
 		
 .hide-for-medium-up {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: none !important;
 		}
 	}
 	
 .hide-for-medium-only {
-	@include respond-min(48em) {
+	@include respond-min($medium) {
 		display: none !important;
 		}
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display: inherit !important;
 		}	
 	}
@@ -143,7 +144,7 @@
 	}
 	
 .hide-for-large-only {			
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		display: none !important;
 		}		
 	@include respond-min(75em) {
@@ -178,7 +179,7 @@
 		}
 	}
 
-@include respond-min(60em) {
+@include respond-min($large) {
 	.hide-on-large {
 		@include visuallyhidden;
 		}

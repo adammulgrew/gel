@@ -12,12 +12,12 @@ body {
 	margin:0 auto;
 	width:94%;
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		max-width:1200px;
 		width:100%;
 		}
 		
-	@include respond-min(90em) {
+	@include respond-min($xlarge) {
 		max-width:1600px;
 		width:100%;
 		}
@@ -58,14 +58,14 @@ body {
 	@include clearfix();
 	}
 
-@include respond-min(48em) {
+@include respond-min($medium) {
 	.panel-hero,
 	.wrap {
 		@include clearfix();
 		}
 	}
 
-@include respond-min(60em) {
+@include respond-min($large) {
 	.article,
 	.content,
 	.nav-primary > ul,

@@ -245,15 +245,15 @@
 	
 	
 .icon--overlay {
-	background-color:#fff;
-	font-size:rem(22px);
-	left:0;
-	padding:lh(.25);
+	background-color:transparent;
+	font-size:rem(36px);
+	left:-22px;
 	position:absolute;
-	top:0px;
-	@include respond-min(48em) {
-		font-size:rem(32px);
-		}
+	top:-22px;
+	}
+	
+.list--plain li {
+	list-style-type:none;
 	}
 	
 	

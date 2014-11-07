@@ -3,14 +3,14 @@
 	margin:lh(1) auto 0 auto;
 	padding:lh(1);
 	width:100%;
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		margin:lh(2) auto 0 auto;
 		padding:lh(2) 0 lh(1) 0;
 		}
 	}
 	
 .wrap-footer {
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		margin:0 auto;
 		max-width:1200px;
 		width:100%;
@@ -23,7 +23,7 @@
 	height:105px !important;
 	width:300px !important;
 	
-	@include respond-min(60em) {
+	@include respond-min($large) {
 		height:80px !important;
 		width:229px !important;
 		}

@@ -42,15 +42,39 @@
     
   </head>
   
+        <div class="remodal" data-remodal-id="modal">
+        
+			<div class="search">
+							                    
+                <label class="search__label">
+                
+                    Search the Digital Guidelines
+                    
+                </label>
+                
+                <input type="text" id="siteSearch" class="search__input" placeholder="Search the Digital Guidelines...">
+                
+                <a class="search__btn" href="javascript:goSearch();">
+                
+                    <i class="icon icon-search"></i>
+                    
+                    <span class="visuallyhidden">Search</span>
+                    
+                </a>
+                
+            </div>
+            
+        </div>
+  
     <body id="kss-node" class="test-match-height">
-    
+        
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
                 <header id="top" class="cf masthead" role="banner">
                       
-                    <div class="wrap">
+                    <div class="wrap relative">
                     
                         <hr class="masthead-panel-colour" />
                         
@@ -66,7 +90,7 @@
                         
                         </a>
                                 
-                        <div class="col large_6 flush--bottom"> 
+                        <div class="col small_12 large_6 flush--bottom"> 
                         
                             <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
                                 
@@ -76,7 +100,7 @@
                         
                         </div>
                         
-                        <div class="col large_6 primary-font mega flush--bottom"> 
+                        <div class="col small_12 large_6 primary-font flush--bottom"> 
                         
                             <div class="tagline">
                             
@@ -100,7 +124,7 @@
                         
                             <li class="fixed-logo">
                             
-                                <img class="site-logo--fixed" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
+                                <img class="site-logo--fixed" src="../content/images/branding/Header-logo.svg" data-fallback="../content/images/branding/Header-logo.png" alt="Standard Life logo">
                             
                             </li>
                         
@@ -132,11 +156,7 @@
                                 
                                 </a>
                                 
-                                <span class="js-toggle-link expander">
-                                
-                                	<i class="icon-angle-down alpha"></i>
-                                
-                                </span>
+                                <span class="js-toggle-link expander icon-angle-down alpha"></span>
                                 
                                 <nav class="js-toggle-item nav-secondary">
                                 
@@ -203,6 +223,20 @@
                                 <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
                                 
                                     Resources
+                                
+                                </a>
+                            
+                            </li>
+                            
+                            <li class="nav-primary__item show-for-medium-up pull-right--medium"> 
+                            
+                                <a href="#modal" class="block mega icon-search">
+                                
+                                    <span class="visuallyhidden">
+                                    
+                                    	Search
+                                    
+                                    </span>
                                 
                                 </a>
                             
@@ -304,7 +338,7 @@
                 
                         <div class="kss-wrapper wrap">
                         
-                          <div class="kss-sidebar col medium_4 large_3">
+                          <div class="kss-sidebar col small_12 medium_4 large_3">
                           
                             <div class="kss-sidebar-inner">
                               
@@ -629,7 +663,7 @@
                                       
                                           <span class="kss-ref">20.1</span>
                                           
-                                          <span class="kss-name">Show by Screen Size In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class&#x27;s conditions, the element will be shown. If not, it will be hidden.</span>
+                                          <span class="kss-name">Show by Screen Size</span>
                                       
                                       </a>
                                   
@@ -730,11 +764,20 @@
                                     
                                     </span> 
                                 
-                                    Show by Screen Size In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class&#x27;s conditions, the element will be shown. If not, it will be hidden.
+                                    Show by Screen Size
                                 
                                 </h1>
                                 
                                 
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p>In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class&apos;s conditions, the element will be shown. If not, it will be hidden.</p>
+
+                                  
+                                </div>
                                 
                                 
                                 
@@ -1047,7 +1090,7 @@
     	</div>
     
     </div>
-    
+
     <script src="public/kss.js"></script>
     
     <script src="public/jquery-1.9.1.min.js"></script>
@@ -1067,6 +1110,8 @@
     <script src="../content/js/libs/audioplayer.min.js"></script>
     
     <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
+    
+    <script src="../content/js/libs/jquery.remodal.min.js"></script>
     
     <script src="../content/js/core.js"></script>
     
@@ -1090,6 +1135,7 @@
     	<script src="public/rainbow.min.js"></script>
     
     <!--<![endif]-->
+    
     
   </body>
   
