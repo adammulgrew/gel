@@ -2,10 +2,8 @@
 //-----------------------------------------------------------------------------//
 
 
-
 /* PRIMARY NAV EXPANDER ------------ */
-$(function () {
-	
+$(function () {	
     $('.js-toggle-link').click(function(e){
          var item = $(e.currentTarget);
         item.parent().find(".js-toggle-item").toggle();
