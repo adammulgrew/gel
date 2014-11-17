@@ -11,16 +11,14 @@
    Remodal necessary styles
    ========================================================================== */
 
+
 /* Hide scroll bar */
 
 html.remodal_lock, body.remodal_lock {
 	overflow: hidden; 
 	}
 	
-html.remodal_lock{
 	
-	}
-
 /* Anti FOUC */
 .remodal, [data-remodal-id] {
 	visibility: hidden;

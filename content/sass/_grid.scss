@@ -249,7 +249,6 @@ $xlarge:90.075em;
 
 .col {	
 	float: left;
-	margin-bottom:lh(1);
 	margin-left: $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 	margin-right: $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;

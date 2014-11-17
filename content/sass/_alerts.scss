@@ -23,53 +23,44 @@
 
 .alert {
 	background-color:tint($yellow, 75%);
-	border:1px solid $yellow;
 	color:$grey;
 	display:block;
 	font-family:$secondary-font;
 	font-size:rem(18px);
 	margin:0 0 lh(1) 0;
 	padding:lh(1) lh(1.66);
+	
 	a {
-		color:$dark-orange;
+		border-bottom:1px solid $grey;
+		border-color:inherit;
+		color:inherit;
+
 		&:hover {
-			text-decoration:underline;
+			border-bottom:1px solid transparent;
+			color:inherit;
+			text-decoration:none;
 			}
+
 		}
+		
 	}
 		
 .alert--info {
     background-color:$blue-tint;
-	border-color: tint($bright-blue, 50%);
 	color:$bright-blue;
-	a {
-		color:$bright-blue;
-		}
 	}
 	
 .alert--success {
     background-color:tint($green, 75%);
-	border-color:tint($green, 50%);
 	color:$dark-green;
-	a {
-		color:$dark-green;
-		}
 	}
 	
 .alert--warning {
     background-color:tint($orange, 75%);
-	border-color:tint($orange, 50%);
 	color:$dark-orange;
-	a {
-		color:$dark-orange;
-		}
 	}
 	
 .alert--danger {
     background-color:tint($dark-red, 75%);
-	border-color:tint($dark-red, 50%);
 	color:$dark-red;
-	a {
-		color:$dark-red;
-		}
 	}
