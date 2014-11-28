@@ -1,44 +1,45 @@
 // Tabs
 //
 // Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+// A tab interface built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with ARIA via javascript. 
 //
 // Markup:
-//<dl class="cf tabs tabs__list">
-//  <dd class="active tabs__item">
-//    <a href="#simple1" class="tabs__link">
-//      Tab 1
-//    </a>
-//  </dd>
-//  <dd class="tabs__item">
-//    <a href="#simple2" class="tabs__link">
-//      Tab 2
-//    </a>
-//  </dd>
-//  <dd class="tabs__item">
-//    <a href="#simple3" class="tabs__link">
-//      Tab 3
-//    </a>
-//  </dd>
-//  <dd class="tabs__item">
-//    <a href="#simple4" class="tabs__link">
-//      Tab 4
-//    </a>
-//  </dd>
-//</dl>
-//<ul class="cf tabs__content">
-//  <li id="simple1Tab" class="active soft">
+//<div class="js-tabs">
+//  <ul class="tab__list">
+//    <li class="tab__item">
+//      <a href="#tab1" class="tab__link">
+//        Tab 1
+//      </a>
+//    </li>
+//    <li class="tab__item">
+//      <a href="#tab2" class="tab__link">
+//        Tab 2
+//      </a>
+//    </li>
+//    <li class="tab__item">
+//      <a href="#tab3" class="tab__link">
+//        Tab 3
+//      </a>
+//    </li>
+//    <li class="tab__item">
+//      <a href="#tab4" class="tab__link">
+//        Tab 4
+//      </a>
+//    </li>
+//  </ul>
+//  <section id="tab1" class="soft">
 //    First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-//  </li>
-//  <li id="simple2Tab" class="soft">
+//  </section>
+//  <section id="tab2" class="soft">
 //    Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-//  </li>
-//  <li id="simple3Tab" class="soft">
+//  </section>
+//  <section id="tab3" class="soft">
 //    Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-//  </li>
-//  <li id="simple4Tab" class="soft">
+//  </section>
+//  <section id="tab4" class="soft">
 //    Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-//  </li>
-//</ul>
+//  </section>
+//</div>
 //
 // Styleguide 15.0
 
@@ -83,147 +84,89 @@
 // Styleguide 15.1	
 
 
-
-.tabs { 
+.tab__list {
 	@include clearfix();
-	border-bottom: solid 1px $light-grey-2;
+	border-bottom: solid 1px $blue-tint;
 	display: block; 
-	font-family:$primary-font;
+	font-size:rem(18px);
 	height:rem(48px);
 	list-style: none;
-	margin-bottom:lh(); 
-	padding: 0 lh(.33); 
-	}
-	
-.tabs__item { 
-	display: block; 
-	float: left; 
-	margin: 0; 
-	padding: 0;
+	margin-bottom:lh(1); 
+	padding:0; 
+
+	@include respond-min($medium) {
+		padding: 0 lh(1); 
+		}
+
 	}
 
-.tabs__link { 
+.tab__item {
+	display:block;
+	float:left;
+	list-style: none;
+	}
+
+.tab__link {
 	background-color:$blue-tint;
+	border-bottom: 1px solid $blue-tint;
 	border-left: 1px solid $blue-tint;
-	border-top: 2px solid $blue-tint;
+	border-right: 1px solid $blue-tint;
+	border-spacing:0;
+	border-top: 2px solid transparent;
 	color:$bright-blue;
-	display: block; 
-	font-size:rem(16px);
+	display: block;
+	font-family:$secondary-font;
 	height:rem(48px);
-	line-height:rem(48px);
-	padding: 0 lh(1);
+	line-height:rem(32px);
+	margin:0;
+	padding: 0 lh(.33);
 	text-decoration:none;
-	
-	&:visited {
-		color:$bright-blue;
-		}
-		
+
 	&:hover {
 		color:$dark-blue;
 		cursor: pointer; 
 		text-decoration:none;
 		}
 		
-	@include respond-min($medium) {
-		font-size:rem(18px);
-		padding: 0 lh(1);
-		}
+	&:visited {
+		color:$bright-blue;
+		&:hover {
+			color:$dark-blue;
+			}
+		}	
 		
+	@include respond-min($medium) {
+		padding: lh(.33) lh(1);
+		}
+
 	}
-	
-.active .tabs__link  { 
+
+.tab__link[aria-selected] {	
 	background-color:#fff;
+	border-bottom: 1px solid #fff;
 	border-left: 1px solid $blue-tint;
 	border-right: 1px solid $blue-tint;
-	border-top: 2px solid $dark-blue; 
+	border-spacing:0;
+	border-top: 2px solid $dark-blue;
 	color:$dark-blue;
 	cursor: default; 
-	text-shadow:none;
-	}
-	
-ul.tabs__content { 
-	display: block; 
-	margin: 0 0 20px 0;
+	margin-left:0;
 	}
 
-ul.tabs__content > li { 
-	display: none; 
+
+.tab__link[role="tab"]:focus {
+	
 	}
 
-ul.tabs__content > li.active { 
-	display: block; 
-	margin:0;
-	padding:0;
+[role="tabpanel"][aria-hidden="true"] {
+	display: none;
 	}
 
-.no-js ul.tabs__content > li { 
-	display: block;
+[role="tabpanel"]:focus {
+	outline: thin dotted;
 	}
-	
-	
-.tabs--pull-up {
-	
-	border-bottom: none;
-	margin-top:-72px;
 
-	.tabs__link {
-		background-color:rgba(0, 0, 0, .2);
-		border-left: 1px solid transparent;
-		border-right: 1px solid transparent;
-		
-		@include old-ie {
-			background-color:transparent;
-			background-image:url(../images/common/ie-black-opacity-20.png);
-			}
-			
-		border-top: none;
-		border-bottom:none;
-		margin-right:2px;
-		color:#fff;
-		font-size:em(15px);
-		
-		&:hover {
-			background-color:rgba(0, 0, 0, .4);
-			
-			@include old-ie {
-				background-color:transparent;
-				background-image:url(../images/common/ie-black-opacity-40.png);
-				}
-				
-			border-bottom: none;
-			color:#fff;
-			}
-		
-		&:visited {
-			color:#fff;
-			}
-			
-		}
-		
-	.active .tabs__link  { 
-		background-color:#fff;
-		border-bottom: 1px solid #fff;
-		border-left: 1px solid transparent;
-		border-right: 1px solid transparent;
-		border-top: 2px solid $bright-blue;
-		color:$bright-blue;
-		cursor: default; 
-		text-shadow:none;
-		
-		@include old-ie {
-			background-image:none;
-			}
-		
-		}
-		
-	}
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

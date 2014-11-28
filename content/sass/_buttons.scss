@@ -253,9 +253,9 @@
 .btn--warning {
 	background-color:$warning-color;
 	border-color:shade($warning-color, 25%);
-	color:#fff;
+	color:#222;
 	&:visited {
-		color:#fff;
+		color:#333;
 		}
 		
 	&:hover,
@@ -263,11 +263,11 @@
 	&.active,
 	&:active {
 		background-color:tint($warning-color, 25%);
-		color:#fff;
+		color:#222;
 		}
 		
 	&:visited {
-		color:#fff;
+		color:#222;
 		}
 	}
 
@@ -294,15 +294,15 @@
 	
 // Success appears as green
 .btn--success {
-	background-color:$success-color;
-	border-color:shade($success-color, 25%);
+	background-color:shade($success-color, 25%);
+	border-color:shade($success-color, 50%);
 	color:#fff;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
-		background-color:tint($success-color, 25%);
+		background-color:$success-color;
 		color:#fff;
 		}
 		
@@ -392,37 +392,38 @@
 .btn--yellow {
 	background-color:$yellow;
 	border-color:shade($yellow, 25%);
-	color:$dark-blue;
+	color:#222;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
 		background-color:tint($yellow, 25%);
-		color:$dark-blue;
+		color:#222;
 		}
 		
 	&:visited, 
 	&.btn--icon .icon {
-		color:$dark-blue;
+		color:#222;
 		}
+		
 	}	
 	
 .btn--orange {
 	background-color:$orange;
 	border-color:shade($orange, 25%);
-	color:#fff;
+	color:#222;
 	
 	&:hover,
 	&:focus,
 	&.active,
 	&:active {
 		background-color:tint($orange, 25%);
-		color:#fff;
+		color:#222;
 		}
 		
 	&:visited {
-		color:#fff;
+		color:#222;
 		}
 	}
 	
@@ -457,9 +458,11 @@
 		color:#fff;
 		}
 		
-	&:visited {
+	&:visited,
+	.icon {
 		color:$dark-blue;
 		}
+		
 		
 	}
 	

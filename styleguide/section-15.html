@@ -669,7 +669,8 @@
                                 
                                 <div class="kss-description">
                                 
-                                  <p>Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</p>
+                                  <p>Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+A tab interface built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with ARIA via javascript. </p>
 
                                   
                                 </div>
@@ -682,42 +683,42 @@
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <dl class="cf tabs tabs__list">
- <dd class="active tabs__item">
-   <a href="#simple1" class="tabs__link">
-     Tab 1
-   </a>
- </dd>
- <dd class="tabs__item">
-   <a href="#simple2" class="tabs__link">
-     Tab 2
-   </a>
- </dd>
- <dd class="tabs__item">
-   <a href="#simple3" class="tabs__link">
-     Tab 3
-   </a>
- </dd>
- <dd class="tabs__item">
-   <a href="#simple4" class="tabs__link">
-     Tab 4
-   </a>
- </dd>
-</dl>
-<ul class="cf tabs__content">
- <li id="simple1Tab" class="active soft">
+                                      <div class="js-tabs">
+ <ul class="tab__list">
+   <li class="tab__item">
+     <a href="#tab1" class="tab__link">
+       Tab 1
+     </a>
+   </li>
+   <li class="tab__item">
+     <a href="#tab2" class="tab__link">
+       Tab 2
+     </a>
+   </li>
+   <li class="tab__item">
+     <a href="#tab3" class="tab__link">
+       Tab 3
+     </a>
+   </li>
+   <li class="tab__item">
+     <a href="#tab4" class="tab__link">
+       Tab 4
+     </a>
+   </li>
+ </ul>
+ <section id="tab1" class="soft">
    First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- </li>
- <li id="simple2Tab" class="soft">
+ </section>
+ <section id="tab2" class="soft">
    Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- </li>
- <li id="simple3Tab" class="soft">
+ </section>
+ <section id="tab3" class="soft">
    Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- </li>
- <li id="simple4Tab" class="soft">
+ </section>
+ <section id="tab4" class="soft">
    Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- </li>
-</ul>
+ </section>
+</div>
                                       
                                     </div>
                                     
@@ -727,42 +728,42 @@
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;dl class=&quot;cf tabs tabs__list&quot;&gt;
- &lt;dd class=&quot;active tabs__item&quot;&gt;
-   &lt;a href=&quot;#simple1&quot; class=&quot;tabs__link&quot;&gt;
-     Tab 1
-   &lt;/a&gt;
- &lt;/dd&gt;
- &lt;dd class=&quot;tabs__item&quot;&gt;
-   &lt;a href=&quot;#simple2&quot; class=&quot;tabs__link&quot;&gt;
-     Tab 2
-   &lt;/a&gt;
- &lt;/dd&gt;
- &lt;dd class=&quot;tabs__item&quot;&gt;
-   &lt;a href=&quot;#simple3&quot; class=&quot;tabs__link&quot;&gt;
-     Tab 3
-   &lt;/a&gt;
- &lt;/dd&gt;
- &lt;dd class=&quot;tabs__item&quot;&gt;
-   &lt;a href=&quot;#simple4&quot; class=&quot;tabs__link&quot;&gt;
-     Tab 4
-   &lt;/a&gt;
- &lt;/dd&gt;
-&lt;/dl&gt;
-&lt;ul class=&quot;cf tabs__content&quot;&gt;
- &lt;li id=&quot;simple1Tab&quot; class=&quot;active soft&quot;&gt;
+                                    <pre><code data-language="html">&lt;div class=&quot;js-tabs&quot;&gt;
+ &lt;ul class=&quot;tab__list&quot;&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab1&quot; class=&quot;tab__link&quot;&gt;
+       Tab 1
+     &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab2&quot; class=&quot;tab__link&quot;&gt;
+       Tab 2
+     &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab3&quot; class=&quot;tab__link&quot;&gt;
+       Tab 3
+     &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab4&quot; class=&quot;tab__link&quot;&gt;
+       Tab 4
+     &lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;section id=&quot;tab1&quot; class=&quot;soft&quot;&gt;
    First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- &lt;/li&gt;
- &lt;li id=&quot;simple2Tab&quot; class=&quot;soft&quot;&gt;
+ &lt;/section&gt;
+ &lt;section id=&quot;tab2&quot; class=&quot;soft&quot;&gt;
    Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- &lt;/li&gt;
- &lt;li id=&quot;simple3Tab&quot; class=&quot;soft&quot;&gt;
+ &lt;/section&gt;
+ &lt;section id=&quot;tab3&quot; class=&quot;soft&quot;&gt;
    Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- &lt;/li&gt;
- &lt;li id=&quot;simple4Tab&quot; class=&quot;soft&quot;&gt;
+ &lt;/section&gt;
+ &lt;section id=&quot;tab4&quot; class=&quot;soft&quot;&gt;
    Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
- &lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+ &lt;/section&gt;
+&lt;/div&gt;</code></pre>
                                     
                                   </div>
                                   
@@ -1035,7 +1036,7 @@
     
     <script src="../content/js/libs/offcanvas.js"></script>
 
-    <script src="../content/js/libs/jquery.foundation.tabs.js"></script>
+    <script src="../content/js/libs/tabs.js"></script>
     
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
     

@@ -2,7 +2,7 @@
 
 <div class="editor-content">
 
-	<p>Here you can download all of the GEL boilerplate assets including sass, css, javascript, images and webfonts. An example index.html file with the correct asset references is also included</p>
+	<p>Here you can download all of the <abbr title="Global Experience Language">GEL</abbr> boilerplate assets including sass, css, javascript, images and webfonts. An example index.html file with the correct asset references is also included</p>
 
 	<a href="https://github.com/SLDG/gel/releases/download/v0.1.0/0.1.0.zip" class="btn btn--primary btn--icon no-external">
 	
@@ -18,7 +18,7 @@
 	
 	</h2>
 
-	<p>The styleguide is constructed using <a href="http://warpspire.com/kss/">KSS</a> documentation within the Sass files. To rebuild the styleguide after making updates, you will need to install  <a href="http://howtonode.org/introduction-to-npm">npm</a> and <a href="https://github.com/hughsk/kss-node#installation">kss-node</a>.
+	<p>The styleguide is constructed using <a href="http://warpspire.com/kss/"><abbr title="Knyle Style Sheets">KSS</abbr></a> documentation within the Sass files. To rebuild the styleguide after making updates, you will need to install  <a href="http://howtonode.org/introduction-to-npm">npm</a> and <a href="https://github.com/hughsk/kss-node#installation">kss-node</a>.
 
 	<p>To rebuild the styleguide, run these commands:</p>
 
