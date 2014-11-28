@@ -487,11 +487,26 @@
                                   
                                   <li class="kss-menu-item">
                                   
+                                      <a href="section-12.html">
+                                      
+                                          <span class="kss-ref">12</span>
+                                          
+                                          <span class="kss-name">Navigation</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
                                       <a href="section-13.html">
                                       
                                           <span class="kss-ref">13</span>
                                           
-                                          <span class="kss-name">Navigation</span>
+                                          <span class="kss-name">Pagination</span>
                                       
                                       </a>
                                   
@@ -506,7 +521,7 @@
                                       
                                           <span class="kss-ref">14</span>
                                           
-                                          <span class="kss-name">Pagination</span>
+                                          <span class="kss-name">Tabs</span>
                                       
                                       </a>
                                   
@@ -521,7 +536,7 @@
                                       
                                           <span class="kss-ref">15</span>
                                           
-                                          <span class="kss-name">Tabs</span>
+                                          <span class="kss-name">Tables</span>
                                       
                                       </a>
                                   
@@ -536,7 +551,7 @@
                                       
                                           <span class="kss-ref">16</span>
                                           
-                                          <span class="kss-name">Tables</span>
+                                          <span class="kss-name">Tooltips</span>
                                       
                                       </a>
                                   
@@ -551,7 +566,7 @@
                                       
                                           <span class="kss-ref">17</span>
                                           
-                                          <span class="kss-name">Tooltips</span>
+                                          <span class="kss-name">Typography</span>
                                       
                                       </a>
                                   
@@ -566,7 +581,7 @@
                                       
                                           <span class="kss-ref">18</span>
                                           
-                                          <span class="kss-name">Typography</span>
+                                          <span class="kss-name">Videos</span>
                                       
                                       </a>
                                   
@@ -580,21 +595,6 @@
                                       <a href="section-19.html">
                                       
                                           <span class="kss-ref">19</span>
-                                          
-                                          <span class="kss-name">Videos</span>
-                                      
-                                      </a>
-                                  
-                                  </li>
-                                  
-                                  
-                                  
-                                  
-                                  <li class="kss-menu-item">
-                                  
-                                      <a href="section-20.html">
-                                      
-                                          <span class="kss-ref">20</span>
                                           
                                           <span class="kss-name">Visibility</span>
                                       
@@ -623,7 +623,7 @@
                                       
                                           <span class="kss-ref">14.1</span>
                                           
-                                          <span class="kss-name">Horizontally centered</span>
+                                          <span class="kss-name">Responsive tabs to accordion</span>
                                       
                                       </a>
                                   
@@ -659,7 +659,7 @@
                                     
                                     </span> 
                                 
-                                    Pagination
+                                    Tabs
                                 
                                 </h1>
                                 
@@ -669,7 +669,7 @@
                                 
                                 <div class="kss-description">
                                 
-                                  <p>Pagination is a type of navigation that lets users tap through a series of related pages. Moving between pages has become less common with the advent of longer pages and AJAX loading.</p>
+                                  <p>Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container. A tab interface built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with ARIA via javascript. </p>
 
                                   
                                 </div>
@@ -682,42 +682,41 @@
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <div>
- <ul class="pagination__list"> 
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--unavailable">&laquo;</a>
+                                      <div class="js-tabs">
+ <ul class="tab__list">
+   <li class="tab__item">
+     <a href="#tab1" class="tab__link">
+       Tab 1
+     </a>
    </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">1</a>
-   </li> 
-   <li class="pagination__item">
-     <a href="" class="pagination__link">2</a>
+   <li class="tab__item">
+     <a href="#tab2" class="tab__link">
+       Tab 2
+     </a>
    </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--active">3</a>
+   <li class="tab__item">
+     <a href="#tab3" class="tab__link">
+       Tab 3
+     </a>
    </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">4</a>
-   </li>
-   <li class="pagination__item">
-      <a href="" class="pagination__link pagination__link--unavailable">&hellip;</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">5</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">6</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">7</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">8</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--unavailable">&raquo;</a>
+   <li class="tab__item">
+     <a href="#tab4" class="tab__link">
+       Tab 4
+     </a>
    </li>
  </ul>
+ <section id="tab1" class="soft">
+   First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ </section>
+ <section id="tab2" class="soft">
+   Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ </section>
+ <section id="tab3" class="soft">
+   Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ </section>
+ <section id="tab4" class="soft">
+   Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ </section>
 </div>
                                       
                                     </div>
@@ -728,42 +727,41 @@
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;div&gt;
- &lt;ul class=&quot;pagination__list&quot;&gt; 
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&laquo;&lt;/a&gt;
+                                    <pre><code data-language="html">&lt;div class=&quot;js-tabs&quot;&gt;
+ &lt;ul class=&quot;tab__list&quot;&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab1&quot; class=&quot;tab__link&quot;&gt;
+       Tab 1
+     &lt;/a&gt;
    &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;1&lt;/a&gt;
-   &lt;/li&gt; 
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;2&lt;/a&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab2&quot; class=&quot;tab__link&quot;&gt;
+       Tab 2
+     &lt;/a&gt;
    &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--active&quot;&gt;3&lt;/a&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab3&quot; class=&quot;tab__link&quot;&gt;
+       Tab 3
+     &lt;/a&gt;
    &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;4&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-      &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&hellip;&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;5&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;6&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;7&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;8&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&raquo;&lt;/a&gt;
+   &lt;li class=&quot;tab__item&quot;&gt;
+     &lt;a href=&quot;#tab4&quot; class=&quot;tab__link&quot;&gt;
+       Tab 4
+     &lt;/a&gt;
    &lt;/li&gt;
  &lt;/ul&gt;
+ &lt;section id=&quot;tab1&quot; class=&quot;soft&quot;&gt;
+   First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ &lt;/section&gt;
+ &lt;section id=&quot;tab2&quot; class=&quot;soft&quot;&gt;
+   Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ &lt;/section&gt;
+ &lt;section id=&quot;tab3&quot; class=&quot;soft&quot;&gt;
+   Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ &lt;/section&gt;
+ &lt;section id=&quot;tab4&quot; class=&quot;soft&quot;&gt;
+   Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ &lt;/section&gt;
 &lt;/div&gt;</code></pre>
                                     
                                   </div>
@@ -786,7 +784,7 @@
                                     
                                     </span> 
                                 
-                                    Horizontally centered
+                                    Responsive tabs to accordion
                                 
                                 </h1>
                                 
@@ -796,7 +794,7 @@
                                 
                                 <div class="kss-description">
                                 
-                                  <p>Wrap your .pagination__list with an element that has the .pagination--centered class to center your pagination.</p>
+                                  <p> Easy responsive tabs is a lightweight jQuery plugin which optimizes normal horizontal or vertical tabs to accordion on multi devices like: web, tablets, Mobile (IPad &amp; IPhone). This plugin adapts the screen size and changes its form accordingly. <a href="https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion">Easy responsive tabs on Github</a></p>
 
                                   
                                 </div>
@@ -809,43 +807,36 @@
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <div class="pagination--centered">
- <ul class="pagination__list"> 
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--unavailable">&laquo;</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">1</a>
-   </li> 
-   <li class="pagination__item">
-     <a href="" class="pagination__link">2</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--active">3</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">4</a>
-   </li>
-   <li class="pagination__item">
-      <a href="" class="pagination__link pagination__link--unavailable">&hellip;</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">5</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">6</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">7</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link">8</a>
-   </li>
-   <li class="pagination__item">
-     <a href="" class="pagination__link pagination__link--unavailable">&raquo;</a>
-   </li>
+                                      <div id="horizontalTab">
+<ul class="resp-tab__list">
+  <li class="resp-tab__item">
+    Tab 1
+  </li>
+  <li class="resp-tab__item">
+     Tab 2
+  </li>
+  <li class="resp-tab__item">
+     Tab 3
+  </li>
+  <li class="resp-tab__item">
+     Tab 4
+  </li>
  </ul>
-</div>
+ <div class="resp-tabs__container">
+   <div>
+      First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+   <div>
+     Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+   <div>
+     Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+   <div>
+     Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+ </div>
+</div>	
                                       
                                     </div>
                                     
@@ -855,43 +846,36 @@
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;div class=&quot;pagination--centered&quot;&gt;
- &lt;ul class=&quot;pagination__list&quot;&gt; 
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&laquo;&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;1&lt;/a&gt;
-   &lt;/li&gt; 
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;2&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--active&quot;&gt;3&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;4&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-      &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&hellip;&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;5&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;6&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;7&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link&quot;&gt;8&lt;/a&gt;
-   &lt;/li&gt;
-   &lt;li class=&quot;pagination__item&quot;&gt;
-     &lt;a href=&quot;&quot; class=&quot;pagination__link pagination__link--unavailable&quot;&gt;&raquo;&lt;/a&gt;
-   &lt;/li&gt;
+                                    <pre><code data-language="html">&lt;div id=&quot;horizontalTab&quot;&gt;
+&lt;ul class=&quot;resp-tab__list&quot;&gt;
+  &lt;li class=&quot;resp-tab__item&quot;&gt;
+    Tab 1
+  &lt;/li&gt;
+  &lt;li class=&quot;resp-tab__item&quot;&gt;
+     Tab 2
+  &lt;/li&gt;
+  &lt;li class=&quot;resp-tab__item&quot;&gt;
+     Tab 3
+  &lt;/li&gt;
+  &lt;li class=&quot;resp-tab__item&quot;&gt;
+     Tab 4
+  &lt;/li&gt;
  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+ &lt;div class=&quot;resp-tabs__container&quot;&gt;
+   &lt;div&gt;
+      First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   &lt;/div&gt;
+   &lt;div&gt;
+     Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   &lt;/div&gt;
+   &lt;div&gt;
+     Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   &lt;/div&gt;
+   &lt;div&gt;
+     Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	</code></pre>
                                     
                                   </div>
                                   

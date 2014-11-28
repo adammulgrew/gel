@@ -487,11 +487,26 @@
                                   
                                   <li class="kss-menu-item">
                                   
+                                      <a href="section-12.html">
+                                      
+                                          <span class="kss-ref">12</span>
+                                          
+                                          <span class="kss-name">Navigation</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
                                       <a href="section-13.html">
                                       
                                           <span class="kss-ref">13</span>
                                           
-                                          <span class="kss-name">Navigation</span>
+                                          <span class="kss-name">Pagination</span>
                                       
                                       </a>
                                   
@@ -506,7 +521,7 @@
                                       
                                           <span class="kss-ref">14</span>
                                           
-                                          <span class="kss-name">Pagination</span>
+                                          <span class="kss-name">Tabs</span>
                                       
                                       </a>
                                   
@@ -521,7 +536,7 @@
                                       
                                           <span class="kss-ref">15</span>
                                           
-                                          <span class="kss-name">Tabs</span>
+                                          <span class="kss-name">Tables</span>
                                       
                                       </a>
                                   
@@ -536,7 +551,7 @@
                                       
                                           <span class="kss-ref">16</span>
                                           
-                                          <span class="kss-name">Tables</span>
+                                          <span class="kss-name">Tooltips</span>
                                       
                                       </a>
                                   
@@ -551,7 +566,7 @@
                                       
                                           <span class="kss-ref">17</span>
                                           
-                                          <span class="kss-name">Tooltips</span>
+                                          <span class="kss-name">Typography</span>
                                       
                                       </a>
                                   
@@ -566,7 +581,7 @@
                                       
                                           <span class="kss-ref">18</span>
                                           
-                                          <span class="kss-name">Typography</span>
+                                          <span class="kss-name">Videos</span>
                                       
                                       </a>
                                   
@@ -580,21 +595,6 @@
                                       <a href="section-19.html">
                                       
                                           <span class="kss-ref">19</span>
-                                          
-                                          <span class="kss-name">Videos</span>
-                                      
-                                      </a>
-                                  
-                                  </li>
-                                  
-                                  
-                                  
-                                  
-                                  <li class="kss-menu-item">
-                                  
-                                      <a href="section-20.html">
-                                      
-                                          <span class="kss-ref">20</span>
                                           
                                           <span class="kss-name">Visibility</span>
                                       
@@ -612,6 +612,54 @@
                                 <ul class="kss-menu-child">
                                 
                                   
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-19.1">
+                                      
+                                          <span class="kss-ref">19.1</span>
+                                          
+                                          <span class="kss-name">Show by Screen Size</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-19.2">
+                                      
+                                          <span class="kss-ref">19.2</span>
+                                          
+                                          <span class="kss-name">Hide by Screen Size</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-19.3">
+                                      
+                                          <span class="kss-ref">19.3</span>
+                                          
+                                          <span class="kss-name">Screenreaders</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
                                   
                                   
                                   
@@ -643,7 +691,7 @@
                                     
                                     </span> 
                                 
-                                    Videos
+                                    Visibility
                                 
                                 </h1>
                                 
@@ -653,10 +701,40 @@
                                 
                                 <div class="kss-description">
                                 
-                                  <p>Responsive video
+                                  <p>Visibility classes let you show or hide elements based on screen size or device orientation. You can use visibility classes to control which elements. You can use visibility classes to control which elements users see depending on their browsing environment.</p>
 
-</p>
-<p>You may need to embed video from other third party websites into your website. To keep the video responsive it needs to sit in it&apos;s own <code>&lt;div class=&quot;flex-video&quot;&gt;</code>. Just replace the link with your own.</p>
+                                  
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-19.1" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        19.1
+                                    
+                                    </span> 
+                                
+                                    Show by Screen Size
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p>In this example, we use the show visibility classes to show certain strings of text based on the device on which users view a page. If their browser meets the class&apos;s conditions, the element will be shown. If not, it will be hidden.</p>
 
                                   
                                 </div>
@@ -669,8 +747,14 @@
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <div class="flex-video flex-video--widescreen">
-<iframe width="1280" height="720" src="//www.youtube.com/embed/0TwCFfW_Has" frameborder="0" allowfullscreen></iframe> 
+                                      <div class="panel">
+	<p class="show-for-small-only">This text is shown only on a small screen.</p>
+	<p class="show-for-medium-up">This text is shown on medium screens and up.</p>
+	<p class="show-for-medium-only">This text is shown only on a medium screen.</p>
+	<p class="show-for-large-up">This text is shown on large screens and up.</p>
+	<p class="show-for-large-only">This text is shown only on a large screen.</p> 
+	<p class="show-for-xlarge-up">This text is shown on xlarge screens and up.</p>
+	<p class="show-for-xlarge-only">This text is shown only on an xlarge screen.</p>
 </div>
                                       
                                     </div>
@@ -681,8 +765,144 @@
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;div class=&quot;flex-video flex-video--widescreen&quot;&gt;
-&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;//www.youtube.com/embed/0TwCFfW_Has&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt; 
+                                    <pre><code data-language="html">&lt;div class=&quot;panel&quot;&gt;
+	&lt;p class=&quot;show-for-small-only&quot;&gt;This text is shown only on a small screen.&lt;/p&gt;
+	&lt;p class=&quot;show-for-medium-up&quot;&gt;This text is shown on medium screens and up.&lt;/p&gt;
+	&lt;p class=&quot;show-for-medium-only&quot;&gt;This text is shown only on a medium screen.&lt;/p&gt;
+	&lt;p class=&quot;show-for-large-up&quot;&gt;This text is shown on large screens and up.&lt;/p&gt;
+	&lt;p class=&quot;show-for-large-only&quot;&gt;This text is shown only on a large screen.&lt;/p&gt; 
+	&lt;p class=&quot;show-for-xlarge-up&quot;&gt;This text is shown on xlarge screens and up.&lt;/p&gt;
+	&lt;p class=&quot;show-for-xlarge-only&quot;&gt;This text is shown only on an xlarge screen.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-19.2" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        19.2
+                                    
+                                    </span> 
+                                
+                                    Hide by Screen Size
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p>This example shows the opposite: It uses the hide visibility classes to state which elements should disappear based on your device&apos;s screen size or orientation. Users will see elements on every browser except those that meet these conditions.</p>
+
+                                  
+                                </div>
+                                
+                                
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <div class="panel">
+	<p class="hide-for-small-only">You are <b>not</b> on a small screen.</p>
+	<p class="hide-for-medium-up">You are <b>not</b> on a medium, large, xlarge screen.</p>
+	<p class="hide-for-medium-only">You are <b>not</b> on a medium screen.</p>
+	<p class="hide-for-large-up">You are <b>not</b> on a large, xlarge screen.</p>
+	<p class="hide-for-large-only">You are <b>not</b> on a large screen.</p> 
+	<p class="hide-for-xlarge-up">You are <b>not</b> on an xlarge screen.</p>
+	<p class="hide-for-xlarge-only">You are <b>not</b> on an xlarge screen.</p>
+</div>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;div class=&quot;panel&quot;&gt;
+	&lt;p class=&quot;hide-for-small-only&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on a small screen.&lt;/p&gt;
+	&lt;p class=&quot;hide-for-medium-up&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on a medium, large, xlarge screen.&lt;/p&gt;
+	&lt;p class=&quot;hide-for-medium-only&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on a medium screen.&lt;/p&gt;
+	&lt;p class=&quot;hide-for-large-up&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on a large, xlarge screen.&lt;/p&gt;
+	&lt;p class=&quot;hide-for-large-only&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on a large screen.&lt;/p&gt; 
+	&lt;p class=&quot;hide-for-xlarge-up&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on an xlarge screen.&lt;/p&gt;
+	&lt;p class=&quot;hide-for-xlarge-only&quot;&gt;You are &lt;b&gt;not&lt;/b&gt; on an xlarge screen.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-19.3" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        19.3
+                                    
+                                    </span> 
+                                
+                                    Screenreaders
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-description">
+                                
+                                  <p>To hide an element visually but retain for screenreaders, add the class <code>.visuallyhidden</code> to the required element.</p>
+
+                                  
+                                </div>
+                                
+                                
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <div class="panel">
+	<p class="visuallyhidden">This element is visually hidden but still readable by screenreaders.</p>
+</div>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;div class=&quot;panel&quot;&gt;
+	&lt;p class=&quot;visuallyhidden&quot;&gt;This element is visually hidden but still readable by screenreaders.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
                                     
                                   </div>

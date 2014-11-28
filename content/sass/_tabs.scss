@@ -1,7 +1,6 @@
 // Tabs
 //
-// Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
-// A tab interface built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with ARIA via javascript. 
+// Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container. A tab interface built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with ARIA via javascript. 
 //
 // Markup:
 //<div class="js-tabs">
@@ -41,7 +40,7 @@
 //  </section>
 //</div>
 //
-// Styleguide 15.0
+// Styleguide 14.0
 
 
 	
@@ -81,7 +80,7 @@
 //  </div>
 //</div>	
 //
-// Styleguide 15.1	
+// Styleguide 14.1	
 
 
 .tab__list {
@@ -153,11 +152,6 @@
 	margin-left:0;
 	}
 
-
-.tab__link[role="tab"]:focus {
-	
-	}
-
 [role="tabpanel"][aria-hidden="true"] {
 	display: none;
 	}
@@ -167,10 +161,8 @@
 	}
 
 
-	
-	
-	
-	
+
+
 
 .resp-tab__list {
 	@include clearfix();
