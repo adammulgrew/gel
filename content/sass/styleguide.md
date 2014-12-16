@@ -18,7 +18,7 @@
 	
 	</h2>
 
-	<p>The styleguide is constructed using <a href="http://warpspire.com/kss/"><abbr title="Knyle Style Sheets">KSS</abbr></a> documentation within the Sass files. To rebuild the styleguide after making updates, you will need to install  <a href="http://howtonode.org/introduction-to-npm">npm</a> and <a href="https://github.com/hughsk/kss-node#installation">kss-node</a>.
+	<p>The styleguide is constructed using <a href="http://warpspire.com/kss/"><abbr title="Knyle Style Sheets">KSS</abbr></a> documentation within the <abbr title="Syntactically Awesome Style Sheets">Sass</abbr> files. To rebuild the styleguide after making updates, you will need to install  <a href="http://howtonode.org/introduction-to-npm"><abbr title="Node Package Manager">npm</abbr></a> and <a href="https://github.com/hughsk/kss-node#installation">kss-node</a>.
 
 	<p>To rebuild the styleguide, run these commands:</p>
 

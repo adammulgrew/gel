@@ -94,13 +94,13 @@
 	.nav-primary__link {
 		display: block;
 		color: #ccc;
+		font-family:$primary-font;
 		outline: none;
 
 		&:focus,
 		&:hover {
+			background-color:transparent;
 			color: #fff;
-			/*background: rgba(255,255,255, 0.1);*/
-			background-color:$primary-color;
 			opacity:1;
 			}
 			
@@ -171,24 +171,24 @@
 			}
 	
 		.nav-primary__item {
-			position: relative;
 			border-top: 1px solid rgba(255,255,255, 0.1);
-	
+			position: relative;
+			
 			&:last-child {
 				border-bottom: 1px solid rgba(255,255,255, 0.1);
 				}
 	
 			&.active:after {
-				z-index: 50;
-				display: block;
-				content: "";
-				position: absolute;
-				top: 50%;
-				left: rem(-0.5px);
-				margin-top: rem(-10px);
 				border-top: rem(10px) #fff solid;
 				border-bottom: rem(10px) #fff solid;
 				border-left: rem(10px) #fff solid;
+				content: "";
+				display: block;
+				left: rem(-0.5px);
+				position: absolute;
+				margin-top: rem(-10px);
+				top: 50%;
+				z-index: 50;
 				}
 	
 			.nav-primary__link {

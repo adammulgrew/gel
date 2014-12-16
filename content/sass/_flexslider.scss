@@ -296,7 +296,7 @@ html[xmlns] .slides {
 	text-align:left;
 	
 	@include respond-min($medium) {
-		height:rem(400px);
+		height:rem(300px);
 		margin:0;
 		}
 
@@ -304,10 +304,18 @@ html[xmlns] .slides {
 		background-image:url(../images/branding/sl-pattern-01.png);
 		background-position:right top;
 		background-repeat:no-repeat;
+		height:rem(400px);
 		margin-bottom:lh(-3);
 		padding-bottom:lh(4);
 		}
 		
+	}
+	
+.flexslider--hero {
+	@include respond-min($large) {
+		background-color:#50504E;
+		background-image:url(../images/branding/hero-home-01.jpg);
+		}
 	}
 	
 .flexslider--hero .flex-control-nav {
@@ -315,19 +323,14 @@ html[xmlns] .slides {
 	text-align:left;
 	margin-left:auto;
 	margin-right:auto;
+	text-align:center;
 	width: 94%;
 	
 	@include respond-min($large) {
 		bottom:lh(4);
-		left:0;
-		max-width: 1152px;
-		right:0;
 		width:100%;
 		}
-		
-	@include respond-min($xlarge) {
-		max-width: 1400px;
-		}
+
 
 	}
 		
@@ -411,6 +414,19 @@ html[xmlns] .slides {
 	@include respond-min($large) {
 		font-size:rem(52px);
 		margin-top:lh(1.25); 
+		}
+	
+	}
+	
+.flexslider--hero .flex-caption__title {
+	
+	@include respond-min($medium) {
+		font-size:rem(40px); 
+		}
+		
+	@include respond-min($large) {
+		font-size:rem(40px);
+		margin-top:lh(2); 
 		}
 	
 	}

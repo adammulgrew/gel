@@ -309,31 +309,13 @@
 .soft { 
 	padding:rem($font-base-line-height) !important; 
 	}
-	
-.soft--medium {
-	@include respond-min($medium) {
-		padding:rem($font-base-line-height) !important;
-		}
-	}
-	
-.soft--large {	
-	@include respond-min($large) {
-		padding:rem($font-base-line-height) !important;
-		}
-	}
-	
+
 .soft--top { 
 	padding-top:rem($font-base-line-height) !important; 
 	}
 	
 .soft--right { 
 	padding-right:rem($font-base-line-height) !important; 
-	}
-	
-.soft-right--large { 
-	@include respond-min($large) {
-		padding-right:$font-base-line-height !important;
-		}
 	}
 	
 .soft--bottom { 
@@ -356,12 +338,6 @@
 
 .soft-half { 
 	padding:rem($font-base-line-height-half) !important; 
-	}
-	
-.soft-half--large { 
-	@include respond-min($large) {
-		padding:rem($font-base-line-height-half) !important;
-		}
 	}
 	
 .soft-half--top { 
@@ -389,6 +365,33 @@
 	padding-right:rem($font-base-line-height-half) !important; 
 	padding-left: rem($font-base-line-height-half) !important; 
 	}
+	
+.soft--medium {
+	@include respond-min($medium) {
+		padding:rem($font-base-line-height) !important;
+		}
+	}	
+	
+.soft--large {	
+	@include respond-min($large) {
+		padding:rem($font-base-line-height) !important;
+		}
+	}
+	
+.soft-half--large { 
+	@include respond-min($large) {
+		padding:rem($font-base-line-height-half) !important;
+		}
+	}
+	
+.soft-right--large { 
+	@include respond-min($large) {
+		padding-right:$font-base-line-height !important;
+		}
+	}
+	
+	
+	
 
 .hard { 
 	padding: 0!important; 
@@ -509,9 +512,6 @@ pre {
 	
 	
 .panel-text-home {
-    @include respond-min($medium)  {
-		height:rem(140px);
-		}
 		
 	@include respond-min($large)  {
 		height:rem(100px);

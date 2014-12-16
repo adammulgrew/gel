@@ -4,7 +4,6 @@
 //
 // Styleguide 2.0
 
-
 // Options
 //
 // You can add more classes to your alert box to change its appearance - `.alert--info`, `.alert--success`, `.alert--warning `, or `.alert--danger`
@@ -27,7 +26,7 @@
 	display:block;
 	font-family:$secondary-font;
 	font-size:rem(18px);
-	margin:0 0 lh(1) 0;
+	margin-bottom:lh(1);
 	padding:lh(1) lh(1.66);
 	
 	a {
@@ -44,6 +43,7 @@
 		}
 		
 	}
+	
 		
 .alert--info {
     background-color:$blue-tint;
