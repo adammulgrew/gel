@@ -4,40 +4,149 @@
 //
 // Styleguide 12.0
 
-// Off Canvas
+// Simple horizontal navigation
+//
+// Markup:
+//<nav class="cf nav nav-primary" role="navigation">
+//  <ul class="nav-primary__list">
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link nav-primary__link--selected">Selected nav item</a>
+//    </li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//  </ul>
+//</nav>
 //
 //
 //
 // Styleguide 12.1
 
-// Top bar
+// Simple horizontal navigation with secondary level
 //
+// Markup:
+//<nav class="cf nav nav-primary" role="navigation">
+//  <ul class="nav-primary__list">
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link nav-primary__link--selected">Primary nav item</a>
+//        <nav class="js-toggle-item nav-secondary">                               
+//          <ul class="nav-secondary__list">
+//          <li class="nav-secondary__item">
+//            <a class="nav-secondary__link" href="#">
+//              Secondary nav item
+//            </a>
+//          </li>
+//          <li class="nav-secondary__item">
+//            <a class="nav-secondary__link nav-secondary__link--selected" href="#">
+//              Selected nav item
+//            </a>
+//          </li>
+//          <li class="nav-secondary__item">
+//            <a class="nav-secondary__link" href="#">
+//              Secondary nav item
+//            </a>
+//          </li>
+//        </ul>
+//      </nav>
+//    <li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//    <li class="nav-primary__item">
+//      <a href="#" class="nav-primary__link">Primary nav item</a>
+//    </li>
+//  </ul>
+//</nav>
 //
 //
 //
 // Styleguide 12.2
 
-// Simple side navigation
+// Nav tabs
+//
+// Simple horizontal navigation styling to resemble tabs
+//
+//Markup:
+//<nav class="cf nav nav-tabs" role="navigation">
+//  <ul class="nav-tab__list">
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link nav-tab__link--active">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//  </ul>
+//</nav>
 //
 //
 //
 // Styleguide 12.3
 
-// Nav tabs
-//
-//
-//
-//
-// Styleguide 13.4
 
+// Horizontally centered nav tabs
+//
+//
+//Markup:
+//<nav class="cf nav nav-tabs nav-tabs--centered" role="navigation">
+//  <ul class="nav-tab__list">
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link nav-tab__link--active">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//    <li class="nav-tab__item">
+//      <a href="#" class="nav-tab__link">Nav tab item</a>
+//    </li>
+//  </ul>
+//</nav>
+//
+//
+//
+// Styleguide 12.4
 
 // Breadcrumbs
 //
+//Markup:
+//  <nav class="nav nav-breadcrumbs">
+//    <ol class="nav-breadcrumb__list">
+//      <li class="nav-breadcrumb__item">
+//        <a href="#" class="nav-breadcrumb__link">
+//          Home
+//        </a>
+//      </li>
+//      <li class="nav-breadcrumb__item">
+//        <a href="#" class="nav-breadcrumb__link">
+//          Level one
+//        </a>
+//      </li>
+//      <li class="nav-breadcrumb__item">
+//        Current page
+//      </li>
+//    </ol>
+//  </nav>
 //
 //
 //
-//
-// Styleguide 12.5
+// Styleguide 12.6
 	
 .nav {
 	list-style-type:none;
@@ -205,7 +314,9 @@
 		border-left:1px solid $light-grey-2;
 		}
 	}
-	
+
+.nav-primary__link--selected,
+.nav-primary__link--selected:visited,
 .selected .nav-primary__link {
 	@include respond-min($large) {	
 		background-color:$bright-blue;
@@ -214,9 +325,7 @@
 	}
 	
 .nav-primary__list .icon-search {
-	
 	margin-top:rem(6px);
-	
 	&:visited {
 		color:$dark-blue;
 		
@@ -227,7 +336,7 @@
 		}
 		
 	}
-		
+	
 @include respond-min($large) {	
 	.submenu {
 		margin-bottom:rem(45px);
@@ -281,9 +390,12 @@
 			}
 		}
 		
+	.nav-secondary__link--selected {
+		border-bottom:4px solid #fff;
+		}
+		
 	}
-		
-		
+				
 .nav-secondary__item.selected .nav-secondary__link {
 	@include respond-min($large) {	
 		border-bottom:4px solid #fff;
@@ -332,28 +444,85 @@
 	border-left:4px solid $dark-blue;
 	color:$dark-blue;
 	}
-	
-.nav--breadcrumb {
-	> li {
-		display:inline-block;
-		}
-	}
 
-.js-toggle {
-	&:hover {
-		cursor:pointer;
-		}
-	}
-	
 .nav-tabs {
 	@include clearfix();
 	display:block;
 	font-family:$primary-font;
 	}
-	
+		
+.nav-tab__list {
+	@include clearfix();
+	border-bottom: solid 1px $blue-tint;
+	display: block; 
+	font-size:rem(18px);
+	height:rem(48px);
+	list-style: none;
+	padding:0; 
+
+	@include respond-min($medium) {
+		padding: 0 lh(1); 
+		}
+
+	}
+
+.nav-tab__item {
+	display:block;
+	float:left;
+	list-style: none;
+	}
+
+.nav-tab__link {
+	background-color:$blue-tint;
+	border-bottom: 1px solid $blue-tint;
+	border-left: 1px solid $blue-tint;
+	border-right: 1px solid $blue-tint;
+	border-spacing:0;
+	border-top: 2px solid transparent;
+	color:$bright-blue;
+	display: block;
+	font-family:$secondary-font;
+	height:rem(48px);
+	line-height:rem(32px);
+	margin:0;
+	padding: 0 lh(.33);
+	text-decoration:none;
+
+	&:hover {
+		color:$dark-blue;
+		cursor: pointer; 
+		text-decoration:none;
+		}
+		
+	&:visited {
+		color:$bright-blue;
+		&:hover {
+			color:$dark-blue;
+			}
+		}	
+		
+	@include respond-min($medium) {
+		padding: lh(.33) lh(1);
+		}
+
+	}
+
+.nav-tab__link--active {	
+	background-color:#fff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid $blue-tint;
+	border-right: 1px solid $blue-tint;
+	border-spacing:0;
+	border-top: 2px solid $dark-blue;
+	color:$dark-blue;
+	cursor: default; 
+	margin-left:0;
+	}
+		
 .nav-tabs--centered {
 
 	@include respond-min($medium) {
+		float:left;
 		margin-left: auto;
 		margin-right: auto;
 		overflow:hidden;
@@ -361,117 +530,66 @@
 		width:100%;
 		}
 		
-	.nav-tabs__list {
+	.nav-tab__list {
 		clear:left;
-   		float:left;
-		left:50%;	
-		position:relative;
-		}
-		
-	.nav-tabs__item {
-		right:50%;
-		}
-		
-	}
-	
-	
-.nav-tabs__list {
-	@include respond-max(48em) {
-		margin-bottom:lh(1);
-		margin-top:lh(1);
-		}
-	@include respond-min($medium) {
-	   	padding:0;
-		text-align:center;
-		}
-		
-	}
-		
-.nav-tabs__item {
-	display:block;
-	padding:0;
-	
-	@include respond-min($medium) {
 		float:left;
-		margin:0;
+		left:50%;
+		margin:0;	
 		position:relative;
-		width:auto;
-		}
-		
-	}	
-	
-.nav-tabs__link {
-	color:$bright-blue;
-	border-bottom: 1px solid darken($blue-tint, 5%);
-	display:block;
-	padding:lh(.5);
-	
-	&:visited {
-		color:$bright-blue;
-		}
-			
-	@include respond-max(48em) {
-		position:relative;
-		&:after {
-			color:$orange;
-			content: '\e802'; 
-			display:inline-block;
-			font-family:"fontello";
-			position:absolute;
-			right:0;
-			top:lh(.5);
-			}
-			
-		}
-			
-	@include respond-min($medium) {
-		background-color:darken($dark-blue, 10%);
-		border-bottom:none;
-		border-top:4px solid transparent;
-		color:#fff;
-		font-size:rem(16px);
-		margin-right:lh(.25);
-		padding:lh(.5) lh(1);
 		text-align:center;
-		
-		&:visited {
-			color:#fff;
-			}
-				
-		&:hover {
-			background-color:#fff;
-			color:$bright-blue;
-			text-decoration:none;
-			}
-			
 		}
-		
-	@include respond-min($large) {
-		padding:lh(.5) lh(1.66);
-		}
-		
-	}
-	
-	
-.active .nav-tabs__link {		
-	
-	@include respond-max(48em) {
-		background-color: darken($blue-tint, 5%);
-		color:$dark-blue;
+
+	.nav-tab__item {
 		position:relative;
-		
-		&:after {
-			content: none; 
-			}
-			
-		}
-		
-	@include respond-min($medium) {
-		background-color:#fff;
-		border-bottom: none;
-		border-top:4px solid $bright-blue;
-		color:$bright-blue;
+		right:50%;
 		}
 
 	}
+	
+	
+.nav-breadcrumb {
+	display:block;
+	}
+	
+.nav-breadcrumb__list {
+	@include clearfix();
+	}
+		
+.nav-breadcrumb__item {
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	&:last-child {
+		opacity:0.5;
+		}
+	}
+	
+.nav-breadcrumb__link {
+	display:block;
+	margin:0;
+	padding:0;
+	
+	&:hover {
+		opacity:0.66;
+		}
+		
+	&:after {
+		border-bottom:none;
+		content:'\E802';	
+		font-family:"fontello";
+		font-size:80%;
+		margin-left:lh(.5);
+		margin-right:lh(.5);
+		padding:0;
+		}
+		
+	}
+		
+.js-toggle {
+	&:hover {
+		cursor:pointer;
+		}
+	}
+	
 	

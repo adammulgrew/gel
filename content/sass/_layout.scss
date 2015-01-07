@@ -2,7 +2,7 @@
 //
 // Classes to help responsive layout
 //
-//Styleguide 10.0
+// Styleguide 10.0
 
 // Pull left or right
 //
@@ -14,7 +14,7 @@
 // .pull-right--large - Pull right after large breakpoint
 //
 // Markup:
-// <a class="btn {$modifiers}">{$modifiers}</a>
+// <a class="btn {$modifiers}">.{$modifiers}</a>
 //
 // Styleguide 10.1
 
@@ -37,26 +37,26 @@
 // .push-half--sides  - Half horizontal margins
 //
 // Markup:
-// <div class="bg-yellow inline-block ">
+// <div class="bg-yellow inline-block">
 //   <div class="bg-bright-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.2
 
 	
-//remove margins
+// Remove margins
 //
-// .flush -remove all margins
-// .flush--top -remove top margin
-// .flush--right -remove right margin
-// .flush--bottom -remove bottom margin
-// .flush--left -remove left margin
-// .flush--ends -remove vertical margins
-// .flush--sides -remove horizontal margins
+// .flush - All sides
+// .flush--top - Remove top margin
+// .flush--right - Remove right margin
+// .flush--bottom - Remove bottom margin
+// .flush--left - Remove left margin
+// .flush--ends - Remove vertical margins
+// .flush--sides - Remove horizontal margins
 //
 // Markup:
-// <div class="bg-yellow inline-block ">
-//   <div class="bg-bright-blue soft push white inline-block {$modifiers}">.{$modifiers}</div>
+// <div class="bg-yellow inline-block">
+//   <div class="bg-bright-blue soft white inline-block push {$modifiers}">.{$modifiers}</div>
 // </div>
 //
 // Styleguide 10.3
@@ -80,14 +80,12 @@
 // .soft-half--sides  - Half horizontal padding
 //
 // Markup:
-// <div class="bg-yellow soft inline-block">
-//   <div class="bg-bright-blue white inline-block {$modifiers}">.{$modifiers}</div>
-// </div>
+// <div class="bg-bright-blue white inline-block {$modifiers}">.{$modifiers}</div>
 //
 // Styleguide 10.4
 
 
-//remove padding
+// Remove padding
 //
 // .hard -remove all padding
 // .hard--top -remove top padding
@@ -114,9 +112,7 @@
 // .text--right--large - text align right after large breakpoint
 //
 // Markup:
-// <div class="bg-yellow block">
-//   <div class="dark-blue block {$modifiers}">.{$modifiers}</div>
-// </div>
+// <div class="block {$modifiers}">.{$modifiers}</div>
 //
 // Styleguide 10.6
 

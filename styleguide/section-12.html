@@ -623,7 +623,23 @@
                                       
                                           <span class="kss-ref">12.1</span>
                                           
-                                          <span class="kss-name">Off Canvas</span>
+                                          <span class="kss-name">Simple horizontal navigation</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-12.2">
+                                      
+                                          <span class="kss-ref">12.2</span>
+                                          
+                                          <span class="kss-name">Simple horizontal navigation with secondary level</span>
                                       
                                       </a>
                                   
@@ -639,7 +655,7 @@
                                       
                                           <span class="kss-ref">12.3</span>
                                           
-                                          <span class="kss-name">Simple side navigation</span>
+                                          <span class="kss-name">Nav tabs</span>
                                       
                                       </a>
                                   
@@ -651,9 +667,25 @@
                                   
                                   <li class="kss-menu-item">
                                   
-                                      <a href="#section-12.5">
+                                      <a href="#section-12.4">
                                       
-                                          <span class="kss-ref">12.5</span>
+                                          <span class="kss-ref">12.4</span>
+                                          
+                                          <span class="kss-name">Horizontally centered nav tabs</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="#section-12.6">
+                                      
+                                          <span class="kss-ref">12.6</span>
                                           
                                           <span class="kss-name">Breadcrumbs</span>
                                       
@@ -715,13 +747,179 @@
                                     
                                     </span> 
                                 
-                                    Off Canvas
+                                    Simple horizontal navigation
                                 
                                 </h1>
                                 
                                 
                                 
                                 
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <nav class="cf nav nav-primary" role="navigation">
+ <ul class="nav-primary__list">
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link nav-primary__link--selected">Selected nav item</a>
+   </li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+ </ul>
+</nav>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;nav class=&quot;cf nav nav-primary&quot; role=&quot;navigation&quot;&gt;
+ &lt;ul class=&quot;nav-primary__list&quot;&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link nav-primary__link--selected&quot;&gt;Selected nav item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-12.2" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        12.2
+                                    
+                                    </span> 
+                                
+                                    Simple horizontal navigation with secondary level
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <nav class="cf nav nav-primary" role="navigation">
+ <ul class="nav-primary__list">
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link nav-primary__link--selected">Primary nav item</a>
+       <nav class="js-toggle-item nav-secondary">                               
+         <ul class="nav-secondary__list">
+         <li class="nav-secondary__item">
+           <a class="nav-secondary__link" href="#">
+             Secondary nav item
+           </a>
+         </li>
+         <li class="nav-secondary__item">
+           <a class="nav-secondary__link nav-secondary__link--selected" href="#">
+             Selected nav item
+           </a>
+         </li>
+         <li class="nav-secondary__item">
+           <a class="nav-secondary__link" href="#">
+             Secondary nav item
+           </a>
+         </li>
+       </ul>
+     </nav>
+   <li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+   <li class="nav-primary__item">
+     <a href="#" class="nav-primary__link">Primary nav item</a>
+   </li>
+ </ul>
+</nav>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;nav class=&quot;cf nav nav-primary&quot; role=&quot;navigation&quot;&gt;
+ &lt;ul class=&quot;nav-primary__list&quot;&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link nav-primary__link--selected&quot;&gt;Primary nav item&lt;/a&gt;
+       &lt;nav class=&quot;js-toggle-item nav-secondary&quot;&gt;                               
+         &lt;ul class=&quot;nav-secondary__list&quot;&gt;
+         &lt;li class=&quot;nav-secondary__item&quot;&gt;
+           &lt;a class=&quot;nav-secondary__link&quot; href=&quot;#&quot;&gt;
+             Secondary nav item
+           &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li class=&quot;nav-secondary__item&quot;&gt;
+           &lt;a class=&quot;nav-secondary__link nav-secondary__link--selected&quot; href=&quot;#&quot;&gt;
+             Selected nav item
+           &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li class=&quot;nav-secondary__item&quot;&gt;
+           &lt;a class=&quot;nav-secondary__link&quot; href=&quot;#&quot;&gt;
+             Secondary nav item
+           &lt;/a&gt;
+         &lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/nav&gt;
+   &lt;li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-primary__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-primary__link&quot;&gt;Primary nav item&lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
                                 
                                 
                                 
@@ -739,7 +937,7 @@
                                     
                                     </span> 
                                 
-                                    Simple side navigation
+                                    Nav tabs
                                 
                                 </h1>
                                 
@@ -747,19 +945,158 @@
                                 
                                 
                                 
+                                <div class="kss-description">
+                                
+                                  <p>Simple horizontal navigation styling to resemble tabs
+
+</p>
+
+                                  
+                                </div>
+                                
+                                
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <nav class="cf nav nav-tabs" role="navigation">
+ <ul class="nav-tab__list">
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link nav-tab__link--active">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+ </ul>
+</nav>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;nav class=&quot;cf nav nav-tabs&quot; role=&quot;navigation&quot;&gt;
+ &lt;ul class=&quot;nav-tab__list&quot;&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link nav-tab__link--active&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
+                                
                                 
                                 
                               </section>
                               
                               
                               
-                              <section id="section-12.5" class="kss-section kss-depth-2">
+                              <section id="section-12.4" class="kss-section kss-depth-2">
                               
                                 <h1 class="kss-title giga dark-blue push--bottom">
                                 
                                     <span class="kss-ref bright-blue">
                                     
-                                        12.5
+                                        12.4
+                                    
+                                    </span> 
+                                
+                                    Horizontally centered nav tabs
+                                
+                                </h1>
+                                
+                                
+                                
+                                
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                      <nav class="cf nav nav-tabs nav-tabs--centered" role="navigation">
+ <ul class="nav-tab__list">
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link nav-tab__link--active">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+   <li class="nav-tab__item">
+     <a href="#" class="nav-tab__link">Nav tab item</a>
+   </li>
+ </ul>
+</nav>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html">&lt;nav class=&quot;cf nav nav-tabs nav-tabs--centered&quot; role=&quot;navigation&quot;&gt;
+ &lt;ul class=&quot;nav-tab__list&quot;&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link nav-tab__link--active&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class=&quot;nav-tab__item&quot;&gt;
+     &lt;a href=&quot;#&quot; class=&quot;nav-tab__link&quot;&gt;Nav tab item&lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
+                                
+                                
+                                
+                              </section>
+                              
+                              
+                              
+                              <section id="section-12.6" class="kss-section kss-depth-2">
+                              
+                                <h1 class="kss-title giga dark-blue push--bottom">
+                                
+                                    <span class="kss-ref bright-blue">
+                                    
+                                        12.6
                                     
                                     </span> 
                                 
@@ -770,6 +1107,60 @@
                                 
                                 
                                 
+                                
+                                <div class="kss-modifier-block">
+                                
+                                  <div class="kss-modifier kss-modifier-original">
+                                  
+                                    <div class="kss-modifier-example">
+                                    
+                                       <nav class="nav nav-breadcrumbs">
+   <ol class="nav-breadcrumb__list">
+     <li class="nav-breadcrumb__item">
+       <a href="#" class="nav-breadcrumb__link">
+         Home
+       </a>
+     </li>
+     <li class="nav-breadcrumb__item">
+       <a href="#" class="nav-breadcrumb__link">
+         Level one
+       </a>
+     </li>
+     <li class="nav-breadcrumb__item">
+       Current page
+     </li>
+   </ol>
+ </nav>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <div class="kss-markup">
+                                  
+                                    <pre><code data-language="html"> &lt;nav class=&quot;nav nav-breadcrumbs&quot;&gt;
+   &lt;ol class=&quot;nav-breadcrumb__list&quot;&gt;
+     &lt;li class=&quot;nav-breadcrumb__item&quot;&gt;
+       &lt;a href=&quot;#&quot; class=&quot;nav-breadcrumb__link&quot;&gt;
+         Home
+       &lt;/a&gt;
+     &lt;/li&gt;
+     &lt;li class=&quot;nav-breadcrumb__item&quot;&gt;
+       &lt;a href=&quot;#&quot; class=&quot;nav-breadcrumb__link&quot;&gt;
+         Level one
+       &lt;/a&gt;
+     &lt;/li&gt;
+     &lt;li class=&quot;nav-breadcrumb__item&quot;&gt;
+       Current page
+     &lt;/li&gt;
+   &lt;/ol&gt;
+ &lt;/nav&gt;</code></pre>
+                                    
+                                  </div>
+                                  
+                                </div>
                                 
                                 
                                 
