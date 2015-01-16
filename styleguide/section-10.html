@@ -86,6 +86,17 @@
                         
                         </div>
                         
+                        <button class="search-link icon-search" type="button" id="modal_open">
+
+                            <span class="visuallyhidden">
+            
+                                Open the Search Modal
+                            
+                            </span>
+                        
+                        </button>
+
+                        
                     </div>
                 
                 </header>
@@ -171,7 +182,7 @@
                                             </a>
                                         
                                         </li>
-                                    
+
                                     </ul>
                                 
                                 </nav>
@@ -597,6 +608,21 @@
                                           <span class="kss-ref">19</span>
                                           
                                           <span class="kss-name">Visibility</span>
+                                      
+                                      </a>
+                                  
+                                  </li>
+                                  
+                                  
+                                  
+                                  
+                                  <li class="kss-menu-item">
+                                  
+                                      <a href="section-20.html">
+                                      
+                                          <span class="kss-ref">20</span>
+                                          
+                                          <span class="kss-name">Responsive email templates</span>
                                       
                                       </a>
                                   
@@ -2551,6 +2577,42 @@
     	</div>
     
     </div>
+    
+    <div class="modal-overlay" id="modal_window"  aria-hidden="true" role="dialog" aria-labelledby="modal_title">
+
+      <div class="modal__content" id="modal_holder" role="document">
+
+        <div class="search" action="/search">
+                                                            
+            <label class="visuallyhidden" for"siteSearch">
+            
+                Search the Digital Guidelines
+                
+            </label>
+            
+            <input type="text" placeholder="Search the Digital Guidelines..." class="search__input" id="siteSearch">
+            
+            <a href="javascript:goSearch();" class="search__btn">
+            
+                <i class="icon icon-search"></i>
+        
+                <span class="visuallyhidden">Search</span>
+                
+            </a>
+            
+        </div>
+
+        <button class="btn-close" id="modal_close" type="button" aria-label="close">
+        
+          &times;
+          
+        </button>
+        
+        </div>
+
+    </div> 
+      
+      <!-- end .modal-content -->
 
     <script src="public/kss.js"></script>
     
@@ -2572,7 +2634,7 @@
     
     <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
     
-    <script src="../content/js/libs/jquery.remodal.min.js"></script>
+    <script src="../content/js/libs/modal.js"></script>
     
     <script src="../content/js/core.js"></script>
     

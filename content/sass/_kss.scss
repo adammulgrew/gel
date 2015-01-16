@@ -414,6 +414,56 @@ pre .regexp {
 	text-decoration: none
 	}
 	
+.kss-description .btn {
+	@include border-radius(2px);
+	background-color:$light-grey-1;
+	border:1px solid darken($light-grey-1, 10%);
+	color: $dark-grey-2;
+	cursor: pointer;
+	display: inline-block;
+	font-family:$secondary-font;
+	font-size:rem(16px);
+	font-weight:normal;
+	height:rem(48px);
+	line-height:rem(48px);
+	margin:0 0 lh(1) 0;
+	outline: none;
+	padding: 0 lh(1.33);
+	position: relative;
+	text-decoration: none;
+	
+	&:hover,
+	&:focus {
+		background-color:darken($light-grey-2, 5%);
+		color: $dark-grey-3;
+		text-decoration:none;
+		}
+	
+	&:visited {
+		color: $dark-grey-2;
+		}
+	}
+	
+.kss-description .btn--primary {
+	background-color:$bright-blue;
+	border-color:shade($bright-blue, 25%);
+	color:#fff;
+
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:tint($bright-blue, 25%);
+		color:#fff;
+		text-decoration:none;
+		}
+		
+	&:visited {
+		color:#fff;
+		}
+		
+	}
+	
 .kss-description a:hover {
 	text-decoration: underline;
 	color: #068

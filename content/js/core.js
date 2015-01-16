@@ -26,13 +26,6 @@ function loadAsync(url, loadFn) {
 }
 
 
-//  Or init in this way:
-$(document).on('opened', '.remodal', function () {
-	$('#siteSearch').focus();
-});
-var inst = $('[data-remodal-id=modal]').remodal();
-//  inst.open();
-
 
 
 

@@ -72,20 +72,38 @@
 	
 	
 .search-link {
+	background-color:transparent;
+	border:none;
 	color:$bright-blue;
-	display:block;
+	display:inline-block;
+	font-size:rem(32px);
+	min-width:0;
+	padding:0;
 	position:absolute;
 	right:rem(64px);
 	text-align:center;
-	top:lh(.75);
+	top:rem(12px);
+	width:auto;	
 	z-index:9;
 
-	@include respond-min($medium) {
-		right:rem(72px);
-		}
-
 	@include respond-min($large) {
-		display:none;
+		color:$dark-blue;
+		right:0;
+		top:rem(100px);
+		}
+		
+	&:hover,
+	&:focus {
+		background-color:transparent !important;
+		border:none !important;
+		border-color:transparent;
+		color:$bright-blue;
+		}
+		
+	&:active { 
+		background-color:transparent !important;
+		border:none !important;
+		border-color:transparent;
 		}
 		
 	}
@@ -112,23 +130,6 @@
 		display:none !important;
 		}
 	
-	}
-	
-.js-panel__search {
-	display:none;
-	@include respond-min($large) {
-		display:block !important;
-		}
-	
-	}
-		
-.panel--search {
-	padding:lh(.66) 0;
-	@include respond-min($medium) {
-		margin:0;
-		padding:rem(25px) 0 0 0;
-		width:100%;
-		}
 	}
 		
 .search {

@@ -1,0 +1,101 @@
+/*
+  Modal Overlay - http://codepen.io/scottohara/pen/lIdfv
+*/
+.modal-overlay {
+	background: rgba(#fff, 0.95);
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	transition: opacity .2s;
+	width: 100%;
+	z-index: -1;
+	}
+
+.modal-overlay[aria-hidden="true"] {
+	opacity: 0;
+	visibility: hidden;
+	}
+
+.modal-overlay[aria-hidden="false"] {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1000;
+	}
+	
+
+/*
+  Modal Content Area
+*/
+
+.modal__content {
+	background: transparent;
+	margin-left:auto;
+	margin-right:auto;
+	opacity: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	padding-top:rem(80px);
+	position: relative;
+	transform: scale(1);
+	transition: transform .15s;
+	width: 90%;
+	
+	-webkit-transition: opacity 0.33s linear;
+	-moz-transition: opacity 0.33s linear;
+	-o-transition: opacity 0.33s linear;
+	transition: opacity 0.33s linear;
+	
+	@include respond-min($medium) {
+		max-width:1500px;
+		padding-top:rem(120px);
+		width: 100%;
+		}
+		
+	@include respond-min($large) {
+		padding-top:rem(180px);
+		}
+		
+	}
+
+
+.modal-overlay[aria-hidden="false"] .modal__content {
+	opacity: 1;
+	transform: scale(1);
+	}
+
+
+/*
+  Close Modal Button
+*/
+
+.btn-close {
+	background: none;
+	border: none;
+	color:tint($grey,60%);
+	cursor: pointer;
+	font-family: arial;
+	font-size:rem(48px);
+	font-weight: 800;
+	line-height: 1;
+	min-width:0;
+	padding:0;
+	padding: 0;
+	position: absolute;
+	right:rem(12px);
+	text-decoration: none;
+	top: rem(12px);
+	width:auto;
+	z-index: 2;
+	}
+
+.btn-close:hover {
+	color:$bright-blue;
+	}
+
+.btn-close:focus {
+	outline: 1px dotted;
+	}
+	
+	
