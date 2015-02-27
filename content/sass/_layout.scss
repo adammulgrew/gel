@@ -544,3 +544,17 @@ pre {
 		}
 	}
 	
+.overlay_caption {
+	bottom:lh(1);
+	left:lh(1);
+	position:absolute; 
+	z-index:1;
+	
+	@include respond-min($medium)  {
+		bottom:lh(2);
+		left:lh(2);
+		width:50%;
+		}
+		
+	}
+	

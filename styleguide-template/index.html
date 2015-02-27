@@ -100,11 +100,9 @@
                     </div>
                 
                 </header>
-    
-                <div id="fixed">
-                      
-                  <nav id="nav" class="cf nav nav-primary" role="navigation">
-                  
+         
+                <nav id="nav" class="cf nav nav-primary" role="navigation">
+                
                     <div class="block wrap">
                     
                         <ul class="nav-primary__list">
@@ -182,7 +180,7 @@
                                             </a>
                                         
                                         </li>
-
+                    
                                     </ul>
                                 
                                 </nav>
@@ -224,11 +222,9 @@
                         </a> 
                       
                       </div>
-                      
-                  </nav>
                   
-                </div>
-    
+                </nav>
+                  
                 <main role="main">
                 
                     <div class="bg-pattern panel--push-down push--top">
@@ -305,80 +301,87 @@
                         
                     </nav>
                     
-                    <section class="wrap bg-white soft--ends panel--pull-up">
+                    <section id="content" class="wrap bg-white soft--ends panel--pull-up">
                 
                         <div class="kss-wrapper wrap">
                         
                           <div class="kss-sidebar col small_12 medium_4 large_3">
                           
-                            <div class="kss-sidebar-inner">
-                              
-                              <nav class="kss-nav">
-                              
-                                <ul class="kss-menu" data-kss-ref="{{rootNumber}}">
-                                
-                                  <li class="kss-menu-item">
+                          	<div id="fixed">
+                          
+                                <div class="kss-sidebar-inner">
                                   
-                                      <a href="./">
+                                  <nav class="kss-nav">
+                                  
+                                    <ul class="kss-menu" data-kss-ref="{{rootNumber}}">
+                                    
+                                      <li class="kss-menu-item">
                                       
-                                          <span class="kss-ref">0</span>
+                                          <a href="./">
                                           
-                                          <span class="kss-name">Overview</span>
-                                      
-                                      </a>
-                                  
-                                  </li>
-                                  
-                                  {{#eachRoot}}
-                                  
-                                  <li class="kss-menu-item">
-                                  
-                                      <a href="section-{{reference}}.html">
-                                      
-                                          <span class="kss-ref">{{reference}}</span>
+                                              <span class="kss-ref">0</span>
+                                              
+                                              <span class="kss-name">Overview</span>
                                           
-                                          <span class="kss-name">{{header}}</span>
+                                          </a>
                                       
-                                      </a>
-                                  
-                                  </li>
-                                  
-                                  
-                                  {{/eachRoot}}
-                                  
-                                </ul>
-                                
-                                {{#if overview}}
-                                
-                                {{else}}
-                                
-                                <ul class="kss-menu-child">
-                                
-                                  {{#eachSection rootNumber}}
-                                  {{#whenDepth 1}}
-                                  {{else}}
-                                  
-                                  <li class="kss-menu-item">
-                                  
-                                      <a href="#section-{{reference}}">
+                                      </li>
                                       
-                                          <span class="kss-ref">{{reference}}</span>
+                                      {{#eachRoot}}
+                                      
+                                      <li class="kss-menu-item">
+                                      
+                                          <a href="section-{{reference}}.html">
                                           
-                                          <span class="kss-name">{{header}}</span>
+                                              <span class="kss-ref">{{reference}}</span>
+                                              
+                                              <span class="kss-name">{{header}}</span>
+                                          
+                                          </a>
                                       
-                                      </a>
+                                      </li>
+                                      
+                                      
+                                      {{/eachRoot}}
+                                      
+                                    </ul>
+                                    
+                                    {{#if overview}}
+                                    
+                                    {{else}}
+                                    
+                                    <ul class="kss-menu-child">
+                                    
+                                      {{#eachSection rootNumber}}
+                                      
+                                      {{#whenDepth 1}}
+                                      
+                                      {{else}}
+                                      
+                                      <li class="kss-menu-item">
+                                      
+                                          <a href="#section-{{reference}}">
+                                          
+                                              <span class="kss-ref">{{reference}}</span>
+                                              
+                                              <span class="kss-name">{{header}}</span>
+                                          
+                                          </a>
+                                      
+                                      </li>
+                                      
+                                      {{/whenDepth}}
+                                      
+                                      {{/eachSection}}
+                                      
+                                    </ul>
+                                    
+                                    {{/if}}
+                                    
+                                  </nav>
                                   
-                                  </li>
-                                  
-                                  {{/whenDepth}}
-                                  {{/eachSection}}
-                                  
-                                </ul>
-                                
-                                {{/if}}
-                                
-                              </nav>
-                              
+                                </div>
+                            
                             </div>
                             
                           </div>
@@ -496,6 +499,14 @@
                               
                             </article>
                             
+                            <a href="#content" title="Back to top" class="gamma">
+                            	
+                               <i class="icon-angle-up"></i>
+                            
+                            	Back to top
+                            
+                            </a>
+                            
                           </div>
                           
                         </div>
@@ -600,11 +611,11 @@
     
     <div class="modal-overlay" id="modal_window"  aria-hidden="true" role="dialog" aria-labelledby="modal_title">
 
-      <div class="modal__content" id="modal_holder" role="document">
+      <div class="modal__content wrap" id="modal_holder" role="document">
 
         <div class="search" action="/search">
                                                             
-            <label class="visuallyhidden" for"siteSearch">
+            <label class="visuallyhidden" for"siteSearch" id="modal_title">
             
                 Search the Digital Guidelines
                 

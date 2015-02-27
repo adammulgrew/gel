@@ -63,20 +63,21 @@ pre .regexp {
 	}
 
 .kss-sidebar {
-	
 	height:auto !important;
 
 	@include respond-min($medium) {
+		
 		margin-left: 1.25%;
 		margin-right: 1.25%;
 		overflow: hidden;
+		margin-bottom:rem(400px);
 		}
 	
 	@include respond-min($large) {
 		padding-right:lh(1.66);
 		}
-
 	}
+	
 
 .kss-sidebar.kss-fixed {
 	@include respond-min($medium) {
@@ -212,7 +213,7 @@ pre .regexp {
 	}
 	
 .kss-content {
-	overflow: hidden;
+	
 	}
 
 .kss-section {
@@ -706,7 +707,5 @@ pre .regexp {
 .kss-markup pre {
     border-color: #E3E3E3 #E3E3E3 #E3E3E3 $dark-grey-3;
 	}
-	
-.kss-modifier-original {
-	
-	}
+
+
