@@ -327,17 +327,13 @@ p  {
 a {
 	color:$bright-blue;
 	text-decoration:none;
+	
 	&:hover {
 		color:$dark-blue;
 		text-decoration:none;
 		}
 		
-	&:focus {
-		
-		}
-		
 	}
-	
 		
 .run-in {
 	font-size:rem(18.7px);
