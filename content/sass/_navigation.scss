@@ -260,6 +260,8 @@
 	}
 				
 .nav-primary__link {
+	@include transitions;
+	
 	@include respond-min($large) {
 		border-right:1px solid $light-grey-2;
 		color:$dark-blue;
@@ -369,6 +371,7 @@
 		}
 		
 	.nav-secondary__link {
+		@include transitions;
 		color:#fff;
 		display:block;
 		font-family:$primary-font;

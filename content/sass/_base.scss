@@ -339,6 +339,10 @@ td {
 
 /* CLEAR */
 
+.clear, .cf {
+	@include clearfix();
+	}
+
 .clearfix:after {
 	clear:both;
 	content:' ';

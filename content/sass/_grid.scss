@@ -585,4 +585,25 @@ $xlarge:90.075em;
 	@include clearfix();
 	@include row;
 	}
+	
+.wrap {
+	@include clearfix();
+	margin:0 auto;
+	width:94%;
+	
+	@include respond-min($large) {
+		max-width:1200px;
+		width:100%;
+		}
+		
+	@include respond-min($xlarge) {
+		max-width:1600px;
+		width:100%;
+		}
+		
+	@include old-ie {
+		width:1200px;
+		}
+		
+	}
 

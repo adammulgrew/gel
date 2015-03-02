@@ -1,4 +1,5 @@
 .panel {
+	@include clearfix();
 	background-color:transparent;
 	display:block;
 	margin-bottom:lh(.75);
