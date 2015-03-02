@@ -4,9 +4,9 @@
 
 	<p>Here you can download all of the <abbr title="Global Experience Language">GEL</abbr> boilerplate assets including <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, Javascript, images and webfonts. An example index.html file with the correct asset references is also included</p>
 
-	<a href="https://github.com/SLDG/gel/releases/download/v0.1.0/0.1.0.zip" class="btn btn--primary btn--icon no-external">
+	<a href="https://github.com/SLDG/gel/releases/download/v0.2.0/0.2.0.zip" class="btn btn--primary btn--icon no-external">
 	
-		Download Version 0.1.0 
+		Download Version 0.2.0 
 		
 		<i class="icon icon-download"></i>
 	
