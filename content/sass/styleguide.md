@@ -1,4 +1,4 @@
-#Standard Life Patterns (Beta)
+#Standard Life Patterns
 
 <div class="editor-content">
 
