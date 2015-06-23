@@ -1015,6 +1015,7 @@
 	background-color:$dark-blue;	
 	@include respond-min($large) {
 		background-image:url(../images/branding/sl-pattern-01.png);
+		background-image:none;
 		background-position:right top;
 		background-repeat:no-repeat;
 		background-size: contain;

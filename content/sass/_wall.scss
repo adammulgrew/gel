@@ -1,0 +1,337 @@
+/**
+ *
+ * Used to generate responsive styles according to the breakpoint we set into the variables file
+ *
+ */
+/**
+ *
+ * Simpler shortcut to create easily break points
+ *
+ */
+/**
+ * Easy functions to create easily pure css arrows anywhere
+ */
+/**
+ *
+ * The wall could be used to show an image gallery or any other content in a "google images" user interaction way
+ * Here there is all the html needed
+ *
+ *
+ *  <div class="GITheWall">
+ *    <ul>
+ *      <li data-contenttype="image" data-href="path/to/the/image">
+ *        <img src="small/thumb" />
+ *      <li>
+ *      <li data-contenttype="ajax" data-href="path/to/the/html/to/load">
+ *        <img src="small/thumb" />
+ *      <li>
+ *    </ul>
+ *  </div>
+ *
+ */
+
+
+.GITheWall__list {
+  @include clearfix;
+  list-style: none;
+  margin: 0 auto;
+  text-align:center;
+  width: 100%;
+
+  @include respond-min($large) {
+    width: 80%;
+    }
+
+  }
+
+
+.GITheWall ul li {
+  display: inline-block;
+  }
+
+.GITheWall-nav-item {
+  @include border-radius(50%);
+  @include transitions;
+  background-color:#fff;
+  border:1px solid $dark-blue;
+  color:$dark-blue;
+  font-family:$primary-font;
+  font-size:rem(24px);
+  height:rem(240px);
+  line-height:1.25;
+  margin:0 auto lh(2) auto;
+  text-align:Center;
+  width:rem(240px);
+
+  &:hover {
+    background-color:$dark-blue;
+    color:#fff;
+    cursor:pointer;
+    }
+
+  @include respond-min($medium) {
+    font-size:rem(21px);
+    height:rem(160px);
+    width:rem(160px);
+    }
+
+  @include respond-min($large) {
+    font-size:rem(28px);
+    height:rem(220px);
+    width:rem(220px);
+    }
+
+  @include respond-min($xlarge) {
+    height:rem(240px);
+    width:rem(240px);
+    }
+
+  }
+
+.GI_TW_Current {
+
+  .GITheWall-nav-item {
+    background-color:$dark-blue;
+    color:#fff;
+    }
+
+  }
+
+.GITheWall-nav-item__inner {
+  display:table-cell;
+  height:rem(240px);
+  padding:lh(1);
+  vertical-align:middle;
+  width:rem(240px);
+
+  @include respond-min($medium) {
+    height:rem(160px);
+    width:rem(160px);
+    }
+
+  @include respond-min($large) {
+    height:rem(220px);
+    width:rem(220px);
+    }
+
+  @include respond-min($xlarge) {
+    height:rem(240px);
+    width:rem(240px);
+    }
+
+  }
+
+
+
+.GITheWall ul li.GI_TW_Selected_Row {
+  -webkit-transition: margin-bottom 0.3s ease-in;
+  -moz-transition: margin-bottom 0.3s ease-in;
+  -o-transition: margin-bottom 0.3s ease-in;
+  transition: margin-bottom 0.3s ease-in;
+  }
+
+.GI_TW_expander {
+  background: #fff;
+  height: 0;
+  left: 0;
+  /*margin-top: 10px;*/
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  -webkit-transition: height 0.3s ease-in;
+  -moz-transition: height 0.3s ease-in;
+  -o-transition: height 0.3s ease-in;
+  transition: height 0.3s ease-in;
+  }
+
+.GI_TW_expander.animating {
+  overflow: hidden !important;
+  }
+
+.GI_TW_expander.opened {
+  overflow: visible;
+  }
+
+.GI_TW_expander .GI_TW_pointer {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid $bright-blue;
+  height: 0;  
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  width: 0;
+
+  -webkit-transition: left 0.3s ease-in;
+  -moz-transition: left 0.3s ease-in;
+  -o-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
+  }
+
+.GI_TW_expander .GI_TW_expander-inner {
+  
+  /*height: 560px; */
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+
+
+  }
+
+.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  margin: 10px 0 0;
+  text-align: center;
+  overflow: hidden;
+  }
+
+.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg img {
+  position: relative;
+  }
+
+.GI_TW_expander .GI_TW_Controls {
+  z-index: 1;
+  }
+
+.GI_TW_expander .GI_TW_close {
+  color:#fff;
+  cursor: pointer;
+  font-size:rem(32px);  
+  height: 44px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 44px;  
+  }
+
+.GI_TW_expander .GI_TW_arrow {
+  color:$dark-blue;
+  cursor: pointer;
+  font-size:rem(44px); 
+  position: absolute;
+  top: 50%;
+  }
+
+.GI_TW_expander .GI_TW_arrow.GI_TW_hidden {
+  display: none;
+  }
+
+.GI_TW_expander .GI_TW_arrow.GI_TW_next {
+  right: 0;
+
+  @include respond-min($medium) {
+    right: 30px;
+    }
+
+  }
+
+.GI_TW_expander .GI_TW_arrow.GI_TW_prev {
+  left: 0;
+
+  @include respond-min($medium) {
+    left: 30px;
+    }
+    
+  }
+
+.GI_TW_expander .GI_TW_loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  -ms-animation: loader 0.5s infinite ease-in-out both;
+  -o-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+  }
+
+@-moz-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@-o-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@-ms-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}

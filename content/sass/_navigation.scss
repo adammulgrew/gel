@@ -429,6 +429,8 @@
 	}
 
 .nav-vertical {
+	display:block;
+	width:100%;
 	@include respond-min($large) {
 		padding-right:lh(1.66);
 		}

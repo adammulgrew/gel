@@ -86,10 +86,12 @@
 	font-size:66%;
 	margin-left:lh(.15);
 	}
-	
+
+
+.editor-content a.btn,
 .editor-content a[href^="http"].no-external:after {
-	content: none; 
-	margin-left:0;
+	content: none !important; 
+	margin-left:0 !important; 
 	}
 	
 	
