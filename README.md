@@ -24,7 +24,7 @@
 
 	<pre>cd PATH_TO_PATTERNS_DIRECTORY</pre>
 
-	<pre>kss-node content/sass --template styleguide-template/ --style content/css/all.css</pre>
+	<pre>kss-node content/sass --template styleguide-template/ --css content/css/all.css</pre>
 
 	<p>The updated styleguide can then be viewed by opening <code>styleguide/index.html</code> in a browser.</p>
 	
