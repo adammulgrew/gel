@@ -5,13 +5,17 @@
 // helper function to place modal window as the first child
 // of the #page node
 var m = document.getElementById('modal_window'),
+    mv = document.getElementById('modal_video_window'),
     p = document.getElementById('outer-wrap');
 
-function swap () {
-  p.parentNode.insertBefore(m, p);
+function swap (el) {
+  p.parentNode.insertBefore(el, p);
 }
 
-swap();
+swap(m);
+if(!!mv){
+    swap(mv);
+}
 
 
 // modal window
@@ -24,6 +28,10 @@ swap();
       mOpen = getId('modal_open'),
       mClose = getId('modal_close'),
       modal = getId('modal_holder'),
+      mVOverlay = getId('modal_video_window'),
+      mVOpen = document.querySelector('.btn[title="Discover the Digital Guidelines"]'),
+      mVClose = getId('modal_video_close'),
+      modalV = getId('modal_video_holder'),
       allNodes = document.querySelectorAll("*"),
       modalOpen = false,
       lastFocus,
@@ -37,21 +45,42 @@ swap();
 
 
   // Let's open the modal
-  function modalShow () {
+  function modalShow (event) {
+      var currOverlay = mOverlay,
+          currModal = modal,
+          focusableEl = 'input';
+    event.preventDefault();
+    event.stopPropagation();
     lastFocus = document.activeElement;
-    mOverlay.setAttribute('aria-hidden', 'false');
-    modalOpen = true;
-    modal.setAttribute('tabindex', '0');
-    modal.querySelector('input').focus();
+      
+    if(event.target.className.indexOf('search-link') < 0){
+        currOverlay = mVOverlay;
+        currModal = modalV;
+        focusableEl = 'video';
+    }
+    currOverlay.setAttribute('aria-hidden', 'false');
+    modalOpen = focusableEl;
+    currModal.setAttribute('tabindex', '0');
+    currModal.querySelector(focusableEl).focus();
   }
+    
 
 
   // binds to both the button click and the escape key to close the modal window
   // but only if modalOpen is set to true
-  function modalClose ( event ) {
-    if (modalOpen && ( !event.keyCode || event.keyCode === 27) ) {
-      mOverlay.setAttribute('aria-hidden', 'true');
-      modal.setAttribute('tabindex', '-1');
+  function modalClose (event) {
+      var currOverlay = mOverlay,
+          currModal = modal,
+          focusableEl = 'input';
+      
+    if (!!modalOpen && ( !event.keyCode || event.keyCode === 27) ) {
+        if(modalOpen === 'video'){
+
+            currOverlay = mVOverlay;
+            currModal = modalV;
+        }
+      currOverlay.setAttribute('aria-hidden', 'true');
+      currModal.setAttribute('tabindex', '-1');
       modalOpen = false;
       lastFocus.focus();
     }
@@ -63,9 +92,10 @@ swap();
   // Shift + Tab will allow backup to the top of the modal,
   // and then stop.
   function focusRestrict ( event ) {
-    if ( modalOpen && !modal.contains( event.target ) ) {
+      var curModal = modalOpen === 'video' ? modalV : modal;
+    if (!!modalOpen && !curModal.contains( event.target ) ) {
       event.stopPropagation();
-      modal.focus();
+      curModal.focus();
     }
   }
 
@@ -77,12 +107,28 @@ swap();
      }
   }, false);
 
+if(!!mv){
+    // Close modal window by clicking on the overlay
+      mVOverlay.addEventListener('click', function( e ) {
+        if (e.target == modalV.parentNode) {
+           modalClose( e );
+         }
+      }, false);
+    }
 
   // open modal by btn click/hit
   mOpen.addEventListener('click', modalShow);
-
+    
+if(!!mv){
+  mVOpen.addEventListener('click', modalShow);
+}
+    
   // close modal by btn click/hit
   mClose.addEventListener('click', modalClose);
+
+if(!!mv){
+  mVClose.addEventListener('click', modalClose);
+}
 
   // close modal by keydown, but only if modal is open
   document.addEventListener('keydown', modalClose);

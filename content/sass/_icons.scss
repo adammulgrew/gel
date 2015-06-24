@@ -45,10 +45,10 @@
 //
 // Markup:
 // <div class="inline-block soft">
-//   <i class="icon-email bright-blue {$modifiers}"></i>
+//   <i class="icon-email bright-blue {{modifier_class}}"></i>
 // </div>
 // <div class="inline-block soft">
-//   <i class="icon-alert bright-blue {$modifiers}"></i>
+//   <i class="icon-alert bright-blue {{modifier_class}}"></i>
 // </div>
 //
 // Styleguide 8.1
@@ -63,10 +63,10 @@
 //
 // Markup:
 // <div class="inline-block soft">
-//   <i class="icon-email tera {$modifiers}"></i>
+//   <i class="icon-email tera {{modifier_class}}"></i>
 // </div>
 // <div class="inline-block soft">
-//   <i class="icon-alert tera {$modifiers}"></i>
+//   <i class="icon-alert tera {{modifier_class}}"></i>
 // </div>
 //
 // Styleguide 8.2

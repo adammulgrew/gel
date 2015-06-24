@@ -309,7 +309,7 @@
                                   
                                   <nav class="kss-nav">
                                   
-                                    <ul class="kss-menu" data-kss-ref="{{rootNumber}}">
+                                    <ul class="kss-menu" data-kss-ref="{{rootName}}">
                                     
                                       <li class="kss-menu-item">
                                       
@@ -342,15 +342,15 @@
                                       
                                     </ul>
                                     
-                                    {{#if overview}}
+                                    {{#if homepage}}
                                     
                                     {{else}}
                                     
                                     <ul class="kss-menu-child">
                                     
-                                      {{#eachSection rootNumber}}
+                                      {{#eachSection rootName}}
                                       
-                                      {{#whenDepth 1}}
+                                      {{#ifDepth 1}}
                                       
                                       {{else}}
                                       
@@ -366,7 +366,7 @@
                                       
                                       </li>
                                       
-                                      {{/whenDepth}}
+                                      {{/ifDepth}}
                                       
                                       {{/eachSection}}
                                       
@@ -386,18 +386,18 @@
                           
                             <article class="kss-article">
                             
-                              {{#if overview}}
+                              {{#if homepage}}
                               
                               <section id="section-0" class="kss-section kss-overview">
                               
-                                {{html overview}}
+                                {{{homepage}}}
                                 
                               </section>
                               
                               {{else}}
-                              {{#eachSection rootNumber}}
+                              {{#eachSection rootName}}
                               
-                              <section id="section-{{reference}}" class="kss-section kss-depth-{{refDepth}}">
+                              <section id="section-{{reference}}" class="kss-section kss-depth-{{depth}}">
                               
                                 <h1 class="kss-title giga dark-blue push--bottom">
                                 
@@ -411,13 +411,13 @@
                                 
                                 </h1>
                                 
-                                {{#ifAny markup modifiers}}
+                                {{#if markup}}
                                 
                                 {{#if description}}
                                 
                                 <div class="kss-description">
                                 
-                                  {{html description}}
+                                  {{{description}}}
                                   
                                 </div>
                                 
@@ -429,7 +429,7 @@
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      {{modifierMarkup}}
+                                      {{{markup}}}
                                       
                                     </div>
                                     
@@ -449,7 +449,7 @@
                                       
                                       <div class="kss-modifier-description">
                                       
-                                        {{html description}}
+                                        {{{description}}}
                                         
                                       </div>
                                       
@@ -457,7 +457,7 @@
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      {{modifierMarkup}}
+                                      {{{markup}}}
                                       
                                     </div>
                                     
@@ -479,13 +479,13 @@
                                 
                                 <div class="kss-description">
                                 
-                                  {{html description}}
+                                  {{{description}}}
                                   
                                 </div>
                                 
                                 {{/if}}
                                 
-                                {{/ifAny}}
+                                {{/if}}
                                 
                               </section>
                               
@@ -670,7 +670,7 @@
 			$('pre .value').waitUntilExists(function() {
 				$('pre .value').each(function() {
 					$(this).text(function(index, text){
-						return text.replace(' {$modifiers}', '');
+						return text.replace(' {{modifier_class}}', '');
 					}
 					);
 				});

@@ -13,8 +13,8 @@
 // .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
 //
 // Markup:
-// <a class="btn {$modifiers}">Button</a>
-// <button type="submit" class="btn {$modifiers}">Button</button>
+// <a class="btn {{modifier_class}}">Button</a>
+// <button type="submit" class="btn {{modifier_class}}">Button</button>
 //
 // Styleguide 4.1
 
@@ -30,8 +30,8 @@
 // .btn--block - Block level button.
 //
 // Markup:
-// <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
-// <button type="submit" class="btn {$modifiers}">Button</button>
+// <button type="submit" class="btn btn-primary {{modifier_class}}">Button</button>
+// <button type="submit" class="btn {{modifier_class}}">Button</button>
 //
 // Styleguide 4.2
 
@@ -54,8 +54,8 @@
 // .btn--blue-tint  - Brand basics Blue tint 
 //
 // Markup:
-// <a href="#" class="btn {$modifiers}">Button</a>
-// <button type="submit" class="btn {$modifiers}">Button</button>
+// <a href="#" class="btn {{modifier_class}}">Button</a>
+// <button type="submit" class="btn {{modifier_class}}">Button</button>
 //
 // Styleguide 4.3
 
@@ -82,7 +82,7 @@
 //
 // Markup:
 //<div>
-//	<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+//	<a href="#" class="btn {{modifier_class}} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 //</div>
 //
 // Styleguide 4.4

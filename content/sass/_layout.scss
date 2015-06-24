@@ -14,7 +14,7 @@
 // .pull-right--large - Pull right after large breakpoint
 //
 // Markup:
-// <a class="btn {$modifiers}">.{$modifiers}</a>
+// <a class="btn {{modifier_class}}">.{{modifier_class}}</a>
 //
 // Styleguide 10.1
 
@@ -38,7 +38,7 @@
 //
 // Markup:
 // <div class="bg-yellow inline-block">
-//   <div class="bg-bright-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft white inline-block {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 10.2
@@ -56,7 +56,7 @@
 //
 // Markup:
 // <div class="bg-yellow inline-block">
-//   <div class="bg-bright-blue soft white inline-block push {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft white inline-block push {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 10.3
@@ -80,7 +80,7 @@
 // .soft-half--sides  - Half horizontal padding
 //
 // Markup:
-// <div class="bg-bright-blue white inline-block {$modifiers}">.{$modifiers}</div>
+// <div class="bg-bright-blue white inline-block {{modifier_class}}">.{{modifier_class}}</div>
 //
 // Styleguide 10.4
 
@@ -97,7 +97,7 @@
 //
 // Markup:
 // <div class="bg-yellow soft inline-block">
-//   <div class="bg-bright-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-bright-blue soft white inline-block {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 10.5
@@ -112,7 +112,7 @@
 // .text--right--large - text align right after large breakpoint
 //
 // Markup:
-// <div class="block {$modifiers}">.{$modifiers}</div>
+// <div class="block {{modifier_class}}">.{{modifier_class}}</div>
 //
 // Styleguide 10.6
 

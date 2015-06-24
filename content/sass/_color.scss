@@ -257,7 +257,7 @@
 //
 // Markup:
 // <div class="inline-block">
-//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 5.4
@@ -274,7 +274,7 @@
 //
 // Markup:
 // <div class="inline-block">
-//   <div class="bg-light-grey-1 soft push grey inline-block border--dark-blue  {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-light-grey-1 soft push grey inline-block border--dark-blue  {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 5.5
@@ -290,7 +290,7 @@
 //
 // Markup:
 // <div class="inline-block">
-//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 5.7
@@ -303,7 +303,7 @@
 //
 // Markup:
 // <div class="inline-block">
-//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {{modifier_class}}">.{{modifier_class}}</div>
 // </div>
 //
 // Styleguide 5.8

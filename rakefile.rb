@@ -4,7 +4,7 @@ ROOT = "content"
 SASS_PATH = "#{ROOT}/sass"
 CSS_FILE_PATH = "#{ROOT}/css/all.css"
 KSS_TEMPLATE_PATH = "styleguide-template/"
-KSS_COMMAND = "kss-node #{SASS_PATH}  --template #{KSS_TEMPLATE_PATH} --style #{CSS_FILE_PATH}"
+KSS_COMMAND = "kss-node #{SASS_PATH}  --template #{KSS_TEMPLATE_PATH} --css #{CSS_FILE_PATH}"
 SASS_COMMAND = "compass compile #{ROOT} -e production --force --css-dir=css"
 
 task :default => ['kss:styleguide']

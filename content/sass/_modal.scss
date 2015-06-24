@@ -13,6 +13,10 @@
 	z-index: -1;
 	}
 
+.modal-overlay--video {
+    background: rgba(0,0,0,0.85);
+}
+
 .modal-overlay[aria-hidden="true"] {
 	opacity: 0;
 	visibility: hidden;

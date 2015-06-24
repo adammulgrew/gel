@@ -10,7 +10,7 @@
             $childMenu = $('.kss-menu-child'),
             $menuItem = $menu.find('.kss-menu-item'),
             $childMenuItem = $childMenu.find('.kss-menu-item'),
-            ref = $menu.data('kss-ref'),
+            ref = $menu.data('kss-ref') !== 'styleguide.homepage' ? $menu.data('kss-ref') : 0,
             prevScrollTop;
 
         // Dynamic menu activation

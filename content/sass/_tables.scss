@@ -18,7 +18,7 @@
 // .table--condensed - Makes tables more compact by cutting cell padding in half.
 //
 // Markup:
-// <table class="table {$modifiers}" summary="Interest rates start at 1.6% for Young Savers accounts and at 2% for Smart accounts">
+// <table class="table {{modifier_class}}" summary="Interest rates start at 1.6% for Young Savers accounts and at 2% for Smart accounts">
 //   <thead>
 //     <tr>
 //       <th>No.</th>
