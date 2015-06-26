@@ -124,3 +124,151 @@
 		}
 		
 	}
+
+.form-comments {
+    clear:left;
+    }
+
+.form-comments-heading {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    }
+
+.ms-socialCommentInputBox { 
+    background-color: white;
+    border:1px solid darken($light-grey-1, 10%);
+	color: $dark-grey-2;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	font-family:$secondary-font;
+    font-size: rem(18px);
+    -webkit-transition: -webkit-box-shadow 0.15s, border-color 0.15s ease-in-out;
+    -moz-transition: -moz-box-shadow 0.15s, border-color 0.15s ease-in-out;
+    transition: box-shadow 0.15s, border-color 0.15s ease-in-out;
+    max-width: 100%;
+    padding: 0.9375rem 0.99rem;
+    width: 100%;
+	margin-bottom:lh(1);
+    }
+
+.form-comments input[type=button]  {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+     border: 1px solid #d8d8d8;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "metabook-sl",Arial,Helvetica,"Lucida Grande",sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 0 1.5rem 0;
+    outline: none;
+    padding: 0 1.995rem;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+        &:hover {
+            background-color: darken($light-grey-2, 5%);
+            color: $dark-grey-3;
+            text-decoration: none;
+        }
+    }
+
+.ms-socialCommentPaging {
+    padding:0 0 2.5rem 0;
+        span {
+            display:none;
+        }
+    }
+.socialcomment-cmdlink {
+        span {
+            display:none;
+        }
+}
+
+.ms-socialCommentPaging .socialcomment-pagelink:link,
+.ms-socialCommentPaging .socialcomment-pagelink:visited {
+    background-color: $blue-tint;
+    color: $dark-blue;
+    display: inline-block;
+    margin: 0 0.495rem;
+    padding: 1rem 0.99rem;
+    text-align: center;
+    text-decoration: none;
+    font:1rem sans-serif;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+        &:hover:not([disabled]) {
+            background-color: $blue-tint;
+            color: $dark-blue;
+            text-decoration: none;
+        }
+        img {
+            display:none;
+        }
+    }
+.ms-socialCommentContents {
+    color:#4B4B4B;
+    font-family: "metabook-sl",Arial,Helvetica,"Lucida Grande",sans-serif;
+	font-size:rem(18px);
+    font-weight: normal;
+        a {
+                &:link,
+                &:visited {
+                    color:$bright-blue;
+                }
+                &:hover {
+                    color:$dark-blue;
+                }
+        }
+}
+.ms-socialCommentItem {
+    font:1rem "metabook-sl",Arial,Helvetica,"Lucida Grande",sans-serif;
+    color:#4B4B4B;
+        .socialcomment-username a {
+                &:link,
+                &:visited {
+                    color:$bright-blue;
+                }
+                &:hover {
+                    color:$dark-blue;
+                }
+        }
+        .socialcomment-contents {
+            font:1rem "metabook-sl",Arial,Helvetica,"Lucida Grande",sans-serif;
+            color:$grey;
+            
+        }
+        .socialcomment-cmdlink a {
+                &:link,
+                &:visited {
+                    font:1rem "metabook-sl",Arial,Helvetica,"Lucida Grande",sans-serif;
+                    color:$grey;
+                }
+                &:hover {
+                    color:$dark-blue;
+                }
+        }
+}
+.blog-lister {
+    .year {
+        margin-right:5px;
+    }
+    .dark-blue:visited {
+        color:$dark-blue;
+    }
+    p a:link,
+    p a:visited {
+        color:$bright-blue;
+    }
+}
