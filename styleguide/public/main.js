@@ -82,7 +82,7 @@
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
             $window.on('resize', fixSidebar).trigger('resize');
         }
-
+        
         // Syntax hightlignting with Rainbow.js
         $('code.html').attr('data-language', 'html');
         $('code.css').attr('data-language', 'css');

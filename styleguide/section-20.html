@@ -972,7 +972,7 @@ Note that if you are going to send or test them yourself, you need to run them t
 			$('pre .value').waitUntilExists(function() {
 				$('pre .value').each(function() {
 					$(this).text(function(index, text){
-						return text.replace(' ', '');
+						return text.replace(' ', ' ');
 					}
 					);
 				});

@@ -2134,7 +2134,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
 			$('pre .value').waitUntilExists(function() {
 				$('pre .value').each(function() {
 					$(this).text(function(index, text){
-						return text.replace(' ', '');
+						return text.replace(' ', ' ');
 					}
 					);
 				});
