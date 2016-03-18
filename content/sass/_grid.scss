@@ -242,7 +242,10 @@ $medium:48em;
 $large:60em;
 $xlarge:90.075em;
 
+/* GUTTER
+------------------------------------------------*/
 
+$gutter:26px;
 
 /* GRID - CLASSES
 ------------------------------------------------*/
@@ -599,23 +602,15 @@ $xlarge:90.075em;
 	}
 	
 .wrap {
-	@include clearfix();
-	margin:0 auto;
-	width:94%;
-	
-	@include respond-min($large) {
-		max-width:1200px;
-		width:100%;
-		}
-		
-	@include respond-min($xlarge) {
-		max-width:1600px;
-		width:100%;
-		}
-		
-	@include old-ie {
-		width:1200px;
-		}
-		
-	}
+    @include clearfix();
+    margin: 0 auto;
+    max-width: 1240px;
+    width:96%;
+    @include respond-min($medium) {
+        width:100%;
+        }
+    @include respond-min($xlarge) {
+        max-width: 1400px;
+        }
+    }
 

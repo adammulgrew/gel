@@ -18,7 +18,7 @@
 // .table--condensed - Makes tables more compact by cutting cell padding in half.
 //
 // Markup:
-// <table class="table {{modifier_class}}" summary="Interest rates start at 1.6% for Young Savers accounts and at 2% for Smart accounts">
+// <table class="table {$modifiers}" summary="Interest rates start at 1.6% for Young Savers accounts and at 2% for Smart accounts">
 //   <thead>
 //     <tr>
 //       <th>No.</th>
@@ -64,11 +64,11 @@
 		}
 		
 	tr {
-		border-bottom:1px solid $light-grey-3;
+		border-bottom:1px solid $light-grey-2;
 		}
 		
 	th {
-		background-color:$blue-tint;
+		background-color:$light-grey-1;
 		color:$dark-blue;
 		font-family:$secondary-font-bold;
 		font-style:normal;
@@ -78,31 +78,20 @@
 		padding:lh(.66) 3%;
 		text-align:left;
 		vertical-align:bottom;
-		}
-		
+		}		
 	td {
 		padding:lh(.33) 3%;
 		text-align:left;
-		}
-		 
+		}		 
 	}
-	
 	
 .table--plain {
 	border-top:none;
-	
 	th {
 		background-color:#fff;
-		color:$dark-blue;
-		}
-		
-	tr {
-		
-		}
-		 
+		color:$dark-grey-3;
+		}		 
 	}
-	
-
 
 // CONDENSED TABLE W/ HALF PADDING
 // -------------------------------

@@ -14,27 +14,24 @@
 // .alert--danger    - Indicates a dangerous or potentially negative action.
 //
 // Markup:
-// <div class="alert {{modifier_class}}">This is an alert message with a <a href="#">link</a></div>
+// <div class="alert {$modifiers}">This is an alert message with a <a href="#">link</a></div>
 //
 // Styleguide 2.1
 
 // Core
 
-
 .alert {
-	background-color:tint($yellow, 75%);
+	background-color:#fff7bf;
 	color:$grey;
 	display:block;
 	font-family:$secondary-font;
 	font-size:rem(18px);
 	margin-bottom:lh(1);
 	padding:lh(1) lh(1.66);
-	
 	a {
 		border-bottom:1px solid $grey;
 		border-color:inherit;
 		color:inherit;
-
 		&:hover {
 			border-bottom:1px solid transparent;
 			color:inherit;

@@ -1,235 +1,125 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-  
     <meta charset="utf-8" />
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    
     <meta http-equiv="cleartype" content="on"/>
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
     <title>Standard Life Styleguide</title>
-    
     <meta name="description" content="" />
-    
     <meta name="generator" content="kss-node" />
-
     <link rel="stylesheet" href="../content/css/all.css" />
-    
     <link rel="shortcut icon" href="../content/images/icons/favicon.ico" />
-
     <link rel="apple-touch-icon" href="../content/images/icons/apple-touch-icon.png" />
-    
     <link rel="apple-touch-icon-precomposed" href="../content/images/icons/apple-touch-icon.png" />
-    
     <link rel="shortcut icon" href="../content/images/icons/apple-touch-icon.png" />
-    
     <!--[if lt IE 9]>
-    
     	<script src="public/html5shiv.js"></script>
-    
     <![endif]-->
-    
     <script src="../content/js/libs/modernizr.js"></script>
-    
   </head>
   
-    <body id="kss-node" class="test-match-height">
+    <body id="kss-node" class="test-match-height on--nav-secondary">
         
         <div id="outer-wrap" class="outer-wrap">
         
         	<div id="inner-wrap" class="inner-wrap">
   
-                <header id="top" class="cf masthead" role="banner">
-                      
-                    <div class="wrap relative">
-                    
-                        <hr class="masthead-panel-colour" />
-                        
-                        <a class="nav-btn" id="nav-open-btn" href="#nav">
-                        
-                            <i class="icon-menu trigger__icon"></i>
-                        
-                            <span class="visuallyhidden">
-                            
-                                Navigation
-                            
-                            </span>
-                        
-                        </a>
-                                
-                        <div class="col small_12 large_6 flush--bottom"> 
-                        
-                            <a class="site-logo"  href="http://sldigitalguidelines.com" title="Digital Guidelines Home">
-                                
-                                <img class="site-logo__img" src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life logo">
-                    
-                            </a> 
-                        
-                        </div>
-                        
-                        <div class="col small_12 large_6 primary-font flush--bottom"> 
-                        
-                            <div class="tagline">
-                            
-                            	Digital Guidelines
-                            
+                <a href="#contentRow" class="visuallyhidden">Skip to content</a>
+
+                        <header class="cf masthead on--navigation__animate" id="top">
+
+                            <div class="wrap relative">
+
+                                <a href="#navigation" class="nav-btn nav-btn--menu js-toggle" title="Navigation menu" aria-label="Navigation menu">
+                                    <span class="icon-menu"></span>
+                                    <span class="visuallyhidden">Skip to navigation</span>
+                                </a>
+
+                                <div class="col small_12 large_6">
+                                    <a title="Digital Guidelines Home" href="http://sldigitalguidelines.com" class="site-logo">
+                                        <img width="200" height="70" alt="Standard Life logo" data-fallback="../content/images/branding/Header-logo.png" src="../content/images/branding/Header-logo.svg" class="site-logo__img" />
+                                    </a>
+                                </div>
+
+                                <div class="col small_12 large_6 primary-font">
+                                    <div class="tagline">
+                                        Digital Guidelines
+                                    </div>
+                                </div>
+
+                                <button id="modal_open" type="button" class="search-link icon-search">
+                                    <span class="visuallyhidden">
+                                        Open the Search Modal
+                                    </span>
+                                </button>
+
                             </div>
+
+                        </header>
+
+                        <!-- End of Header -->
+
+
+
+                        <div id="DeltaPageStatusBar">
+    
+                            <div id="pageStatusBar" style="margin-bottom:0"></div>
                         
+</div>
+
+                        <nav role="navigation" id="navigation" class="nav-primary">
+                            <div class="cf wrap nav-primary__inner">
+                                <a href="#navigation" class="nav-btn nav-btn--cancel js-toggle" title="Navigation menu" aria-label="Navigation menu">
+                                    <span class="icon-cancel"></span>
+                                    <span class="visuallyhidden">
+                                        Close navigation
+                                    </span>
+                                </a>
+
+                            <div id="DeltaTopNavigation" class="ms-displayInline ms-core-navigation" role="navigation">
+
+                                <ul class="wrap nav-primary__list">
+                                  <li class="nav-primary__item"><a href="/" title="" class="nav-primary__link">Home</a></li>
+                                  <li class="nav-primary__item"><a href="/digital-principles/Pages/default.aspx" title="" class="nav-primary__link">Digital Principles</a></li>
+                                  <li class="nav-primary__item active"><a href="/gel/Pages/default.aspx" title="" class="nav-primary__link">Digital Playbooks</a><a href="#nav-secondary" class="js-sub-toggle nav-primary__expander"><span class="icon-angle-down"></span><span class="icon-angle-up"></span></a>
+                                    <nav id="nav-secondary" class="nav-secondary">
+                                        <ul class="nav-secondary__list wrap">
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-content/Pages/default.aspx" title="">Content &amp; SEO</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-email/Pages/default.aspx" title="">Email</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel/Pages/default.aspx" title="">GEL</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-analytics/Pages/default.aspx" title="">Measurement &amp; Analytics</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-mobile/Pages/default.aspx" title="">Native Mobile Apps</a></li>
+                                            <li class="nav-secondary__item active"><a class="nav-secondary__link" href="/gel/patterns/Pages/Patterns.aspx" title="">Patterns</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-social/Pages/default.aspx" title="">Social Media</a></li>
+                                            <li class="nav-secondary__item"><a class="nav-secondary__link" href="/gel/gel-video/Pages/default.aspx" title="">Video</a></li>
+                                        </ul>
+                                    </nav>
+                                  </li>
+                                  <li class="nav-primary__item"><a href="/visualids/Pages/default.aspx" title="" class="nav-primary__link">Visual Identities</a></li>
+                                  <li class="nav-primary__item"><a href="/case-studies/Pages/default.aspx" title="" class="nav-primary__link">Case Studies</a></li>
+                                  <li class="nav-primary__item"><a href="/gel-collaboration/Pages/default.aspx" title="" class="nav-primary__link">Collaboration</a></li>
+                                  <li class="nav-primary__item"><a href="/blog/Pages/default.aspx" title="" class="nav-primary__link">Digital Community</a></li>
+                                  <li class="nav-primary__item"><a href="/resources/Pages/default.aspx" title="" class="nav-primary__link">Resources</a></li>
+                                </ul>
+
+                              
+                            </div>
+
                         </div>
-                        
-                        <button class="search-link icon-search" type="button" id="modal_open" style="display:none">
 
-                            <span class="visuallyhidden">
-            
-                                Open the Search Modal
-                            
-                            </span>
-                        
-                        </button>
+                    </nav>
 
-                        
-                    </div>
-                
-                </header>
-         
-                <nav id="nav" class="cf nav nav-primary" role="navigation">
-                
-                    <div class="block wrap">
-                    
-                        <ul class="nav-primary__list">
-                        
-                            <li class="nav-primary__item">
-                            
-                                <a title="#" href="http://sldigitalguidelines.com/" class="nav-primary__link">
-                                
-                                    Home
-                                
-                                </a>
-                            
-                            </li>
-                        
-                            <li class="nav-primary__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/digital-principles/Pages/default.aspx" class="nav-primary__link">
-                                
-                                    Digital Principles
-                                
-                                </a>
-                            
-                            </li>
-                        
-                            <li class="nav-primary__item selected"> 
-                            
-                                <a href="http://sldigitalguidelines.com/gel/Pages/default.aspx" class="nav-primary__link">
-                                
-                                    Global Experience Language
-                                
-                                </a>
-                                
-                                <span class="js-toggle-link expander icon-angle-down alpha"></span>
-                                
-                                <nav class="js-toggle-item nav-secondary">
-                                
-                                    <ul class="nav-secondary__list">
-                                    
-                                        <li class="nav-secondary__item">
-                                        
-                                            <a href="http://sldigitalguidelines.com/gel" class="nav-secondary__link">
-                                            
-                                                About GEL
-                                            
-                                            </a>
-                                        
-                                        </li>
-                                        
-                                        <li class="nav-secondary__item">
-                                        
-                                            <a href="http://sldigitalguidelines.com/gel/foundations" class="nav-secondary__link">
-                                            
-                                                Foundations
-                                            
-                                            </a>
-                                        
-                                        </li>
-                                        
-                                        <li class="nav-secondary__item selected">
-                                        
-                                            <a href="http://patterns.sldigitalguidelines.com/" class="nav-secondary__link">
-                                            
-                                                Patterns
-                                            
-                                            </a>
-                                        
-                                        </li>
-                                        
-                                        <li class="nav-secondary__item">
-                                        
-                                            <a href="http://sldigitalguidelines.com/gel/gel-manual/Pages/default.aspx" class="nav-secondary__link">
-                                            
-                                                GEL Manual
-                                            
-                                            </a>
-                                        
-                                        </li>
-                    
-                                    </ul>
-                                
-                                </nav>
-                                                         
-                            </li>
-                        
-                            <li class="nav-primary__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/case-studies/Pages/default.aspx" class="nav-primary__link">
-                                
-                                    Case Studies
-                                
-                                </a>
-                            
-                            </li>
-                            
-                            <li class="nav-primary__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/resources/Pages/default.aspx" class="nav-primary__link">
-                                
-                                    Resources
-                                
-                                </a>
-                            
-                            </li>
-                        
-                        </ul>
-                      
-                        <a class="nav-primary__close-btn" id="nav-close-btn" href="#top">
-                        
-                            <i class="icon-cancel giga"></i> 
-                            
-                            <span class="visuallyhidden">
-                            
-                                Return to Content
-                            
-                            </span>
-                        
-                        </a> 
-                      
-                      </div>
                   
-                </nav>
-                  
-                <main role="main">
+                <main class="on--navigation__animate content">
                 
-                    <div class="bg-pattern panel--push-down push--top">
+                    <div class="panel-intro panel--push-down">
                 
-                        <div class="wrap white soft--ends">
+                        <div class="wrap soft--ends">
                         
-                        	<div class="col small_12 flush--bottom">
+                        	<div class="col medium_10 large_6">
                             
-                                <h1 class="medium_12 tera push--ends">
+                                <h1 class="giga dark-blue">
                     
                                     Patterns
                                 
@@ -237,7 +127,7 @@
                                 
                                 <hr class="overline small_1 overline_1 bg-yellow" />
                                 
-                                <p class="block secondary-font alpha medium_8 large_7">
+                                <p class="secondary-font beta flush--bottom">
                                 
                                      We envisage these elements will be the core elements of any new Standard Life project, dealing with layout, navigation, typography, colour and iconography in a modular, device and screen size agnostic manner.
                                 
@@ -755,8 +645,8 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <a class="btn [modifier class]">Button</a>
-<button type="submit" class="btn [modifier class]">Button</button>
+                                      <a class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -783,8 +673,8 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a class="btn pseudo-class-hover">Button</a>
-<button type="submit" class="btn pseudo-class-hover">Button</button>
+                                      <a class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -811,8 +701,8 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a class="btn pseudo-class-active">Button</a>
-<button type="submit" class="btn pseudo-class-active">Button</button>
+                                      <a class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -839,8 +729,8 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a class="btn disabled">Button</a>
-<button type="submit" class="btn disabled">Button</button>
+                                      <a class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -849,8 +739,8 @@ However, typically you&#39;ll want to apply these to only <code>&lt;a&gt;</code>
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;a class=&quot;btn [modifier class]&quot;&gt;Button&lt;/a&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                    <pre><code data-language="html">&lt;a class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/a&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/button&gt;</code></pre>
                                     
                                   </div>
                                   
@@ -891,8 +781,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <button type="submit" class="btn btn-primary [modifier class]">Button</button>
-<button type="submit" class="btn [modifier class]">Button</button>
+                                      <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -919,8 +809,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <button type="submit" class="btn btn-primary btn--large">Button</button>
-<button type="submit" class="btn btn--large">Button</button>
+                                      <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -947,8 +837,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <button type="submit" class="btn btn-primary btn--small">Button</button>
-<button type="submit" class="btn btn--small">Button</button>
+                                      <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -975,8 +865,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <button type="submit" class="btn btn-primary btn--mini">Button</button>
-<button type="submit" class="btn btn--mini">Button</button>
+                                      <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1003,8 +893,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <button type="submit" class="btn btn-primary btn--block">Button</button>
-<button type="submit" class="btn btn--block">Button</button>
+                                      <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1013,8 +903,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary [modifier class]&quot;&gt;Button&lt;/button&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                    <pre><code data-language="html">&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary {$modifiers}&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/button&gt;</code></pre>
                                     
                                   </div>
                                   
@@ -1054,8 +944,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                   
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn [modifier class]">Button</a>
-<button type="submit" class="btn [modifier class]">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1082,8 +972,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--primary">Button</a>
-<button type="submit" class="btn btn--primary">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1110,8 +1000,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--info">Button</a>
-<button type="submit" class="btn btn--info">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1138,8 +1028,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--success">Button</a>
-<button type="submit" class="btn btn--success">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1166,8 +1056,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--warning">Button</a>
-<button type="submit" class="btn btn--warning">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1194,8 +1084,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--danger">Button</a>
-<button type="submit" class="btn btn--danger">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1222,8 +1112,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--link">Button</a>
-<button type="submit" class="btn btn--link">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1250,8 +1140,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--dark-blue">Button</a>
-<button type="submit" class="btn btn--dark-blue">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1278,8 +1168,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--bright-blue">Button</a>
-<button type="submit" class="btn btn--bright-blue">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1306,8 +1196,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--yellow">Button</a>
-<button type="submit" class="btn btn--yellow">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1334,8 +1224,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--orange">Button</a>
-<button type="submit" class="btn btn--orange">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1362,8 +1252,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--grey">Button</a>
-<button type="submit" class="btn btn--grey">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1390,8 +1280,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     
                                     <div class="kss-modifier-example">
                                     
-                                      <a href="#" class="btn btn--blue-tint">Button</a>
-<button type="submit" class="btn btn--blue-tint">Button</button>
+                                      <a href="#" class="btn {$modifiers}">Button</a>
+<button type="submit" class="btn {$modifiers}">Button</button>
                                       
                                     </div>
                                     
@@ -1400,8 +1290,8 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                   
                                   <div class="kss-markup">
                                   
-                                    <pre><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/a&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                    <pre><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/a&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn {$modifiers}&quot;&gt;Button&lt;/button&gt;</code></pre>
                                     
                                   </div>
                                   
@@ -1442,7 +1332,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn [modifier class] btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1471,7 +1361,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--large btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1500,7 +1390,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--small btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1529,7 +1419,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--mini btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1558,7 +1448,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--block btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1587,7 +1477,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--primary btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1616,7 +1506,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--info btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1645,7 +1535,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--success btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1674,7 +1564,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--warning btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1703,7 +1593,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--danger btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1732,7 +1622,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--dark-blue btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1761,7 +1651,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--bright-blue btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1790,7 +1680,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--yellow btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1819,7 +1709,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--orange btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1848,7 +1738,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--grey btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1877,7 +1767,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                     <div class="kss-modifier-example">
                                     
                                       <div>
-<a href="#" class="btn btn--blue-tint btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 </div>
                                       
                                     </div>
@@ -1888,7 +1778,7 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                                   <div class="kss-markup">
                                   
                                     <pre><code data-language="html">&lt;div&gt;
-&lt;a href=&quot;#&quot; class=&quot;btn [modifier class] btn--icon&quot;&gt;Icon Button &lt;i class=&quot;icon icon-angle-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn {$modifiers} btn--icon&quot;&gt;Icon Button &lt;i class=&quot;icon icon-angle-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/div&gt;</code></pre>
                                     
                                   </div>
@@ -1975,95 +1865,84 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
                 
                 </main>
     
-                <footer class="site-footer" role="contentinfo">
-                        
-                  <div class="cf wrap">
-            
-                    <div class="col medium_6 large_9 pull-right--medium">
-                    
-                      <div class="row">
-                      
-                          <ul class="list list--footer col medium_6 large_4">
-            
-                            <li class="list__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/" class="list__link">
-                                
-                                    Home
-                                
-                                </a> 
-                            
-                            </li>
-                            
-                            <li class="list__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/digital-principles/" class="list__link">
-                                
-                                    Digital Principles
-                                
-                                </a> 
-                            
-                            </li>
-                            
-                            <li class="list__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/gel/" class="list__link">
-                                
-                                    Global Experience Language (GEL)
-                                
-                                </a> 
-                            
-                            </li>
-                            
-                            <li class="list__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/case-studies/" class="list__link">
-                                
-                                    Case Studies
-                                
-                                </a> 
-                            
-                            </li>
-                            
-                            <li class="list__item"> 
-                            
-                                <a href="http://sldigitalguidelines.com/resources/" class="list__link">
-                                
-                                    Resources
-                                
-                                </a> 
-                            
-                            </li>
-                            
-                          </ul> 
-                      
-                      </div>
-                      
-                    </div>
-                    
-                    <div class="col medium_6 large_2">
-                    
-                    	<a href="http://sldigitalguidelines.com/">
-                        
-                        	<img src="../content/images/branding/logo-white.svg" width="400" height="140" data-fallback="../content/images/branding/logo-white.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
-                        
-                        </a>
-                        
-                    </div>
-                    
-                  </div>
-                  
-                  <div class="cf wrap push--top soft--top border--top">
-                  
-                        <p class="delta white">
-                        
-                            &copy; Standard Life Confidential Restricted – Not to be disclosed beyond authorised roles within Standard Life group or authorised third parties. 
-                        
-                        </p>
-                        
-                  </div>
-                  
-        	</footer>
+                <footer class="on--navigation__animate site-footer" role="contentinfo">
+
+                                <div class="cf wrap">
+
+                                    <section class="alert col small_12">
+                                        <h4 class="alpha">
+                                            Feedback
+                                        </h4>
+                                        <p class="beta">
+                                            To share your feedback or suggestions or if you wish a show and tell of the Digital Guidelines for you and your team please contact us on <a href="mailto:digital_guidelines@standardlife.com" target="_top">
+                                                digital_guidelines@standardlife.com
+                                            </a>.
+                                        </p>
+                                    </section>
+
+
+                                    <div class="col small_12 medium_10 pull-right--medium">
+                                        <ul class="list list--footer">
+                                            <li class="list__item">
+                                                <a href="/" class="list__link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/digital-principles/" class="list__link">
+                                                    Digital Principles
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/gel/" class="list__link">
+                                                    Digital Playbooks
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/visualids/" class="list__link">
+                                                    Visual Identities
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/case-studies/" class="list__link">
+                                                    Case Studies
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/gel-collaboration/" class="list__link">
+                                                    Collaboration
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/blog/" class="list__link">
+                                                    Digital Community
+                                                </a>
+                                            </li>
+                                            <li class="list__item">
+                                                <a href="/resources/" class="list__link">
+                                                    Resources
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col small_12 medium_2">
+                                        <a href="http://sldigitalguidelines.com/">
+                                            <img src="../content/images/branding/Header-logo.svg" width="400" height="140" data-fallback="../_/images/branding/Header-logo.png" alt="Standard Life Digital Guidelines" class="footer-logo__img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-dark-blue white push--top">
+                                    <div class="cf wrap soft-half--ends">
+                                        <div class="col small_12">
+                                            <p class="delta flush">
+                                                &copy; Standard Life Confidential Restricted – Not to be disclosed beyond authorised roles within Standard Life group or authorised third parties.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                </footer>
     
     	</div>
     
@@ -2106,29 +1985,17 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
       <!-- end .modal-content -->
 
     <script src="public/kss.js"></script>
-    
     <script src="public/jquery-1.9.1.min.js"></script>
-    
 	<script src="public/storm.js"></script>
-    
     <script src="../content/js/libs/offcanvas.js"></script>
-
     <script src="../content/js/libs/tabs.js"></script>
-    
     <script src="../content/js/libs/easyResponsiveTabs.js"></script>
-    
     <script src="../content/js/libs/jquery.collapse.js"></script>
-    
     <script src="../content/js/libs/jquery.foundation.tooltips.js"></script>
-    
     <script src="../content/js/libs/audioplayer.js"></script>
-    
     <script src="../content/js/libs/jquery.matchHeight-min.js"></script>
-    
     <script src="../content/js/libs/modal.js"></script>
-    
     <script src="../content/js/core.js"></script>
-    
 	<script>
 		$(function() {
 			$('pre .value').waitUntilExists(function() {
@@ -2141,17 +2008,12 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
 			});
 		});
 	</script>
-    
 	<script src="public/main.js"></script>
-    
     <!--[if gt IE 8]><!-->
-    
     	<script src="public/rainbow.min.js"></script>
-    
     <!--<![endif]-->
     
     <script>
-	
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -2159,9 +2021,6 @@ Add <code>.btn--large</code>, <code>.btn--small</code>, or <code>.btn--mini</cod
 		
 		ga('create', 'UA-57601054-1', 'auto');
 		ga('send', 'pageview');
-		
 	</script> 
-    
   </body>
-  
 </html>

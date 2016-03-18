@@ -13,8 +13,8 @@
 // .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
 //
 // Markup:
-// <a class="btn {{modifier_class}}">Button</a>
-// <button type="submit" class="btn {{modifier_class}}">Button</button>
+// <a class="btn {$modifiers}">Button</a>
+// <button type="submit" class="btn {$modifiers}">Button</button>
 //
 // Styleguide 4.1
 
@@ -30,8 +30,8 @@
 // .btn--block - Block level button.
 //
 // Markup:
-// <button type="submit" class="btn btn-primary {{modifier_class}}">Button</button>
-// <button type="submit" class="btn {{modifier_class}}">Button</button>
+// <button type="submit" class="btn btn-primary {$modifiers}">Button</button>
+// <button type="submit" class="btn {$modifiers}">Button</button>
 //
 // Styleguide 4.2
 
@@ -54,8 +54,8 @@
 // .btn--blue-tint  - Brand basics Blue tint 
 //
 // Markup:
-// <a href="#" class="btn {{modifier_class}}">Button</a>
-// <button type="submit" class="btn {{modifier_class}}">Button</button>
+// <a href="#" class="btn {$modifiers}">Button</a>
+// <button type="submit" class="btn {$modifiers}">Button</button>
 //
 // Styleguide 4.3
 
@@ -82,7 +82,7 @@
 //
 // Markup:
 //<div>
-//	<a href="#" class="btn {{modifier_class}} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
+//	<a href="#" class="btn {$modifiers} btn--icon">Icon Button <i class="icon icon-angle-right"></i></a>
 //</div>
 //
 // Styleguide 4.4
@@ -124,9 +124,7 @@
 		-moz-transition: background-color 0.25s ease-in-out;
 		-o-transition: background-color 0.25s ease-in-out;
 		transition: background-color 0.25s ease-in-out; 
-		}
-		
-	
+		}	
 	// Hover/focus state
 	&:hover,
 	&:focus {
@@ -138,7 +136,7 @@
 	&:visited {
 		color: $dark-grey-2;
 		}
-	
+
 	// Active state
 	&.active,
 	&:active {
@@ -146,43 +144,41 @@
 		color: $dark-grey-3;
 		}	
 		
+	}
+
 	// Should you require an btn--icon
-	&.btn--icon {
-		padding-left:lh(.75);
-		padding-right:rem(48px);
-		}
-	
+.btn--icon {
+	padding-left:lh(.75);
+	padding-right:rem(48px);
 	.icon {
+		color:$dark-grey-1;
+		color:$dark-blue;
 		font-size:rem(16px);
 		line-height:rem(48px);
 		padding-left:rem(8px);
 		padding-right:rem(8px);
 		}
-
-	}
+	}	
 	
 .btn--large {
 	height:rem(64px);
 	font-size:rem(32px);
 	line-height:rem(64px);
-	
 	&.btn--icon {
 		padding-right:rem(96px);
-		}
-		
+		}		
 	.icon {
 		font-size:rem(32px);
 		line-height:rem(64px);
 		padding-left:rem(16px);
 		padding-right:rem(16px);
 		}
-
 	}
 
 .btn--small {
 	height:rem(36px);
 	font-size:rem(13px);
-	line-height:rem(36px);
+	line-height:rem(32px);
 	padding: 0 lh(.66);
 	
 	&.btn--icon {
@@ -365,9 +361,11 @@
 		}
 		
 	&:visited {
+		color:#fff !important;
+		}
+	.icon {
 		color:#fff;
 		}
-	
 	}
 	
 .btn--bright-blue {
@@ -448,8 +446,7 @@
 .btn--blue-tint {
 	background-color:$blue-tint;
 	border-color:shade($blue-tint, 25%);
-	color:$dark-blue;
-	
+	color:$dark-blue;	
 	&:hover,
 	&:focus,
 	&.active,
@@ -457,13 +454,33 @@
 		background-color:tint($blue-tint, 25%);
 		color:#fff;
 		}
-		
 	&:visited,
 	.icon {
 		color:$dark-blue;
+		}	
+	}
+
+.btn--white {
+	background-color:#fff;
+	border-color:tint($dark-blue, 50%);
+	color:$dark-blue;	
+	&:hover,
+	&:focus,
+	&.active,
+	&:active {
+		background-color:#fff;
+		color:tint($dark-blue, 25%);
 		}
-		
-		
+	&:visited,
+	.icon {
+		color:$bright-blue;
+		}
+	&.btn--icon .icon {
+		background-color:#fff;
+		&:before {
+			color:$bright-blue;
+		}
+		}		
 	}
 	
 	

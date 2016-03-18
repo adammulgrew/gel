@@ -1,11 +1,13 @@
 .site-footer {
-	background-color:darken($dark-blue, 10%);
+//	background-color:tint($light-grey-1,75%);
+//	border-top:1px solid $light-grey-2;
 	margin:lh(1) auto 0 auto;
-	padding:lh(1);
+	padding:lh(1) 0;
 	width:100%;
 	@include respond-min($large) {
-		margin:lh(2) auto 0 auto;
-		padding:lh(2) 0 lh(1) 0;
+		margin:lh(-2) auto 0 auto;
+		padding-bottom:0;
+		padding-top:lh(4);
 		}
 	}
 	
@@ -17,18 +19,39 @@
 		}
 	}
 	
-	
 .footer-logo__img {
 	display:block;
 	height:105px !important;
 	width:300px !important;
-	
 	@include respond-min($large) {
 		height:80px !important;
 		width:229px !important;
 		}
-		
 	}
-	
-	
-	
+
+.list--footer {
+	@include respond-min($medium) {
+		margin-top:rem(38px);
+		}
+	.list__item {
+		display:inline-block;
+		margin-right:lh(.25);
+		@include respond-min($large) {
+			margin-right:lh(1);
+			}
+		}
+	.list__link {
+		color:$grey;
+		font-size:rem(12px);
+		text-decoration:none;
+		@include respond-min($large) {
+			font-size:rem(16px);
+			}
+		&:hover {
+			color:$bright-blue;
+			}	
+		&:visited {
+			color:$grey;
+			}
+		}	
+	}

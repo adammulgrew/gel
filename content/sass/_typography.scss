@@ -8,18 +8,18 @@
 // Standard Life Font
 // 
 // <div class="row primary-font">
-//   <div class="col large_6 soft-right--large">
+//   <div class="col large-6 soft-right--large">
 //     <p class="primary-font">We have our own font called Standard Life font.</p> 
 //     <p class="primary-font">It is unique to Standard Life.</p>
 //     <p class="primary-font">It is the only font that should be used for headlines, titles, headers, sub heads.</p>
 //     <p class="primary-font">It can also work well for short body copy, especially at larger sizes.</p>
 //     <p class="soft-half bg-blue-tint">To use Standard Life add <code>class="primary-font"</code> or <code>class="primary-font-bold"</code> to the required tag or parent element or include <code>font-family:$primary-font</code> or <code>font-family:$primary-font-bold"</code> in the css class</p>
 //   </div>
-//   <div class="col small_6 large_3 primary-font dark-blue">
+//   <div class="col small-6 large-3 primary-font dark-blue">
 //    <div class="peta">Aa1</div>
 //    <div class="beta">Regular</div>
 //   </div>
-//   <div class="col small_6 large_3 dark-blue">
+//   <div class="col small-6 large-3 dark-blue">
 //     <div class="peta primary-font-bold">Aa1</div>
 //     <div class="beta primary-font-bold">Bold</div>
 //   </div>
@@ -33,15 +33,15 @@
 // Meta Standard Life Pro TF
 //
 // <div class="row secondary-font">
-//   <div class="col large_6 soft-right--large"> 
+//   <div class="col large-6 soft-right--large"> 
 //     <p>For general body copy, and tables and charts, we use our own version of Meta called &ldquo;Meta Standard Life Pro TF&rdquo;.</p>
 //     <p class="soft-half bg-blue-tint">To use Meta Standard Life  add <code>class="secondary-font"</code> or <code>class="secondary-font-bold"</code> to the required tag or parent element or include <code>font-family:$secondary-font</code> or <code>font-family:$secondary-font-bold"</code> in the css class</p>
 //   </div>
-//   <div class="col small_6 large_3 bright-blue secondary-font">
+//   <div class="col small-6 large-3 bright-blue secondary-font">
 //     <div class="peta">Aa1</div>
 //     <div class="secondary-font">Regular</div>
 //  </div>
-//   <div class="col small_6 large_3 bright-blue">
+//   <div class="col small-6 large-3 bright-blue">
 //     <div class="peta secondary-font-bold">Aa1</div>
 //     <div class="beta secondary-font-bold">Bold</div>
 //   </div>
@@ -55,15 +55,15 @@
 // Arial
 // 
 // <div class="row arial">
-//   <div class="col large_6 soft-right--large">
+//   <div class="col large-6 soft-right--large">
 //     <p class="arial">We use Arial for day to day use of Microsoft software or for web where a generic font is required.</p> 
 //     <p class="soft-half bg-blue-tint"> We don't use any other fonts</p>
 //   </div>
-//   <div class="col small_6 large_3 arial dark-blue">
+//   <div class="col small-6 large-3 arial dark-blue">
 //    <div class="peta">Aa1</div>
 //    <div class="beta">Regular</div>
 //   </div>
-//   <div class="col small_6 large_3 dark-blue">
+//   <div class="col small-6 large-3 dark-blue">
 //     <div class="peta arial"><strong>Aa1</strong></div>
 //     <div class="beta arial"><strong>Bold</strong></div>
 //   </div>
@@ -96,25 +96,25 @@
 //
 // <p> Text should only appear at 100% colour on all backgrounds </p>
 // <div class="row">
-//   <div class="col medium_4 bg-dark-blue white soft push--bottom">
+//   <div class="col medium-4 bg-dark-blue white soft push--bottom">
 //    <div class="primary-font mega white"> Text in 100% white </div>
 //    <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
 //    <div class="primary-font mega yellow"> Text in 100% yellow </div>
 //   </div>
-//   <div class="col medium_4 bg-white white soft push--bottom border border--dark-blue">
+//   <div class="col medium-4 bg-white white soft push--bottom border border--dark-blue">
 //     <div class="primary-font mega dark-blue"> Text in 100% dark-blue </div>
 //     <div class="primary-font mega bright-blue"> Text in 100% bright-blue </div>
 //     <div class="primary-font mega grey"> Text in 100% grey </div>
 //   </div>
 // </div>
 // <div class="row">
-//   <div class="col medium_4 bg-white soft push--bottom border border--dark-blue">
+//   <div class="col medium-4 bg-white soft push--bottom border border--dark-blue">
 //     <div class="primary-font alpha yellow"> Avoid using yellow text on white backgrounds </div>
 //   </div>
-//   <div class="col medium_4 bg-white soft push--bottom border border--dark-blue">
+//   <div class="col medium-4 bg-white soft push--bottom border border--dark-blue">
 //     <div class="primary-font alpha orange"> Avoid using orange text on white backgrounds </div>
 //   </div>
-//   <div class="col medium_4 bg-dark-blue soft push--bottom border border--dark-blue">
+//   <div class="col medium-4 bg-dark-blue soft push--bottom border border--dark-blue">
 //     <div class="primary-font alpha orange"> Avoid using orange text on blue backgrounds </div>
 //   </div>
 // </div>
@@ -264,17 +264,15 @@ body {
 
 .alpha { 
 	font-size:rem(18px);
-	line-height: 1.1;
-	
+	line-height: 1.1;	
 	@include respond-min($medium) {
 		line-height:1.2;
-		}
-		
+		}		
 	}
 
 .beta {  
 	font-size:rem(16px);
-	line-height:1.2;
+	line-height:1.35;
 	}
 
 .gamma {  
@@ -329,7 +327,7 @@ p  {
 	font-family:$secondary-font;
 	font-size:rem(18px);
 	font-weight:normal;
-	margin-bottom:lh(.5);
+	margin-bottom:rem(24px);
 	}
 
 a {
@@ -360,6 +358,12 @@ ul {
 ol{
 	list-style-type:decimal;
 	}
+
+.editor {
+	ul, ol {
+		margin:0 0 0 1rem;
+	}
+}
 
 figure.quote {
 	border-left: 6px solid $dark-blue;

@@ -1,65 +1,52 @@
 .masthead {	
 	background-color:#fff;
 	min-height:rem(72px);
+	padding:lh(.5) 0;
 	@include respond-min($medium) {
 		height:rem(96px);
 		min-height:0;
 		margin:0 auto;
+		padding:0;
 		position:relative;
 		width:100%;
 		.wrap {
 			height:rem(72px);
 			margin-bottom:lh(1);
-			}
-		
-		}	
-		
+			}		
+		}			
 	}
 	
-
 .icon-menu {
 	color:$bright-blue;
+	font-size:rem(36px);
 	}
 				
 .site-logo {
 	display:block;
-	margin-bottom:lh(.33);
 	}
-
+	
 .site-logo__img {
 	display:block;
 	height:31px !important;
 	width:143px !important;
-	
 	@include respond-min($medium) {
-		height:55px !important;
-		margin:0;
-		width:240px !important;
-		}
-		
+		height:46px !important;
+		width:200px !important;
+		}		
 	@include respond-min($large) {
 		bottom:0;
 		position:absolute;
-		left:0;
-		margin-bottom:0;
-		}
-	
-	/** @include respond-min($large) {
-		height:rem(108px) !important;
-		margin:rem(30px) 0 0 0;
-		width:rem(320px) !important;
-		} **/
-		
+		}	
 	}
-	
+
 .tagline {
-	color:$bright-blue;
+	color:$dark-blue;
 	font-size:rem(16px);
 	@include respond-min($large) {
 		bottom:0;
-		font-size:rem(26px);
+		font-size:rem(21px);
 		position:absolute;
-		right:0;
+		right:$gutter;
 		text-align:right;
 		}
 	}
@@ -76,7 +63,7 @@
 	border:none;
 	color:$bright-blue;
 	display:inline-block;
-	font-size:rem(32px);
+	font-size:rem(28px);
 	min-width:0;
 	padding:0;
 	position:absolute;
@@ -85,11 +72,10 @@
 	top:rem(12px);
 	width:auto;	
 	z-index:9;
-
 	@include respond-min($large) {
-		color:$dark-blue;
-		right:0;
-		top:rem(100px);
+		color:$mid-grey-3;
+		right:$gutter;
+		top:rem(103px);
 		}
 		
 	&:hover,
@@ -221,7 +207,7 @@
 	width:100%;
 	}
 	
-.icon--xlarge__icon {
+.icon--xlarge-_icon {
 	font-size:rem(100px);
 	position:absolute;
 	}
